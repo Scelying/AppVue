@@ -110,7 +110,7 @@
     </ul>
     <li><code>HTML5</code></li>
     <ul>
-      <li>Nuevas tiquetas estructurales</li>
+      <li>Nuevas etiquetas estructurales</li>
       <ul>
         <li><code>header</code></li>
         <li><code>nav</code></li>
