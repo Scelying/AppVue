@@ -378,7 +378,6 @@
 <details>
   <summary>Módulo 8</summary>
   <li><img src="https://cdn-icons-png.flaticon.com/24/1197/1197460.png"/><sup> Proyecto:<strong><i> Creación de aplicación fullstack completa /<code>node</code>/<code>express</code>/angular|react|vue/web Responsive/jest/cypress</i></strong></sup></li>
-  </ul>
 </details>
 
 <p align="justify"> <strong>UDeCataluña</strong> se reserva el derecho de apertura o aplazamiento del diplomado en caso de no contar con el número mínimo de inscritos. El grupo docente estará sujeto a cambios según disponibilidad de su agenda al igual que el cronograma de actividades académicas</p>
