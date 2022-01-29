@@ -110,7 +110,20 @@
     </ul>
     <li><code>HTML5</code></li>
     <ul>
+      <li>Nuevas tiquetas estructurales</li>
+      <ul>
+        <li><code>header</code></li>
+        <li><code>nav</code></li>
+        <li><code>main</code></li>
+        <li><code>article</code></li>
+        <li><code>aside</code></li>
+        <li><code>footer</code></li>                 
+      </ul>
       <li>Web Semántica</li>
+      <ul>
+        <li>Introducción Web Semántica</li>
+        <li>Componentes Web Semántica</li>
+      </ul>
     </ul>
     <li><code>CSS3</code></li>
     <ul>
