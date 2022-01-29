@@ -1,6 +1,8 @@
-#PowerPoint files
+#PowerPoint files and temporal
 *.ppt*
 *.pptx*
+~$*.ppt*
+~$*.pptx*
 
 #Ficheros macOS
 .DS_Store
