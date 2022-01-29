@@ -97,10 +97,10 @@
         <ul>
           <li><code>config</code></li>
           <li><code>init</code></li>
-          <li><code>branch</code></li>
-          <li><code>status</code></li>
           <li><code>remote</code></li>
+          <li><code>branch</code></li>
           <li><code>checkout</code></li>
+          <li><code>status</code></li>
           <li><code>add</code></li>
           <li><code>commit</code></li>
           <li><code>fetch</code></li>
