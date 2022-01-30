@@ -320,11 +320,11 @@
     <dd><strong>Sintaxis:</strong><code><i>eltname</i></code></dd>
     <dd><strong>Ejemplo:</strong><code>input</code> se aplicará a cualquier elemento <code>&lt;input&gt;</code></dd>
     <dt><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Class_selectors">Selector de clase</a></dt>
-    <dd>Selecciona todos los elementos que tienen el atributo de class especificado.</dt>
+    <dd>Selecciona todos los elementos que tienen el atributo de class especificado.</dd>
     <dd><strong>Sintaxis:</strong><code><i>.classname</i></code></dd>
     <dd><strong>Ejemplo:</strong><code>.index</code> seleccionará cualquier elemento que tenga la clase <i>"index"</i></dd>
     <dt><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/ID_selectors">Selector de ID</a></dt>
-    <dd>Selecciona un elemento basándose en el valor de su atributo <code>id</code>. Solo puede haber un elemento con un determinado ID dentro de un documento.</dt>
+    <dd>Selecciona un elemento basándose en el valor de su atributo <code>id</code>. Solo puede haber un elemento con un determinado ID dentro de un documento.</dd>
     <dd><strong>Sintaxis:</strong><code><i>#idname</i></code></dd>
     <dd><strong>Ejemplo:</strong><code>#toc</code> se aplicará a cualquier elemento que tenga el ID <i>"toc"</i></dd>
     <dt><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Universal_selectors">Selector universal</a></dt>
@@ -342,11 +342,11 @@
   
   <dl align="justify">
     <dt><a href="https://developer.mozilla.org/es/docs/Web/CSS/Adjacent_sibling_combinator">Combinador de hermanos adyacentes</a></dt>
-    <dd>El combinador <code>+</code> selecciona hermanos adyacentes. Esto quiere decir que el segundo elemento sigue directamente al primero y ambos comparten el mismo elemento padre.</dt>
+    <dd>El combinador <code>+</code> selecciona hermanos adyacentes. Esto quiere decir que el segundo elemento sigue directamente al primero y ambos comparten el mismo elemento padre.</dd>
     <dd><strong>Sintaxis:</strong><code><i>A + B</i></code></dd>
     <dd><strong>Ejemplo:</strong>La regla <code>h2 + p</code> se aplicará a todos los elementos <code>&lt;p&gt;</code> que siguen directamente a un elemento <code>&lt;h2&gt;</code> (en-US).</code></dd>
     <dt><a href="https://developer.mozilla.org/es/docs/Web/CSS/General_sibling_combinator">Combinador general de hermanos</a></dt>
-    <dd>El combinador <code>~</code> selecciona hermanos. Esto quiere decir que el segundo elemento sigue al primero (no necesariamente de forma inmediata) y ambos comparten el mismo elemento padre.</dt>
+    <dd>El combinador <code>~</code> selecciona hermanos. Esto quiere decir que el segundo elemento sigue al primero (no necesariamente de forma inmediata) y ambos comparten el mismo elemento padre.</dd>
     <dd><strong>Sintaxis:</strong><code><i>A ~ B</i></code></dd>
     <dd><strong>Ejemplo:</strong>la regla <code>p ~ span</code> se aplicará a todos los elementos <code>&lt;span&gt;</code> que siguen un elemento <code>&lt;p&gt;</code>.</dd>
     <dt><a href="https://developer.mozilla.org/es/docs/Web/CSS/Child_combinator">Combinador de hijo</a></dt>
@@ -466,4 +466,136 @@
     <li>Un elemento <strong>posicionado absolutamente</strong> es un elemento cuyo valor <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/computed_value">computado</a> de <code>position</code> es <code>absolute</code> o <code>fixed</code>. Las propiedades <a href="https://developer.mozilla.org/es/docs/Web/CSS/top">top</a>, <a href="https://developer.mozilla.org/es/docs/Web/CSS/right">right</a>, <a href="https://developer.mozilla.org/es/docs/Web/CSS/bottom">bottom</a>, y  <a href="https://developer.mozilla.org/es/docs/Web/CSS/left">left</a> especifican el desplazamiento desde los bordes del <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Containing_block">bloque contenedor</a> del elemento. (El bloque contenedor es el ancestro relativo al cual el elemento está posicionado). Si el elemento tiene márgenes, se agregarán al desplazamiento. el elemento establece un nuevo contexto de formato de bloque para su contenido</li>
     <li>Un <strong>elemento posicionado fijamente</strong> es un elemento cuyo valor de <code>position</code> <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/computed_value">computado</a> es <code>sticky</code>. Es tratado como un elemento posicionado relativamente hasta que su <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Containing_block">bloque contenedor</a> cruza un límite establecido (como por ejemplo dando a <a href="https://developer.mozilla.org/es/docs/Web/CSS/top">top</a> cualquier valor distinto de auto), dentro de su flujo principal (o el contenedor dentro del cual se mueve), desde el cual es tratado como "fijo" hasta que alcance el borde opuesto de su <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Containing_block">bloque contenedor</a>.</li>
   </ul>
+
+  <p align="justify"> La mayoría de las veces, los elementos absolutamente posicionados que tienen su <a href="https://developer.mozilla.org/es/docs/Web/CSS/height">height</a> y <a href="https://developer.mozilla.org/es/docs/Web/CSS/width">width</a> establecidos en <code>auto</code> son ajustados hasta acomodarse a su contenido. Sin embargo, elementos non-<a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Replaced_element">replaced</a> y absolutamente posicionados se pueden crear para llenar el espacio vertical disponible, especificando tanto <a href="https://developer.mozilla.org/es/docs/Web/CSS/top">top</a> como <a href="https://developer.mozilla.org/es/docs/Web/CSS/bottom">bottom</a>, y dejando <a href="https://developer.mozilla.org/es/docs/Web/CSS/height">height</a> sin especificar (es decir, auto). De igual manera se pueden utilizar para llenar el espacio horizontal disponible especificando tanto <a href="https://developer.mozilla.org/es/docs/Web/CSS/height">left</a> como <a href="https://developer.mozilla.org/es/docs/Web/CSS/right">right</a>, y dando a <a href="https://developer.mozilla.org/es/docs/Web/CSS/width">width</a> el valor de <code>auto</code>. </p>
+
+  <p align="justify"> A excepción del caso anteriormente descrito (de elementos posicionados absolutamente rellenando el espacio disponible): </p>
+
+  <ul align="justify">
+    <li>Si ambos, <code>top</code> y <code>bottom</code> están especificados (técnicamente, no <code>auto</code>), <code>top</code> gana.</li>
+    <li>Si ambos, <code>left</code> y <code>right</code>, están especificados, <code>left</code> gana cuando es <code>ltr</code> (Inglés, japonés horizontal, etc.) y <code>right</code> gana cuando <a href="https://developer.mozilla.org/es/docs/Web/CSS/direction">direction</a> es <code>rtl</code> (Persa, árabe, hebreo, etc.).</li>
+  </ul>
+
+  #### Sintaxis
+  
+  <p align="justify">La propiedad <code>position</code> es especificada como una palabra única elegida de la siguiente lista de valores.</p>
+
+  ##### Valores
+
+  <dl align="justify">
+    <dt><code>static</code></dt>
+    <dd>El elemento es posicionado de acuerdo al flujo normal del documento. Las propiedades <a href="https://developer.mozilla.org/es/docs/Web/CSS/top">top</a>, <a href="https://developer.mozilla.org/es/docs/Web/CSS/right">right</a>, <a href="https://developer.mozilla.org/es/docs/Web/CSS/bottom">bottom</a>, <a href="https://developer.mozilla.org/es/docs/Web/CSS/left">left</a>, and <a href="https://developer.mozilla.org/es/docs/Web/CSS/z-index">z-index</a> <i>no tienen efecto</i>. Este es el valor por defecto.</dd>
+    <dt><code>relative</code></dt>
+    <dd>El elemento es posicionado de acuerdo al flujo normal del documento, y luego es desplazado <i>con relación a sí mismo</i>, con base en los valores de <code>top</code>, <code>right</code>, <code>bottom</code>, and <code>left</code>. El desplazamiento no afecta la posición de ningún otro elemento; por lo que, el espacio que se le da al elemento en el esquema de la página es el mismo como si la posición fuera <code>static</code>. Este valor crea un nuevo <a href="https://developer.mozilla.org/es/docs/Web/CSS/CSS_Positioning/Understanding_z_index/The_stacking_context">contexto de apilamiento</a>, donde el valor de <code>z-index</code> no es <code>auto</code>. El efecto que tiene <code>relative</code> sobre los elementos <code>table-*-group</code>, <code>table-row</code>, <code>table-column</code>, <code>table-cell</code>, y <code>table-caption</code> no está definido.</dd>
+    <dt><code>absolute</code></dt>
+    <dd>El elemento es removido del flujo normal del documento, sin crearse espacio alguno para el elemento en el esquema de la página. Es posicionado relativo a su ancestro posicionado más cercano, si lo hay; de lo contrario, se ubica relativo al <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Containing_block">bloque contenedor</a> inicial. Su posición final está determinada por los valores de <code>top</code>, <code>right</code>, <code>bottom</code>, y <code>left</code>.</dd>
+    <dd>Este valor crea un nuevo <a href="https://developer.mozilla.org/es/docs/Web/CSS/CSS_Positioning/Understanding_z_index/The_stacking_context">contexto de apilamiento</a> cuando el valor de <code>z-index</code> no es <code>auto</code>. Elementos absolutamente posicionados pueden tener margen, y no colapsan con ningún otro margen.</dd>
+    <dt><code>fixed</code></dt>
+    <dd>El elemento es removido del flujo normal del documento, sin crearse espacio alguno para el elemento en el esquema de la página. Es posicionado con relación al <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Containing_block">bloque contenedor</a> inicial establecido por el <a href="https://developer.mozilla.org/es/docs/Glossary/Viewport">viewport</a>, excepto cuando uno de sus ancestros tiene una propiedad <code>transform</code>, <code>perspective</code>, o <code>filter</code> establecida en algo que no sea <code>none</code> (ver <a href="https://www.w3.org/TR/css-transforms-1/#propdef-transform">CSS Transforms Spec</a>), en cuyo caso ese ancestro se comporta como el bloque contenedor. (Notar que hay inconsistencias del navegador con <code>perspective</code> y <code>filter</code> contribuyendo a la formación del bloque contenedor.) Su posición final es determinada por los valores de <code>top</code>, <code>right</code>, <code>bottom</code>, y <code>left</code>.</dd>
+    <dd>Estos valores siempre crean un nuevo <a href="https://developer.mozilla.org/es/docs/Web/CSS/CSS_Positioning/Understanding_z_index/The_stacking_context">contexto de apilamiento</a>. En documentos impresos, el elemento se coloca en la misma posición en <i>cada página</i>.</dd>
+    <dt><code>sticky</code></dt>
+    <dd>El elemento es posicionado de acuerdo al flujo normal del documento, y luego es desplazado <i>con relación a su ancestro que se desplace más cercano</i> y su <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Containing_block">bloque contenedor</a> (ancestro en nivel de bloque más cercano) incluyendo elementos relacionados a tablas, basados en los valores de <code>top</code>, <code>right</code>, <code>bottom</code>, y <code>left</code>. El desplazamiento no afecta la posición de ningún otro elmento.</dd>
+    <dd>Estos valores siempre crean un nuevo <a href="https://developer.mozilla.org/es/docs/Web/CSS/CSS_Positioning/Understanding_z_index/The_stacking_context">contexto de apilamiento</a>. Nótese que un elemento sticky se "adhiere" a su ancestro más cercano que tiene un "mecanismo de desplazamiento" (creado cuando el <code>overflow</code> es <code>hidden</code>, <code>scroll</code>, <code>auto</code>, o bien <code>overlay</code>), aún si ese ancestro no es el ancestro con desplazamiento más cercano. Esto inhibe efectivamente el comportamiento "sticky" (ver el <a href="https://github.com/w3c/csswg-drafts/issues/865">Github issue en W3C CSSWG</a>).</dd>
+  </dl>
+
+  ##### Sintaxis formal
+
+  <p align="justify"> <code>static <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Value_definition_syntax#single_bar">| (en-US)</a> relative <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Value_definition_syntax#single_bar">| (en-US)</a> absolute <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Value_definition_syntax#single_bar">| (en-US)</a> sticky <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Value_definition_syntax#single_bar">| (en-US)</a> fixed</code></p>
+
+  ### BEM
+  #### Toda la refencia aca descrita en adelante se tomo de Get BEM. [Ir a Get BEM](http://getbem.com/)
+  
+  <p align="justify"> BEM: Block Element Modifier es una metodología que lo ayuda a crear componentes reutilizables y compartir código en el desarrollo front-end.</p>
+
+  <dl align="justify">
+    <dt>Fácil</dt>
+    <dd>Para usar BEM, solo necesita emplear la convención de nomenclatura de BEM.</dd>
+    <dt>Modular</dt>
+    <dd>Los bloques independientes y los selectores de CSS hacen que su código sea reutilizable y modular.</dd>
+    <dt>Flexible</dt>
+    <dd>Usando BEM, las metodologías y herramientas se pueden recomponer y configurar de la manera que desee.</dd>
+  </dl>
+
+  #### Introducción
+
+  <p align="justify"> BEM es una convención de nomenclatura muy útil, poderosa y simple que hace que su código front-end sea más fácil de leer y comprender, más fácil de trabajar, más fácil de escalar, más sólido y explícito, y mucho más estricto.</p>
+
+  #### Denominación
+
+  <p align="justify"> El enfoque BEM garantiza que todos los que participan en el desarrollo de un sitio web trabajen con un solo código base y hablen el mismo idioma. El uso de la convención de nomenclatura adecuada de BEM lo preparará mejor para los cambios de diseño realizados en su sitio web.</p>
+
+  <p align="justify"> Es un hecho conocido que la guía de estilo correcta puede aumentar significativamente la velocidad de desarrollo, la depuración y la implementación de nuevas funciones en el código heredado. Lamentablemente, la mayoría de las bases de código CSS a veces se desarrollan sin ninguna estructura o convenciones de nomenclatura. Esto conduce a una base de código CSS inmantenible a largo plazo.</p>
+
+  <p align="justify"> El enfoque BEM garantiza que todos los que participan en el desarrollo de un sitio web trabajen con un solo código base y hablen el mismo idioma. El uso de nombres adecuados lo preparará para los cambios en el diseño del sitio web.</p>
+
+  ##### Bloque
+
+  <p align="justify"> Encapsula una entidad independiente que sea significativa por sí misma. Si bien los bloques se pueden anidar e interactuar entre sí, semánticamente siguen siendo iguales; no hay precedencia ni jerarquía. Las entidades holísticas sin representación DOM (como controladores o modelos) también pueden ser bloques.</p>
+
+  <dl align="justify">
+    <dt>Denominación</dt>
+    <dd>Los nombres de bloque pueden consistir en letras latinas, dígitos y guiones. Para formar una clase CSS, agregue un prefijo corto para el espacio de nombres: <code>.block</code></dd>
+    <dt>HTML</dt>
+    <dd>Cualquier nodo DOM puede ser un bloque si acepta un nombre de clase.</dd>
+    <dd><code>&lt;div class="block"&gt;...&lt;/div&gt;</code></dd>
+    <dt>CSS</dt>
+    <dd>
+      <ul>
+        <li>Usar solo el selector de nombre de clase.</li>
+        <li>Sin nombre de etiqueta o identificadores.</li>
+        <li>Sin dependencia de otros bloques/elementos en una página.</li>
+      </ul>
+    </dd>
+    <dd><code>.block { color: #042; }</code></dd>
+  </dl>
+
+  ##### Elemento
+
+  <p align="justify"> Partes de un bloque y no tienen un significado independiente. Cualquier elemento está ligado semánticamente a su bloque.</p>
+
+  <dl align="justify">
+    <dt>Denominación</dt>
+    <dd>Los nombres de los elementos pueden consistir en letras latinas, dígitos, guiones y guiones bajos. La clase CSS se forma como el nombre del bloque más dos guiones bajos más el nombre del elemento: <code>.block__elem</code></dd>
+    <dt>HTML</dt>
+    <dd>Cualquier nodo DOM dentro de un bloque puede ser un elemento. Dentro de un bloque dado, todos los elementos son semánticamente iguales.</dd>
+    <dd><code>&lt;div class="block"&gt;... &lt;span class="block__elem"&gt;&lt;/span&gt;&lt;/div&gt;</code></dd>
+    <dt>CSS</dt>
+    <dd>
+      <ul>
+        <li>Usar solo el selector de nombre de clase.</li>
+        <li>Sin nombre de etiqueta o identificadores.</li>
+        <li>Sin dependencia de otros bloques/elementos en una página.</li>
+      </ul>
+    </dd>
+    <dd><code>.block__elem { color: #042; }</code></dd>
+  </dl>
+
+  ##### Modificador
+
+  <p align="justify"> Banderas en bloques o elementos. Úsalos para cambiar la apariencia, el comportamiento o el estado.</p>
+
+  <dl align="justify">
+    <dt>Denominación</dt>
+    <dd>Los nombres de los modificadores pueden consistir en letras latinas, dígitos, guiones y guiones bajos. La clase CSS se forma como el nombre del bloque o elemento más dos guiones: <code>.block--mod</code> o <code>.block__elem--mod</code> y <code>.block--color-black</code> con <code>.block--color-red</code>. Los espacios en modificadores complicados se reemplazan por guiones.</dd>
+    <dt>HTML</dt>
+    <dd>El modificador es un nombre de clase adicional que agrega a un nodo DOM de bloque/elemento. Agregue clases modificadoras solo a los bloques/elementos que modifican y mantenga la clase original:</dd>
+    <dd><code>&lt;div class="block block--mod"&gt;...&lt;/div&gt;&lt;div class="block block--size-big block--shadow-yes"&gt;...&lt;/div&gt;</code></dd>
+    <dt>CSS</dt>
+    <dd>
+      <ul>
+        <li>
+          <p>Use el nombre de la clase del modificador como selector:</p>
+          <p><code>.block--hidden { }</code></p>
+        </li>
+        <li>
+          <p>Para modificar elementos en función de un modificador a nivel de bloque:</p>
+          <p><code>.block--mod .block__elem { }</code></p>
+        </li>
+        <li>
+          <p>Modificador de elemento:</p>
+          <p><code>.block__elem--mod { }</code></p>
+        </li>
+      </ul>
+    </dd>
+  </dl>
 </details>
