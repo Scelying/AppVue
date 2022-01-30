@@ -147,7 +147,7 @@
   
   <p align="justify"> Ahora presta atención. Esto es lo más importante que debes recordar acerca de Git si quieres que el resto de tu proceso de aprendizaje prosiga sin problemas. Git tiene tres estados principales en los que se pueden encontrar tus archivos: confirmado (committed), modificado (modified), y preparado (staged).</p>
  
-  <ol>
+  <ol align="justify">
     <li> Confirmado: significa que los datos están almacenados de manera segura en tu base de datos local.</li>
     <li> Modificado: significa que has modificado el archivo pero todavía no lo has confirmado a tu base de datos.</li>
     <li> Preparado: significa que has marcado un archivo modificado en su versión actual para que vaya en tu próxima confirmación.</li>
@@ -157,7 +157,7 @@
  
   <img src="https://git-scm.com/book/en/v2/images/areas.png" />
   
-  <ol>
+  <ol align="justify">
     <li> El directorio de Git es donde se almacenan los metadatos y la base de datos de objetos para tu proyecto. Es la parte más importante de Git, y es lo que se copia cuando clonas un repositorio desde otra computadora.</li>
     <li> El directorio de trabajo es una copia de una versión del proyecto. Estos archivos se sacan de la base de datos comprimida en el directorio de Git, y se colocan en disco para que los puedas usar o modificar.</li>
     <li> El área de preparación es un archivo, generalmente contenido en tu directorio de Git, que almacena información acerca de lo que va a ir en tu próxima confirmación. A veces se le denomina índice (“index”), pero se está convirtiendo en estándar el referirse a ella como el área de preparación.</li>
@@ -165,7 +165,7 @@
   
   <p align="justify"> El flujo de trabajo básico en Git es algo así:</p>
   
-  <ul>
+  <ul align="justify">
     <li> Modificas una serie de archivos en tu directorio de trabajo.</li>
     <li> Preparas los archivos, añadiéndolos a tu área de preparación.</li>
     <li> Confirmas los cambios, lo que toma los archivos tal y como están en el área de preparación y almacena esa copia instantánea de manera permanente en tu directorio de Git.</li>
@@ -185,7 +185,7 @@
   
   <p align="justify"> Durante el video, Carpenter define algunos de los términos comunes que los equipos deberán comprender al usar GitHub. Ellos son:</p>
   
-  <ol>
+  <ol align="justify">
     <li> <strong>Repository (repo)</strong>: una carpeta en la que se almacenan todos los archivos y sus historiales de versión.</li>
     <li> <strong>Branch</strong>: un espacio de trabajo en el que puede realizar cambios que no afectarán al sitio activo.</li>
     <li> <strong>Markdown (.md)</strong>: una forma de escribir en Github que convierte texto sin formato en código de GitHub. Sitios como Atom y Sublime Text son ejemplos de recursos gratuitos para desarrolladores que utilizan Markdown.</li>
@@ -214,7 +214,7 @@
   
   <p align="justify"> Otros recursos: </p>
   
-  <ol>
+  <ol align="justify">
     <li><a href="https://www.w3schools.com/html/default.asp"> W3Schools</a></li>
     <li><a href="https://www.youtube.com/c/GustavoGarciaBlanco"> Canal de youtube de Gustavo Adolfo Garcia Blanco</a></li>
   </ol>
@@ -227,7 +227,7 @@
   
   <p align="justify"> Otros recursos: </p>
   
-  <ol>
+  <ol align="justify">
     <li><a href="https://www.w3schools.com/html/default.asp"> W3Schools</a></li>
     <li><a href="https://www.youtube.com/c/GustavoGarciaBlanco"> Canal de youtube de Gustavo Adolfo Garcia Blanco</a></li>
   </ol>
@@ -238,7 +238,7 @@
   
   <p align="justify"> Además de la clásica "Web de documentos", el W3C está ayudando a construir una pila de tecnología para respaldar una "Web de datos", el tipo de datos que se encuentran en las bases de datos. El objetivo final de la Web de datos es permitir que las computadoras realicen un trabajo más útil y desarrollar sistemas que puedan admitir interacciones confiables a través de la red. El término “Web Semántica” se refiere a la visión del W3C de la Web de datos enlazados. Las tecnologías de la Web Semántica permiten a las personas crear almacenes de datos en la Web, crear vocabularios y escribir reglas para el manejo de datos. Los datos vinculados están potenciados por tecnologías como RDF, SPARQL, OWL y SKOS.</p>
   
-  <dl>
+  <dl align="justify">
     <dt><a href="https://www.w3.org/standards/semanticweb/data">Datos vinculados</a></dt>
     <dd>La Web Semántica es una Web de datos: de fechas, títulos, números de pieza, propiedades químicas y cualquier otro dato que uno pueda concebir. RDF proporciona la base para publicar y vincular sus datos. Varias tecnologías le permiten incrustar datos en documentos (RDFa, GRDDL) o exponer lo que tiene en bases de datos SQL, o hacerlo disponible como archivos RDF.</dd>
     <dt><a href="https://www.w3.org/standards/semanticweb/ontology">Vocabularios</a></dt>
@@ -253,7 +253,7 @@
   
   <p align="justify"> Otros recursos: </p>
   
-  <ol>
+  <ol align="justify">
     <li><a href="https://devopedia.org/semantic-web"> Devopedia</a></li>
     <li><a href="https://dbpedia.org/page/Semantic_Web"> DBpedia</a></li>
     <li><a href="https://www.sciencedirect.com/topics/computer-science/semantic-web-technology"> ScienceDirect</a></li>
@@ -287,7 +287,7 @@
   
   <p align="justify"> Nuestra <a href="https://developer.mozilla.org/es/docs/Learn/CSS">área de aprendizaje CSS</a>  presenta múltiples módulos que enseñan CSS desde cero — no se requieren conocimientos previos.</p>
   
-  <dl>
+  <dl align="justify">
     <dt><a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/First_steps">Primeros pasos en CSS</a></dt>
     <dd>CSS es utilizado para diseñar y dar estilo a las páginas web, por ejemplo, alterando la fuente, color, tamaño y espaciado del contenido, dividirlo en múltiples columnas o agregar animaciones y otras características decorativas. Este módulo proporciona un suave comienzo hacia el dominio de CSS con los conceptos básicos acerca de su funcionamiento, la sintaxis y la manera en que puedes comenzar a utilizarlo para agregar estilos al HTML.</dd>
     <dt><a href="https://developer.mozilla.org/es/docs/Learn/CSS/Building_blocks">Bloques de construcción CSS</a></dt>
@@ -303,7 +303,7 @@
   
   <p align="justify"> Otros recursos: </p>
   
-  <ol>
+  <ol align="justify">
     <li><a href="https://www.w3schools.com/css/"> W3Schools</a></li>
     <li><a href="https://css-tricks.com/"> CSS-TRICKS</a></li>
   </ol>
@@ -314,7 +314,7 @@
   <p align="justify"> Los <strong>selectores</strong> definen sobre qué elementos se aplicará un conjunto de reglas CSS.</p>
   
   #### Selectores Básicos
-  <dl>
+  <dl align="justify">
     <dt><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Type_selectors">Selector de tipo</a></dt>
     <dd>Selecciona todos los elementos que coinciden con el nombre del elemento especificado.</dd>
     <dd><strong>Sintaxis:</strong><code><i>eltname</i></code></dd>
@@ -340,7 +340,7 @@
   ### Combinadores CSS
   ####  Toda la refencia aca descrita en adelante se tomo de Developer Mozilla. [Ir a Developer Mozilla](https://developer.mozilla.org/es/docs/Web/CSS/CSS_Selectors)
   
-  <dl>
+  <dl align="justify">
     <dt><a href="https://developer.mozilla.org/es/docs/Web/CSS/Adjacent_sibling_combinator">Combinador de hermanos adyacentes</a></dt>
     <dd>El combinador <code>+</code> selecciona hermanos adyacentes. Esto quiere decir que el segundo elemento sigue directamente al primero y ambos comparten el mismo elemento padre.</dt>
     <dd><strong>Sintaxis:</strong><code><i>A + B</i></code></dd>
@@ -410,7 +410,7 @@
   
   #### Tipos de selectores
   
-  <ol start="0">
+  <ol start="0" align="justify">
     <li><a href="https://developer.mozilla.org/es/docs/Web/CSS/Type_selectors">Selectores de tipo</a> (p.e., <code>h1</code>) y pseudo-elementos (p.e., <code>::before</code>).</li>
     <li><a href="https://developer.mozilla.org/es/docs/Web/CSS/Class_selectors">Selectores de clase</a> (p.e., <code>.example</code>), selectores de atributos (p.e., <code>[type="radio"]</code>)y pseudoclases (p.e., <code>:hover</code>).</li>
     <li><a href="https://developer.mozilla.org/es/docs/Web/CSS/ID_selectors">Selectores de ID</a> (p.e., <code>#example</code>).</li>
@@ -442,7 +442,7 @@
   
   <p align="justify"> La propiedad <code>display</code> se especifica mediante valores de palabras clave. Los valores de palabras clave se agrupan en seis categorías:</p>
   
-  <ol>
+  <ol align="justify">
     <li><a href="https://developer.mozilla.org/es/docs/Web/CSS/display#display-outside">&lt;display-outside&gt;</a></li>
     <li><a href="https://developer.mozilla.org/es/docs/Web/CSS/display#display-inside">&lt;display-inside&gt;</a></li>
     <li><a href="https://developer.mozilla.org/es/docs/Web/CSS/display#display-listitem">&lt;display-listitem&gt;</a></li>
@@ -460,7 +460,7 @@
     
   #### Tipos de posicionamiento
   
-  <ul>
+  <ul align="justify">
     <li>Un <strong>elemento posicionado</strong> es un elemento cuyo valor <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/computed_value">computado</a> de <code>position</code> es <code>relative</code>, <code>absolute</code>, <code>fixed</code>, o <code>sticky</code>. (En otras palabras, cualquiera excepto <code>static</code>).</li>
     <li>Un <strong>elemento posicionado relativamente</strong> es un elemento cuyo valor <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/computed_value">computado</a> de <code>position</code> es <code>relative</code>. Las propiedades <a href="https://developer.mozilla.org/es/docs/Web/CSS/top">top</a> y <a href="https://developer.mozilla.org/es/docs/Web/CSS/bottom">bottom</a> especifican el desplazamiento vertical desde su posición original; las propiedades <a href="https://developer.mozilla.org/es/docs/Web/CSS/left">left</a> y <a href="https://developer.mozilla.org/es/docs/Web/CSS/right">right</a> especifican su desplazamiento horizontal.</li>
     <li>Un elemento <strong>posicionado absolutamente</strong> es un elemento cuyo valor <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/computed_value">computado</a> de <code>position</code> es <code>absolute</code> o <code>fixed</code>. Las propiedades <a href="https://developer.mozilla.org/es/docs/Web/CSS/top">top</a>, <a href="https://developer.mozilla.org/es/docs/Web/CSS/right">right</a>, <a href="https://developer.mozilla.org/es/docs/Web/CSS/bottom">bottom</a>, y  <a href="https://developer.mozilla.org/es/docs/Web/CSS/left">left</a> especifican el desplazamiento desde los bordes del <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Containing_block">bloque contenedor</a> del elemento. (El bloque contenedor es el ancestro relativo al cual el elemento está posicionado). Si el elemento tiene márgenes, se agregarán al desplazamiento. el elemento establece un nuevo contexto de formato de bloque para su contenido</li>
