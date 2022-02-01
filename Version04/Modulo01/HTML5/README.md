@@ -3,65 +3,260 @@
 
 ![](https://i.ibb.co/rbzdqdR/FOTO.png)
 
-## HTML5
-### Módulo 1
+## ECMAScript
+### Módulo 2
+
+[Ir a la documentación oficial de ECMA-INTERNATIONAL](https://www.ecma-international.org/publications-and-standards/standards/ecma-262/)
   
 ### Introducción
-####  Toda la refencia aca descrita en adelante se tomo de Developer Mozilla. [Ir a Developer Mozilla](https://developer.mozilla.org/es/docs/Web/HTML)
+####  Toda la refencia aca descrita en adelante se tomo de Wikipedia. [Ir a Wikipedia](https://es.wikipedia.org/wiki/ECMAScript#ES2020)
   
-### HTML: Lenguaje de etiquetas de hipertexto
+<p align="justify"> <strong>ECMAScript</strong> es una especificación de <a href="https://es.wikipedia.org/wiki/Lenguaje_de_programaci%C3%B3n">lenguaje de programación</a> publicada por <a href="https://es.wikipedia.org/wiki/Ecma_International">ECMA International</a>. El desarrollo empezó en 1996 y estuvo basado en el popular lenguaje <a href="https://es.wikipedia.org/wiki/JavaScript">JavaScript</a> propuesto como estándar por <a href="https://es.wikipedia.org/wiki/Netscape_Communications_Corporation">Netscape Communications Corporation</a>. Actualmente está aceptado como el estándar ISO/IEC 22275:2018.</p>
   
-<p align="justify"> <strong>HTML</strong> (Lenguaje de Marcas de Hipertexto, del inglés <i>HyperText Markup Language</i>) es el componente más básico de la Web. Define el significado y la estructura del contenido web. Además de HTML, generalmente se utilizan otras tecnologías para describir la apariencia/presentación de una página web <a href="https://developer.mozilla.org/es/docs/Web/CSS">(CSS)</a> o la funcionalidad/comportamiento <a href="https://developer.mozilla.org/es/docs/Web/JavaScriptS">(JavaScript)</a>.</p>
-  
-<p align="justify"> "Hipertexto" hace referencia a los enlaces que conectan páginas web entre sí, ya sea dentro de un único sitio web o entre sitios web. Los enlaces son un aspecto fundamental de la Web. Al subir contenido a Internet y vincularlo a las páginas creadas por otras personas, te conviertes en un participante activo en la <i>«World Wide Web»</i> (Red Informática Mundial).</p>
-  
-<p align="justify"> HTML utiliza "marcas" para etiquetar texto, imágenes y otro contenido para mostrarlo en un navegador Web. Las  marcas HTML incluyen "elementos" especiales como <a href="https://developer.mozilla.org/es/docs/Web/HTML/Element/head"> &lt;head&gt;</a>, <a href="https://developer.mozilla.org/es/docs/Web/HTML/Element/title"> &lt;title&gt;</a>, <a href="https://developer.mozilla.org/es/docs/Web/HTML/Element/body"> &lt;body&gt;</a>, <a href="https://developer.mozilla.org/es/docs/Web/HTML/Element/header"> &lt;header&gt;</a>, <a href="https://developer.mozilla.org/es/docs/Web/HTML/Element/footer"> &lt;footer&gt;</a>, <a href="https://developer.mozilla.org/es/docs/Web/HTML/Element/article"> &lt;articlr&gt;</a>, <a href="https://developer.mozilla.org/es/docs/Web/HTML/Element/section"> &lt;section&gt;</a>, <a href="https://developer.mozilla.org/es/docs/Web/HTML/Element/p"> &lt;p&gt;</a>, <a href="https://developer.mozilla.org/es/docs/Web/HTML/Element/div"> &lt;div&gt;</a>, <a href="https://developer.mozilla.org/es/docs/Web/HTML/Element/span"> &lt;span&gt;</a>, <a href="https://developer.mozilla.org/es/docs/Web/HTML/Element/img"> &lt;img&gt;</a>, <a href="https://developer.mozilla.org/es/docs/Web/HTML/Element/aside"> &lt;aside&gt;</a>, <a href="https://developer.mozilla.org/es/docs/Web/HTML/Element/audio"> &lt;audio&gt;</a>, <a href="https://developer.mozilla.org/es/docs/Web/HTML/Element/canvas"> &lt;canvas&gt;</a>, <a href="https://developer.mozilla.org/es/docs/Web/HTML/Element/datalist"> &lt;datalist&gt;</a>, <a href="https://developer.mozilla.org/es/docs/Web/HTML/Element/details"> &lt;details&gt;</a>, <a href="https://developer.mozilla.org/es/docs/Web/HTML/Element/embed"> &lt;embed&gt;</a>, <a href="https://developer.mozilla.org/es/docs/Web/HTML/Element/nav"> &lt;nav&gt;</a>, <a href="https://developer.mozilla.org/es/docs/Web/HTML/Element/output"> &lt;output&gt;</a> (en-US), <a href="https://developer.mozilla.org/es/docs/Web/HTML/Element/progress"> &lt;progress&gt;</a>, <a href="https://developer.mozilla.org/es/docs/Web/HTML/Element/video"> &lt;video&gt;</a>, <a href="https://developer.mozilla.org/es/docs/Web/HTML/Element/ul"> &lt;ul&gt;</a>, <a href="https://developer.mozilla.org/es/docs/Web/HTML/Element/ol"> &lt;ol&gt;</a>, <a href="https://developer.mozilla.org/es/docs/Web/HTML/Element/li"> &lt;li&gt;</a> y muchos otros.</p>
-  
-  <p align="justify"> Un elemento HTML se distingue de otro texto en un documento mediante "etiquetas", que consisten en el nombre del elemento rodeado por "<" y ">". El nombre de un elemento dentro de una etiqueta no distingue entre mayúsculas y minúsculas. Es decir, se puede escribir en mayúsculas, minúsculas o una mezcla. Por ejemplo, la etiqueta <code>&lt;title&gt;</code> se puede escribir como <code>&lt;Title&gt;</code>, <code>&lt;TITLE&gt;</code> o de cualquier otra forma.</p>
-  
-  <p align="justify"> Otros recursos: </p>
-  
-<ol align="justify">
-  <li><a href="https://www.w3schools.com/html/default.asp"> W3Schools</a></li>
-  <li><a href="https://www.youtube.com/c/GustavoGarciaBlanco"> Canal de youtube de Gustavo Adolfo Garcia Blanco</a></li>
-</ol>
-  
-####  Toda la refencia aca descrita en adelante se tomo de Developer Mozilla. [Ir a Developer Mozilla](https://developer.mozilla.org/es/docs/Glossary/HTML5)
-  
-### HTML5
-  
-<p align="justify"> La última versión estable de <a href="https://developer.mozilla.org/es/docs/Glossary/HTML"> HTML</a>, HTML5 convierte a HTML de un simple formato de marcado para estructurar documentos en una plataforma completa de desarrollo de aplicaciones. Entre otras características, HTML5 incluye nuevos elementos y <a href="https://developer.mozilla.org/es/docs/Glossary/API"> API</a> de <a href="https://developer.mozilla.org/es/docs/Glossary/JavaScript"> JavaScript</a> para mejorar el almacenamiento, la multimedia y el acceso al hardware.</p>
-  
-<p align="justify"> Otros recursos: </p>
-  
-<ol align="justify">
-  <li><a href="https://www.w3schools.com/html/default.asp"> W3Schools</a></li>
-  <li><a href="https://www.youtube.com/c/GustavoGarciaBlanco"> Canal de youtube de Gustavo Adolfo Garcia Blanco</a></li>
-</ol>
-  
-####  Toda la refencia aca descrita en adelante se tomo de W3C. [Ir a w3C](https://www.w3.org/standards/semanticweb/)
-  
-### Web Semántica
-  
-<p align="justify"> Además de la clásica "Web de documentos", el W3C está ayudando a construir una pila de tecnología para respaldar una "Web de datos", el tipo de datos que se encuentran en las bases de datos. El objetivo final de la Web de datos es permitir que las computadoras realicen un trabajo más útil y desarrollar sistemas que puedan admitir interacciones confiables a través de la red. El término “Web Semántica” se refiere a la visión del W3C de la Web de datos enlazados. Las tecnologías de la Web Semántica permiten a las personas crear almacenes de datos en la Web, crear vocabularios y escribir reglas para el manejo de datos. Los datos vinculados están potenciados por tecnologías como RDF, SPARQL, OWL y SKOS.</p>
-  
+<p align="justify"> ECMAScript define un lenguaje de tipos dinámicos ligeramente inspirado en <a href="https://es.wikipedia.org/wiki/Java_(lenguaje_de_programaci%C3%B3n)">Java</a> y otros lenguajes del estilo de <a href="https://es.wikipedia.org/wiki/C_(lenguaje_de_programaci%C3%B3n)">C</a>. Soporta algunas características de la <a href="https://es.wikipedia.org/wiki/Programaci%C3%B3n_orientada_a_objetos">programación orientada a objetos</a> mediante objetos basados en prototipos y pseudoclases.</p>
+
+<p align="justify"> La mayoría de <a href="https://es.wikipedia.org/wiki/Navegador_web">navegadores de Internet</a> incluyen una implementación del estándar ECMAScript, al igual que un acceso al <a href="https://es.wikipedia.org/wiki/Document_Object_Model">Document Object Model</a> para manipular páginas web. <a href="https://es.wikipedia.org/wiki/JavaScript">JavaScript</a> está implementado en la mayoría de navegadores, <a href="https://es.wikipedia.org/wiki/Internet_Explorer">Internet Explorer</a> de <a href="https://es.wikipedia.org/wiki/Microsoft">Microsoft</a> usa <a href="https://es.wikipedia.org/wiki/JScript">JScript</a>. El navegador <a href="https://es.wikipedia.org/wiki/Opera_(navegador)">Opera</a> tenía su propio intérprete de ECMAScript con extensiones para soportar algunas características de JavaScript y JScript, actualmente <a href="https://es.wikipedia.org/wiki/Opera_(navegador)">Opera</a> está basado en Chromium (y utiliza su intérprete). Cada navegador tiene extensiones propias al estándar ECMAScript, pero cualquier código que se adecúe al estándar debería funcionar en todos ellos.</p>
+
+<p align="justify"> <a href="https://es.wikipedia.org/wiki/ActionScript">ActionScript</a>, para <a href="https://es.wikipedia.org/wiki/Adobe_Flash">Adobe Flash</a>, también está basado en el estándar ECMAScript, con mejoras que permiten mover, crear y analizar dinámicamente objetos, mientras la película está en ejecución.</p>
+
+<p align="justify"> Desde el lanzamiento en junio de 1997 del estándar <strong>ECMAScript 1</strong>, han existido las versiones 2, 3 y 5, que es la más usada actualmente (la 4 se abandonó). En junio de 2015 se cerró y publicó la versión ECMAScript 6.</p>
+
+### Historia
+
+<p align="justify"> ECMAScript es una especificación estándar de un lenguaje desarrollado por <a href="https://es.wikipedia.org/wiki/Brendan_Eich">Brendan Eich</a>, empleado en <a href="https://es.wikipedia.org/wiki/Netscape_Communications_Corporation">Netscape</a>; inicialmente se llamaba Mocha, luego LiveScript, y finalmente Javascript. En diciembre de 1995, Sun Microsystems y Netscape anunciaron JavaScript en una conferencia de prensa.​ En marzo de 1996, <a href="https://es.wikipedia.org/wiki/Netscape_Navigator">Netscape Navigator</a> 2.0 fue lanzado con soporte para JavaScript.</p>
+
+<p align="justify"> Debido al gran éxito de Javascript como lenguaje de scripting del lado del cliente para páginas web, Microsoft desarrolló un dialecto compatible del lenguaje, llamado <a href="https://es.wikipedia.org/wiki/JScript">JScript</a>, para evitar problemas legales con la marca. JScript agregó nuevos métodos para las fechas, para aliviar los problemas del año 2000 (<a href="https://es.wikipedia.org/wiki/Problema_del_a%C3%B1o_2000">Y2K</a>), causados en parte porque los métodos de Javascript estaban basados en las clases Date de Java. JScript fue incluido en <a href="https://es.wikipedia.org/wiki/Internet_Explorer">Internet Explorer</a> 3.0, lanzado en agosto de 1996.</p>
+
+<p align="justify"> Netscape envió el borrador de JavaScript a <a href="https://es.wikipedia.org/wiki/Ecma_International">Ecma International</a> para su estandarización y para que trabajasen sobre su especificación ECMA-262, que comenzó en noviembre de 1996. La primera edición de ECMA-262 fue adoptada por asamblea general de Ecma en junio de 1997. Varias ediciones del lenguaje estándar han sido publicadas desde entonces. El nombre "ECMAScript" fue un compromiso entre las organizaciones involucradas en la estandarización del lenguaje, especialmente entre Netscape y Microsoft, que se disputaron el dominio de las primeras sesiones estándar. Eich comentó que "ECMAScript fue siempre un nombre de marca indeseado, que sonaba como una enfermedad de la piel."</p>
+
+<p align="justify"> A pesar de que ambas especificaciones, tanto JavaScript y JScript, apuntan a ser compatibles con ECMAScript, también proveen características adicionales, no descritas en la especificaciones de ECMA. </p>
+
+### Versiones
+
+#### ES1
 <dl align="justify">
-  <dt><a href="https://www.w3.org/standards/semanticweb/data">Datos vinculados</a></dt>
-  <dd>La Web Semántica es una Web de datos: de fechas, títulos, números de pieza, propiedades químicas y cualquier otro dato que uno pueda concebir. RDF proporciona la base para publicar y vincular sus datos. Varias tecnologías le permiten incrustar datos en documentos (RDFa, GRDDL) o exponer lo que tiene en bases de datos SQL, o hacerlo disponible como archivos RDF.</dd>
-  <dt><a href="https://www.w3.org/standards/semanticweb/ontology">Vocabularios</a></dt>
-  <dd>A veces puede ser importante o valioso organizar los datos. Usando OWL (para construir vocabularios u "ontologías") y SKOS (para diseñar sistemas de organización del conocimiento) es posible enriquecer los datos con un significado adicional, lo que permite que más personas (y más máquinas) hagan más con los datos.</dd>
-  <dt><a href="https://www.w3.org/standards/semanticweb/query">Consulta</a></dt>
-  <dd>Los lenguajes de consulta van de la mano con las bases de datos. Si la Web Semántica se ve como una base de datos global, entonces es fácil entender por qué se necesitaría un lenguaje de consulta para esos datos. SPARQL es el lenguaje de consulta de la Web Semántica.</dd>
-  <dt><a href="https://www.w3.org/standards/semanticweb/inference">Inferencia</a></dt>
-  <dd>Cerca de la parte superior de la pila de la Web Semántica, se encuentra la inferencia: razonamiento sobre datos a través de reglas. El trabajo del W3C sobre reglas, principalmente a través de RIF y OWL, se centra en traducir entre lenguajes de reglas e intercambiar reglas entre diferentes sistemas.</dd>
-  <dt><a href="https://www.w3.org/standards/semanticweb/applications">Aplicaciones verticales</a></dt>
-  <dd>W3C está trabajando con diferentes industrias, por ejemplo, en el cuidado de la salud y las ciencias de la vida, el gobierno electrónico y la energía, para mejorar la colaboración, la investigación y el desarrollo, y la adopción de la innovación a través de la tecnología de la Web Semántica. Por ejemplo, al ayudar en la toma de decisiones en la investigación clínica, las tecnologías de la Web Semántica unirán muchas formas de información biológica y médica entre instituciones.</dd>
+  <dt>Fecha de publicación</dt>
+  <dd>Junio de 1997.</dd>
+  <dt>Cambios desde la edición anterior</dt>
+  <dd>Primera edición.</dd>
+  <dt>Editor</dt>
+  <dd>Guy L. Steele, Jr.</dd>
+  <dt>
+    <img src="https://cdn-icons-png.flaticon.com/24/2541/2541979.png" />
+  </dt>
+  <dd>
+    <a href="https://www.ecma-international.org/wp-content/uploads/ECMA-262_1st_edition_june_1997.pdf">Ir al documento de la edición completa.</a>
+  </dd>
 </dl>
-  
-<p align="justify"> Otros recursos: </p>
-  
-<ol align="justify">
-  <li><a href="https://devopedia.org/semantic-web"> Devopedia</a></li>
-  <li><a href="https://dbpedia.org/page/Semantic_Web"> DBpedia</a></li>
-  <li><a href="https://www.sciencedirect.com/topics/computer-science/semantic-web-technology"> ScienceDirect</a></li>
-</ol>
+
+#### ES2
+<dl>
+  <dt>Fecha de publicación</dt>
+  <dd>Junio de 1998.</dd>
+  <dt>Cambios desde la edición anterior</dt>
+  <dd>Cambios editoriales para mantener la especificación completa alineada con el estándar internacional ISO/IEC 16262.</dd>
+  <dt>Editor</dt>
+  <dd>Mike Cowlishaw.</dd>
+  <dt>
+    <img src="https://cdn-icons-png.flaticon.com/24/2541/2541979.png" />
+  </dt>
+  <dd>
+    <a href="https://www.ecma-international.org/wp-content/uploads/ECMA-262_2nd_edition_august_1998.pdf">Ir al documento de la edición completa.</a>
+  </dd>
+</dl>
+
+#### ES3
+<dl>
+  <dt>Fecha de publicación</dt>
+  <dd>Diciembre de 1999.</dd>
+  <dt>Cambios desde la edición anterior</dt>
+  <dd>Se agregaron expresiones regulares.</dd>
+  <dd>Mejor manejo de strings.</dd>
+  <dd>Nuevo control de declaraciones.</dd>
+  <dd>Manejo de excepciones con <code>try/catch</code>.</dd>
+  <dd>Definición más estricta de errores.</dd>
+  <dd>Formato para la salida numérica y otras mejoras.</dd>
+  <dt>Editor</dt>
+  <dd>Mike Cowlishaw.</dd>
+  <dt>
+    <img src="https://cdn-icons-png.flaticon.com/24/2541/2541979.png" />
+  </dt>
+  <dd>
+    <a href="https://www.ecma-international.org/wp-content/uploads/ECMA-262_3rd_edition_december_1999.pdf">Ir al documento de la edición completa.</a>
+  </dd>
+</dl>
+
+#### ES4
+<dl>
+  <dt>Fecha de publicación</dt>
+  <dd>Abandonado</dd>
+  <dt>Cambios desde la edición anterior</dt>
+  <dd>La cuarta edición fue abandonada debido a diferencias políticas respecto a la complejidad del lenguaje. Muchas características propuestas para la cuarta edición fueron completamente abandonadas; algunas fueron propuestas para la edición ECMAScript Harmony.</dd>
+  <dt>Editor</dt>
+  <dd>No hay editor para esta edición ya que fue abandonada.</dd>
+  <dt>
+    <img src="https://cdn-icons-png.flaticon.com/24/2541/2541979.png" />
+  </dt>
+  <dd>
+    No hay documento de esta edición ya que fue abandonada.
+  </dd>
+</dl>
+
+#### ES5
+<dl>
+  <dt>Fecha de publicación</dt>
+  <dd>Diciembre de 2009.</dd>
+  <dt>Cambios desde la edición anterior</dt>
+  <dd>Agrega el modo estricto ("<code>strict mode</code>").</dd>
+  <dd>Un subconjunto destinado a proporcionar una mejor comprobación de errores y evitar constructores propensos a errores.</dd>
+  <dd>Aclara varias ambigüedades de la tercera edición.</dd>
+  <dd>Afina el comportamiento de las implementaciones del "mundo real" que difieren consistentemente desde esa especificación.</dd>
+  <dd>Agrega algunas nuevas características, como <code>getters</code> y <code>setters</code></dd>
+  <dd>Librería para el soporte de <code><a href="https://es.wikipedia.org/wiki/JSON">JSON</a></code></dd>
+  <dd>Una más completa <a href="https://es.wikipedia.org/wiki/Reflexi%C3%B3n_(inform%C3%A1tica)">reflexión</a> sobre las propiedades de los objetos.</dd>
+  <dt>Editor</dt>
+  <dd>Pratap Lakshman.</dd>
+  <dd>Allen WirfsBrock.</dd>
+  <dt>
+    <img src="https://cdn-icons-png.flaticon.com/24/2541/2541979.png" />
+  </dt>
+  <dd>
+    <a href="https://www.ecma-international.org/wp-content/uploads/ECMA-262_5th_edition_december_2009.pdf">Ir al documento de la edición completa.</a>
+  </dd>
+</dl>
+
+#### ES5.1
+<dl>
+  <dt>Fecha de publicación</dt>
+  <dd>Junio de 2011.</dd>
+  <dt>Cambios desde la edición anterior</dt>
+  <dd>Esta edición 5.1 de la ECMAScript Standard está completamente alineada con la tercera edición del estándar internacional ISO/IEC 16262:2011.</dd>
+  <dt>Editor</dt>
+  <dd>Pratap Lakshman.</dd>
+  <dd>Allen WirfsBrock.</dd>
+  <dt>
+    <img src="https://cdn-icons-png.flaticon.com/24/2541/2541979.png" />
+  </dt>
+  <dd>
+    <a href="https://www.ecma-international.org/wp-content/uploads/ECMA-262_5.1_edition_june_2011.pdf">Ir al documento de la edición completa.</a>
+  </dd>
+</dl>
+
+#### ES6
+<dl>
+  <dt>Fecha de publicación</dt>
+  <dd>Junio de 2015.</dd>
+  <dt>Cambios desde la edición anterior</dt>
+  <dd>La sexta edición agrega cambios significativos en la sintaxis para escribir aplicaciones complejas, incluyendo clases y módulos, definiéndolos sémanticamente en los mismos términos del modo estricto de la edición ECMAScript 5.</dd>
+  <dd>Otras nuevas características incluyen iteradores <code>for/of</code> loops, generadores y generador de expresiones estilo <a href="https://es.wikipedia.org/wiki/Python">Python.</a></dd>
+  <dd>Funciones de dirección.</dd>
+  <dd>Datos binarios.</dd>
+  <dd>Colecciones (mapas, sets, mapas débiles).</dd>
+  <dd>Proxies (metaprogramación para objetos virtuales y wrappers).</dd>
+  <dd>Al ser la primera especificación “ECMAScript Harmony”, es también conocida como “ES6 Harmony”.</dd>
+  <dt>Editor</dt>
+  <dd>Allen WirfsBrock.</dd>
+  <dt>
+    <img src="https://cdn-icons-png.flaticon.com/24/2541/2541979.png" />
+  </dt>
+  <dd>
+    <a href="https://www.ecma-international.org/wp-content/uploads/ECMA-262_6th_edition_june_2015.pdf">Ir al documento de la edición completa.</a>
+  </dd>
+</dl>
+
+#### ES7
+<dl>
+  <dt>Fecha de publicación</dt>
+  <dd>Junio de 2016.</dd>
+  <dt>Cambios desde la edición anterior</dt>
+  <dd>La séptima edición fue una mera actualización de la versión 6.</dd>
+  <dd>Incorpora el método <code>Array.prototype.includes()</code> y el operador exponencial (<code>**</code>).</dd>
+  <dt>Editor</dt>
+  <dd>Brian Terlson.</dd>
+  <dt>
+    <img src="https://cdn-icons-png.flaticon.com/24/2541/2541979.png" />
+  </dt>
+  <dd>
+    <a href="https://262.ecma-international.org/7.0/">Ir al documento de la edición completa.</a>
+  </dd>
+</dl>
+
+#### ES8
+<dl>
+  <dt>Fecha de publicación</dt>
+  <dd>Junio de 2017.</dd>
+  <dt>Cambios desde la edición anterior</dt>
+  <dd>La 8ª edición, oficialmente conocida como ECMAScript 2017.</dd>
+  <dd>Incluye constructores <code>async/await</code>, los cuales funcionan usando generadores y promesas.</dd>
+  <dt>Editor</dt>
+  <dd>Brian Terlson.</dd>
+  <dt>
+    <img src="https://cdn-icons-png.flaticon.com/24/2541/2541979.png" />
+  </dt>
+  <dd>
+    <a href="https://262.ecma-international.org/8.0/">Ir al documento de la edición completa.</a>
+  </dd>
+</dl>
+
+#### ES9
+<dl>
+  <dt>Fecha de publicación</dt>
+  <dd>Junio de 2018.</dd>
+  <dt>Cambios desde la edición anterior</dt>
+  <dd>La 9.ª edición, oficialmente conocida como ECMAScript 2018.</dd>
+  <dd>Incluye operadores <code>rest/spread</code> para variables (tres puntos: <code>...identificador</code>).</dd>
+  <dd>Iteración asincrónica.</dd>
+  <dd>Incorporó <code>Promise.prototype.finally()</code>.</dd>
+  <dt>Editor</dt>
+  <dd>Brian Terlson.</dd>
+  <dt>
+    <img src="https://cdn-icons-png.flaticon.com/24/2541/2541979.png" />
+  </dt>
+  <dd>
+    <a href="https://262.ecma-international.org/9.0/">Ir al documento de la edición completa.</a>
+  </dd>
+</dl>
+
+#### ES10
+<dl>
+  <dt>Fecha de publicación</dt>
+  <dd>Enero de 2019.</dd>
+  <dt>Cambios desde la edición anterior</dt>
+  <dd>La 10.ª edición, oficialmente conocida como ECMAScript 2019.</dd>
+  <dd>Incorporó <code>Array.flat()</code>.</dd>
+  <dd>Incorporó <code>Array.flatMap()</code>.</dd>
+  <dd>Incorporó <code>String.trimStart()</code>.</dd>
+  <dd>Incorporó <code>String.trimEnd()</code>.</dd>
+  <dd>Incorporó <code>Object.fromEntries()</code>.</dd>
+  <dd>Incorporó <code>Symbol.description</code>.</dd>
+  <dd>Errores opcionales en el bloque <code>catch</code>.</dd>
+  <dt>Editor</dt>
+  <dd>Mathías Bynens.</dd>
+  <dt>
+    <img src="https://cdn-icons-png.flaticon.com/24/2541/2541979.png" />
+  </dt>
+  <dd>
+    <a href="https://262.ecma-international.org/10.0/">Ir al documento de la edición completa.</a>
+  </dd>
+</dl>
+
+#### ES11
+<dl>
+  <dt>Fecha de publicación</dt>
+  <dd>	Junio 2020.</dd>
+  <dt>Cambios desde la edición anterior</dt>
+  <dd>La 11.ª edición, oficialmente conocida como ECMAScript 2020.</dd>
+  <dd>Incluye el tipo primitivo <code>BigInt</code>.</dd>
+  <dd>Incorporó el operador de unión nula (en inglés, <i>nullish coalescing</i>) (<code>??</code>).</dd>
+  <dd>Incorporó el encadenamiento opcional (en inglés, <i>optional chaining</i>) (<code>?.</code>).</dd>
+  <dd>Incorporó el objeto <code>globalThis</code>.</dd>
+  <dt>Editor</dt>
+  <dd>Jordan Harband.</dd>
+  <dd>Kevin Smith.</dd>
+  <dt>
+    <img src="https://cdn-icons-png.flaticon.com/24/2541/2541979.png" />
+  </dt>
+  <dd>
+    <a href="https://262.ecma-international.org/11.0/">Ir al documento de la edición completa.</a>
+  </dd>
+</dl>
