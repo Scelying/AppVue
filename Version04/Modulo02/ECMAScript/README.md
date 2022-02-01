@@ -9,7 +9,7 @@
 [Ir a la documentación oficial de ECMA-INTERNATIONAL](https://www.ecma-international.org/publications-and-standards/standards/ecma-262/)
   
 ### Introducción
-####  Toda la refencia aca descrita en adelante se tomo de Wikipedia. [Ir a Wikipedia](https://es.wikipedia.org/wiki/ECMAScript#ES2020)
+####  Toda la refencia aca descrita en adelante se tomo de Wikipedia [Ir a Wikipedia](https://es.wikipedia.org/wiki/ECMAScript#ES2020) y de w3Schools [Ir a w3schools](https://www.w3schools.com/js/js_versions.asp)
   
 <p align="justify"> <strong>ECMAScript</strong> es una especificación de <a href="https://es.wikipedia.org/wiki/Lenguaje_de_programaci%C3%B3n">lenguaje de programación</a> publicada por <a href="https://es.wikipedia.org/wiki/Ecma_International">ECMA International</a>. El desarrollo empezó en 1996 y estuvo basado en el popular lenguaje <a href="https://es.wikipedia.org/wiki/JavaScript">JavaScript</a> propuesto como estándar por <a href="https://es.wikipedia.org/wiki/Netscape_Communications_Corporation">Netscape Communications Corporation</a>. Actualmente está aceptado como el estándar ISO/IEC 22275:2018.</p>
   
@@ -50,7 +50,7 @@
 </dl>
 
 #### ES2
-<dl>
+<dl align="justify">
   <dt>Fecha de publicación</dt>
   <dd>Junio de 1998.</dd>
   <dt>Cambios desde la edición anterior</dt>
@@ -66,7 +66,7 @@
 </dl>
 
 #### ES3
-<dl>
+<dl align="justify">
   <dt>Fecha de publicación</dt>
   <dd>Diciembre de 1999.</dd>
   <dt>Cambios desde la edición anterior</dt>
@@ -74,6 +74,8 @@
   <dd>Mejor manejo de strings.</dd>
   <dd>Nuevo control de declaraciones.</dd>
   <dd>Manejo de excepciones con <code>try/catch</code>.</dd>
+  <dd>Incorporó <code>switch</code>.</dd>
+  <dd>Incorporó <code>do-while</code>.</dd>
   <dd>Definición más estricta de errores.</dd>
   <dd>Formato para la salida numérica y otras mejoras.</dd>
   <dt>Editor</dt>
@@ -87,7 +89,7 @@
 </dl>
 
 #### ES4
-<dl>
+<dl align="justify">
   <dt>Fecha de publicación</dt>
   <dd>Abandonado</dd>
   <dt>Cambios desde la edición anterior</dt>
@@ -103,11 +105,212 @@
 </dl>
 
 #### ES5
-<dl>
+<dl align="justify">
   <dt>Fecha de publicación</dt>
   <dd>Diciembre de 2009.</dd>
   <dt>Cambios desde la edición anterior</dt>
-  <dd>Agrega el modo estricto ("<code>strict mode</code>").</dd>
+  <dd>
+    <details>
+      <summary>"<code>strict mode</code>".</summary>
+      <h4>La directiva <code>"use strict"</code></h4>
+      <ul>
+        <li><code>"use strict"</code> define que el código JavaScript debe ejecutarse en "modo estricto".</li>
+        <li> No es una declaración, sino una expresión literal, ignorada por versiones anteriores de JavaScript.</li>
+        <li> Con el modo estricto, no puede, por ejemplo, usar variables no declaradas.</li>
+        <li> Todos los navegadores modernos admiten el <code>"use strict"</code>, excepto Internet Explorer 9 y versiones anteriores:</li>
+      </ul>
+      <table class="browserref notranslate">
+        <tbody>
+          <tr>
+            <th style="width:20%;font-size:16px;text-align:left;">Directiva</th>
+            <th style="width:16%;" class="bsChrome" title="Chrome"><img src="https://cdn-icons-png.flaticon.com/24/888/888846.png" /></th>
+            <th style="width:16%;" class="bsEdge" title="Internet Explorer / Edge"><img src="https://cdn-icons-png.flaticon.com/24/5968/5968890.png" /></th>
+            <th style="width:16%;" class="bsFirefox" title="Firefox"><img src="https://cdn-icons-png.flaticon.com/24/5968/5968827.png" /></th>
+            <th style="width:16%;" class="bsSafari" title="Safari"><img src="https://cdn-icons-png.flaticon.com/24/6124/6124992.png" /></th>
+            <th style="width:16%;" class="bsOpera" title="Opera"><img src="https://cdn-icons-png.flaticon.com/24/732/732233.png" /></th>                
+          </tr>
+          <tr>
+            <td style="text-align:left;"><code>"use strict"</code></td>
+            <td>13.0</td>
+            <td>10.0</td>
+            <td>4.0</td>
+            <td>6.0</td>
+            <td>12.1</td>
+          </tr>
+        </tbody>
+      </table>
+      <ul>
+        <li> Los números de la tabla anterior especifican la primera versión del navegador que es totalmente compatible con la directiva.</li>
+        <li> Puede usar el modo estricto en todos sus programas. Le ayuda a escribir un código más limpio, como evitar que use variables no declaradas.</li>
+        <li> <code>"use strict"</code> es solo una cadena de texto, por lo que IE 9 no arrojará un error incluso si no lo entiende.</li>
+      </ul>
+      <h4>Declaración de modo estricto</h4>
+      <ul>
+        <li> El modo estricto se declara agregando <code>"use strict";</code> al comienzo de un <code>script</code> o una función</li>
+        <li> Declarado al comienzo de un <code>script</code>, tiene un alcance global (todo el código del <code>script</code> se ejecutará en modo estricto).</li>
+        <li> Declarado dentro de una función, tiene alcance local (solo el código dentro de la función está en modo estricto):</li>
+      </ul>
+      <h4>Sintaxis <code>"use strict"</code></h4>
+      <ul>
+        <li> La sintaxis, para declarar el modo estricto, fue diseñada para ser compatible con versiones anteriores de JavaScript.</li>
+        <li> La compilación de un literal numérico <code>(4 + 5;)</code> o un literal de cadena de texto <code>("John Doe";)</code> en un programa de JavaScript no tiene efectos secundarios. Simplemente compila a una variable no existente y muere.</li>
+        <li> Así que <code>"use strict"</code>; solo importa a los nuevos compiladores que "entienden" el significado de la misma.</li>
+      </ul>
+      <h4>Porque "modo estricto"</h4>
+      <ul>
+        <li> El modo estricto facilita la escritura de JavaScript "seguro".</li>
+        <li> El modo estricto cambia la "mala sintaxis" previamente aceptada en errores reales.</li>
+        <li> Como ejemplo, en JavaScript normal, escribir mal el nombre de una variable crea una nueva variable global. En modo estricto, esto generará un error, lo que imposibilitará la creación accidental de una variable global.</li>
+        <li> En JavaScript normal, un desarrollador no recibirá ningún comentario de error al asignar valores a propiedades que son de solo lectura.</li>
+        <li> En modo estricto, cualquier asignación a una propiedad que no se puede escribir, una propiedad de solo lectura, una propiedad inexistente, una variable inexistente o un objeto inexistente generará un error.</li>
+      </ul>
+      <h4>Que no permite "modo estricto"</h4>
+      <ul>
+        <li> 
+          <p align="justify"> No se permite usar una variable sin declararla:</p>
+          <p align="justify">
+              <pre>"use strict"; 
+x = 3.14;                 //Esto causará un error.</pre>
+          </p>
+        </li>
+        <li> 
+          <p align="justify"> No se permite usar un objeto sin declararlo:</p>
+          <p align="justify">
+              <pre>"use strict"; 
+x = {p1:10, p2:20};       //Esto causará un error.</pre>
+          </p>
+        </li>
+        <li> 
+          <p align="justify"> No se permite eliminar una variable (u objeto):</p>
+          <p align="justify">
+              <pre>"use strict"; 
+let x = 3.14;
+delete x;                 //Esto causará un error.</pre>
+          </p>
+        </li>
+        <li> 
+          <p align="justify"> No se permite eliminar una función:</p>
+          <p align="justify">
+              <pre>"use strict"; 
+function x(p1, p2) {};
+delete x;                 //Esto causará un error.</pre>
+          </p>
+        </li>
+        <li> 
+          <p align="justify"> No se permite duplicar el nombre de un parámetro:</p>
+          <p align="justify">
+              <pre>"use strict"; 
+function x(p1, p1) {};    //Esto causará un error.</pre>    
+          </p>
+        </li>
+        <li> 
+          <p align="justify"> Los literales numéricos octales no están permitidos:</p>
+          <p align="justify">
+              <pre>"use strict"; 
+let x = 010;              //Esto causará un error.</pre>    
+          </p>
+        </li>
+        <li> 
+          <p align="justify"> No se permiten caracteres de escape octales:</p>
+          <p align="justify">
+              <pre>"use strict"; 
+let x = "\010";           //Esto causará un error.</pre>    
+          </p>
+        </li>
+        <li> 
+          <p align="justify"> No se permite escribir en una propiedad de solo lectura:</p>
+          <p align="justify">
+              <pre>"use strict"; 
+const obj = {};
+Object.defineProperty(obj, "x", {value:0, writable:false});
+
+obj.x = 3.14;             //Esto causará un error.</pre>
+          </p>
+        </li>
+        <li> 
+          <p align="justify"> No se permite escribir en una propiedad de solo obtención:</p>
+          <p align="justify">
+              <pre>"use strict"; 
+const obj = {get x() {return 0} };
+
+obj.x = 3.14;             //Esto causará un error.</pre>
+          </p>
+        </li>
+        <li> 
+          <p align="justify"> No se permite eliminar una propiedad imborrable:</p>
+          <p align="justify">
+              <pre>"use strict"; 
+delete Object.prototype;  //Esto causará un error.</pre>
+          </p>
+        </li>
+        <li> 
+          <p align="justify"> La palabra <code>eval</code> no se puede utilizar como variable:</p>
+          <p align="justify">
+              <pre>"use strict"; 
+let eval = 3.14;          //Esto causará un error.</pre>
+          </p>
+        </li>
+        <li> 
+          <p align="justify"> La palabra <code>arguments</code> no se puede utilizar como variable:</p>
+          <p align="justify">
+              <pre>"use strict"; 
+let arguments = 3.14;    //Esto causará un error.</pre>
+          </p>
+        </li>
+        <li> 
+          <p align="justify"> La sentencia <code>with</code> no esta permitida:</p>
+          <p align="justify">
+              <pre>"use strict"; 
+with (Math){x = cos(2)}; //Esto causará un error.</pre>
+          </p>
+        </li>
+        <li> 
+          <p align="justify"> Por razones de seguridad, <code>eval()</code> no puede crear variables en el ámbito desde el que se llamó:</p>
+          <p align="justify">
+              <pre>"use strict";
+eval ("let x = 2");
+alert (x);               //Esto causará un error.</pre>
+          </p>
+        </li>
+        <li> 
+          <p align="justify"> La palabra clave <code>this</code> en funciones se comporta de manera diferente en modo estricto.</p>
+          <p align="justify"> La palabra clave <code>this</code> se refiere al objeto que llamó a la función.</p>
+          <p align="justify"> Si no se especifica el objeto, las funciones en modo estricto devolverán <code>undefined</code> y las funciones en modo normal devolverán el objeto global (ventana):</p>
+          <p align="justify">
+              <pre>"use strict";
+function myFunction() {
+    alert(this);          //Mostrará "undefined".
+}</pre>
+          </p>
+        </li>
+      </ul>
+      <h4>¡Prueba del futuro!</h4>
+      <ul>
+        <li> Las palabras clave reservadas para futuras versiones de JavaScript NO se pueden usar como nombres de variables en modo estricto. Estas son</li>
+        <ul>
+          <li><code>implements</code></li>
+          <li><code>interface</code></li>
+          <li><code>let</code></li>
+          <li><code>package</code></li>
+          <li><code>private</code></li>
+          <li><code>protected</code></li>
+          <li><code>public</code></li>
+          <li><code>static</code></li> 
+          <li><code>yield</code></li>                   
+        </ul>
+        <li> 
+          <p align="justify">
+              <pre>"use strict";
+let public = 1500;        //Esto causará un error.</pre>
+          </p>
+        </li>
+      </ul>
+    </details>
+  </dd>
+  <dd>Incorporó <code>String.trim()</code>.</dd>
+  <dd>Incorporó <code>Array.isArray()</code>.</dd>
+  <dd>Permite comas finales para objetos literales.</dd>
+  <dd>Incorporó métodos de iteración sobre la estructura <code>Array</code>.</dd>
   <dd>Un subconjunto destinado a proporcionar una mejor comprobación de errores y evitar constructores propensos a errores.</dd>
   <dd>Aclara varias ambigüedades de la tercera edición.</dd>
   <dd>Afina el comportamiento de las implementaciones del "mundo real" que difieren consistentemente desde esa especificación.</dd>
@@ -124,6 +327,10 @@
     <a href="https://www.ecma-international.org/wp-content/uploads/ECMA-262_5th_edition_december_2009.pdf">Ir al documento de la edición completa.</a>
   </dd>
 </dl>
+
+#### Compatibilidad con navegadores
+
+<p align="justify"> Todos los navegadores modernos soportan ES5.</a>
 
 #### ES5.1
 <dl>
@@ -187,6 +394,10 @@
   <dd>Junio de 2017.</dd>
   <dt>Cambios desde la edición anterior</dt>
   <dd>La 8ª edición, oficialmente conocida como ECMAScript 2017.</dd>
+  <dd>Incorporó <code>Object.entries()</code>.</dd>
+  <dd>Incorporó <code>Object.values()</code>.</dd>
+  <dd>Incorporó JavaScript String Padding.</dd>
+  <dd>Incorporó el concepto de memoria compartida.</dd>
   <dd>Incluye constructores <code>async/await</code>, los cuales funcionan usando generadores y promesas.</dd>
   <dt>Editor</dt>
   <dd>Brian Terlson.</dd>
@@ -206,6 +417,7 @@
   <dd>La 9.ª edición, oficialmente conocida como ECMAScript 2018.</dd>
   <dd>Incluye operadores <code>rest/spread</code> para variables (tres puntos: <code>...identificador</code>).</dd>
   <dd>Iteración asincrónica.</dd>
+  <dd>Adición de nuevas funcionalidades <code>RegExp</code></dd>
   <dd>Incorporó <code>Promise.prototype.finally()</code>.</dd>
   <dt>Editor</dt>
   <dd>Brian Terlson.</dd>
