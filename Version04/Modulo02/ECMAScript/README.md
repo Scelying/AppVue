@@ -70,14 +70,14 @@
   <dt>Fecha de publicación</dt>
   <dd>Diciembre de 1999.</dd>
   <dt>Cambios desde la edición anterior</dt>
-  <dd>Se agregaron expresiones regulares.</dd>
-  <dd>Mejor manejo de strings.</dd>
-  <dd>Nuevo control de declaraciones.</dd>
-  <dd>Manejo de excepciones con <code>try/catch</code>.</dd>
-  <dd>Incorporó <code>switch</code>.</dd>
-  <dd>Incorporó <code>do-while</code>.</dd>
-  <dd>Definición más estricta de errores.</dd>
-  <dd>Formato para la salida numérica y otras mejoras.</dd>
+  <dd>&#8226; Se agregaron expresiones regulares.</dd>
+  <dd>&#8226; Mejor manejo de strings.</dd>
+  <dd>&#8226; Nuevo control de declaraciones.</dd>
+  <dd>&#8226; Manejo de excepciones con <code>try/catch</code>.</dd>
+  <dd>&#8226; Incorporó <code>switch</code>.</dd>
+  <dd>&#8226; Incorporó <code>do-while</code>.</dd>
+  <dd>&#8226; Definición más estricta de errores.</dd>
+  <dd>&#8226; Formato para la salida numérica y otras mejoras.</dd>
   <dt>Editor</dt>
   <dd>Mike Cowlishaw.</dd>
   <dt>
@@ -307,16 +307,170 @@ let public = 1500;        //Esto causará un error.</pre>
       </ul>
     </details>
   </dd>
-  <dd>Incorporó <code>String.trim()</code>.</dd>
-  <dd>Incorporó <code>Array.isArray()</code>.</dd>
-  <dd>Permite comas finales para objetos literales.</dd>
-  <dd>Incorporó métodos de iteración sobre la estructura <code>Array</code>.</dd>
-  <dd>Un subconjunto destinado a proporcionar una mejor comprobación de errores y evitar constructores propensos a errores.</dd>
-  <dd>Aclara varias ambigüedades de la tercera edición.</dd>
-  <dd>Afina el comportamiento de las implementaciones del "mundo real" que difieren consistentemente desde esa especificación.</dd>
-  <dd>Agrega algunas nuevas características, como <code>getters</code> y <code>setters</code></dd>
-  <dd>Librería para el soporte de <code><a href="https://es.wikipedia.org/wiki/JSON">JSON</a></code></dd>
-  <dd>Una más completa <a href="https://es.wikipedia.org/wiki/Reflexi%C3%B3n_(inform%C3%A1tica)">reflexión</a> sobre las propiedades de los objetos.</dd>
+  <dd>    
+  <details>
+    <summary><code>String.trim()</code></summary>
+    <p align="justify"> El método <code>trim()</code> elimina los espacios en blanco de ambos lados de una cadena de texto.</p>
+    <p align="justify">
+      <pre>var texto = "    Hola Mundo!    ";
+console.log(texto.trim());<br>
+&gt; Hola Mundo!;
+      </pre>
+    </p>
+  </details>
+  <details>
+    <summary><code>Array.isArray()</code></summary>
+    <p align="justify"> El método <code>isArray()</code> verifica si un objeto es una matriz.</p>
+    <p align="justify">
+      <pre>var texto = "    Hola Mundo!    ";
+console.log(Array.isArray(texto);<br>
+&gt; false;
+      </pre>
+    </p>
+  </details>
+  <details>
+    <summary><code>Trailing Commas</code></summary>
+    <p align="justify"> ES5 permite comas finales en las definiciones de objetos y matrices:</p>
+    <p align="justify">
+      <span> Ejemplo de objeto</span>
+      <pre>persona = {
+  nombre: "Gustavo",
+  apellido: "Garcia",      
+}
+      </pre>
+      <span> Ejemplo de matriz</span>
+      <pre>digitosPares =  [
+  0,
+  2,
+  4,
+  6,
+  8,    
+]
+      </pre>
+    </p>
+  </details>
+  <details>
+    <summary><code>Array.forEach()</code></summary>
+    <p align="justify"> El método <code>forEach()</code> llama a una función una vez para cada elemento de la matriz:</p>
+    <p align="justify">
+      <pre>var texto = "";
+var numeros = [45, 4, 9, 16, 25];
+numeros.forEach(iteracion);<br>
+
+function iteracion(valor) {
+  &#32;&#32;texto = texto + valor;
+  &#32;&#32;console.log(texto);
+}<br>
+&gt; 45;
+&gt; 454;
+&gt; 4549;
+&gt; 454916;
+&gt; 45491625;
+      </pre>
+    </p>
+  </details>
+  <details>
+    <summary><code>Array.map()</code></summary>
+    <p align="justify"> El método <code>map()</code> crea un nuevo array con los resultados de la llamada a la función indicada aplicados a cada uno de sus elementos:</p>
+    <p align="justify">
+      <pre>var arregloNumeros = [1, 5, 10, 15];
+var doble = arregloNumeros.map(function(numero) {
+   return numero * 2;
+});<br>
+console.log(doble);
+&gt; [2, 10, 20, 30];
+      </pre>
+    </p>
+  </details>
+  <details>
+    <summary><code>Array.filter()</code></summary>
+    <p align="justify"> El método <code>filter()</code> crea un nuevo array con todos los elementos que cumplan la condición implementada por la función dada:</p>
+    <p align="justify">
+      <pre>var arregloCiudades = ['Bogota', 'Cali', 'Bucaramanga', 'Cartagena', 'Medellin', 'Barranquilla'];
+const resultado = arregloCiudades.filter(ciudad => ciudad.length > 8);<br>
+console.log(resultado);
+&gt; ['Bucaramanga', 'Cartagena', 'Barranquilla'];
+      </pre>
+    </p>
+  </details>
+  <details>
+    <summary><code>Array.reduce()</code></summary>
+    <p align="justify"> El método <code>reduce()</code> ejecuta una función reductora sobre cada elemento de un array, devolviendo como resultado un único valor:</p>
+    <p align="justify">
+      <pre>var arregloDigitosImpares = [1, 3, 5, 7, 9];
+var reducido = (valorPrevio, valorActual) => valorPrevio + valorActual;<br>
+console.log(arregloDigitosImpares.reduce(reducido));
+&gt; 25
+      </pre>
+    </p>
+  </details>
+  <details>
+    <summary><code>Array.reduceRight()</code></summary>
+    <p align="justify"> Aplica una función simultáneamente contra un acumulador y cada elemento de un array (de derecha a izquierda) para reducirlo a un único valor.</p>
+    <p align="justify">
+      <pre>var arregloDigitosPares = [0, 2, 4, 6, 8];
+var reducido = (valorPrevio, valorActual, indice, arreglo) => valorPrevio + valorActual;<br>
+console.log(arregloDigitosPares.reduceRight(reducido));
+&gt; 20
+      </pre>
+    </p>
+  </details>
+  <details>
+    <summary><code>Array.every()</code></summary>
+    <p align="justify"> Determina si todos los elementos en el array satisfacen una condición.</p>
+    <p align="justify">
+      <pre>var arregloDigitosImpares = [1, 3, 5, 7, 9];
+var numerosMayoresACinco = arregloDigitosImpares.every(numerosMayores);<br>
+function numerosMayores(valor) {
+  return valor > 5;
+}<br>
+console.log(numerosMayoresACinco);
+&gt; false
+      </pre>
+    </p>
+  </details>
+  <details>
+    <summary><code>Array.some()</code></summary>
+    <p align="justify"> El método <code>some()</code> comprueba si al menos un elemento del array cumple con la condición implementada por la función proporcionada:</p>
+    <p align="justify">
+      <pre>var arregloDigitosPares = [0, 2, 4, 6, 8];
+var numerosMayoresACinco = arregloDigitosPares.some(numerosMayores);<br>
+function numerosMayores(valor) {
+  return valor > 5;
+}<br>
+console.log(numerosMayoresACinco);
+&gt; true
+      </pre>
+    </p>
+  </details>
+  <details>
+    <summary><code>Array.indexOf()</code></summary>
+    <p align="justify"> El método <code>indexOf()</code> retorna el primer índice en el que se puede encontrar un elemento dado en el array, ó retorna -1 si el elemento no esta presente:</p>
+    <p align="justify">
+      <pre>var arregloFrutas = ["Manzana", "Pera", "Banano", "Papaya"];
+var posicionFruta = arregloFrutas.indexOf("Manzana");<br>
+console.log(posicionFruta);
+&gt; 0
+      </pre>
+    </p>
+  </details>
+  <details>
+    <summary><code>Array.lastIndexOf()</code></summary>
+    <p align="justify"> EL método <code>lastIndexOf()</code> es lo mismo que <code>indexOf()</code>, pero busca desde el final de la matriz:</p>
+    <p align="justify">
+      <pre>var arregloFrutas = ["Manzana", "Pera", "Banano", "Papaya"];
+var posicionFruta = arregloFrutas.lastIndexOf("Manzana");<br>
+console.log(posicionFruta);
+&gt; 0
+      </pre>
+    </p>
+  </details>
+  <dd>&#8226; Incorporó un subconjunto destinado a proporcionar una mejor comprobación de errores y evitar constructores propensos a errores.</dd>
+  <dd>&#8226; Aclara varias ambigüedades de la tercera edición.</dd>
+  <dd>&#8226; Afina el comportamiento de las implementaciones del "mundo real" que difieren consistentemente desde esa especificación.</dd>
+  <dd>&#8226; Incorporó algunas nuevas características, como <code>getters</code> y <code>setters</code></dd>
+  <dd>&#8226; Incorporó una librería para el soporte de <code><a href="https://es.wikipedia.org/wiki/JSON">JSON</a></code></dd>
+  <dd>&#8226; Incorporó una más completa <a href="https://es.wikipedia.org/wiki/Reflexi%C3%B3n_(inform%C3%A1tica)">reflexión</a> sobre las propiedades de los objetos.</dd>
   <dt>Editor</dt>
   <dd>Pratap Lakshman.</dd>
   <dd>Allen WirfsBrock.</dd>
@@ -354,12 +508,12 @@ let public = 1500;        //Esto causará un error.</pre>
   <dt>Fecha de publicación</dt>
   <dd>Junio de 2015.</dd>
   <dt>Cambios desde la edición anterior</dt>
-  <dd>La sexta edición agrega cambios significativos en la sintaxis para escribir aplicaciones complejas, incluyendo clases y módulos, definiéndolos sémanticamente en los mismos términos del modo estricto de la edición ECMAScript 5.</dd>
-  <dd>Otras nuevas características incluyen iteradores <code>for/of</code> loops, generadores y generador de expresiones estilo <a href="https://es.wikipedia.org/wiki/Python">Python.</a></dd>
-  <dd>Funciones de dirección.</dd>
-  <dd>Datos binarios.</dd>
-  <dd>Colecciones (mapas, sets, mapas débiles).</dd>
-  <dd>Proxies (metaprogramación para objetos virtuales y wrappers).</dd>
+  <dd>&#8226; La sexta edición agrega cambios significativos en la sintaxis para escribir aplicaciones complejas, incluyendo clases y módulos, definiéndolos sémanticamente en los mismos términos del modo estricto de la edición ECMAScript 5.</dd>
+  <dd>&#8226; Incorporó otras nuevas características incluyen iteradores <code>for/of</code> loops, generadores y generador de expresiones estilo <a href="https://es.wikipedia.org/wiki/Python">Python.</a></dd>
+  <dd>&#8226; Incorporó funciones de dirección.</dd>
+  <dd>&#8226; Incorporó datos binarios.</dd>
+  <dd>&#8226; Incorporó colecciones (mapas, sets, mapas débiles).</dd>
+  <dd>&#8226; Incorporó proxies (metaprogramación para objetos virtuales y wrappers).</dd>
   <dd>Al ser la primera especificación “ECMAScript Harmony”, es también conocida como “ES6 Harmony”.</dd>
   <dt>Editor</dt>
   <dd>Allen WirfsBrock.</dd>
@@ -376,8 +530,8 @@ let public = 1500;        //Esto causará un error.</pre>
   <dt>Fecha de publicación</dt>
   <dd>Junio de 2016.</dd>
   <dt>Cambios desde la edición anterior</dt>
-  <dd>La séptima edición fue una mera actualización de la versión 6.</dd>
-  <dd>Incorpora el método <code>Array.prototype.includes()</code> y el operador exponencial (<code>**</code>).</dd>
+  <dd>&#8226; La séptima edición fue una mera actualización de la versión 6.</dd>
+  <dd>&#8226; Incorporó el método <code>Array.prototype.includes()</code> y el operador exponencial (<code>**</code>).</dd>
   <dt>Editor</dt>
   <dd>Brian Terlson.</dd>
   <dt>
@@ -393,12 +547,12 @@ let public = 1500;        //Esto causará un error.</pre>
   <dt>Fecha de publicación</dt>
   <dd>Junio de 2017.</dd>
   <dt>Cambios desde la edición anterior</dt>
-  <dd>La 8ª edición, oficialmente conocida como ECMAScript 2017.</dd>
-  <dd>Incorporó <code>Object.entries()</code>.</dd>
-  <dd>Incorporó <code>Object.values()</code>.</dd>
-  <dd>Incorporó JavaScript String Padding.</dd>
-  <dd>Incorporó el concepto de memoria compartida.</dd>
-  <dd>Incluye constructores <code>async/await</code>, los cuales funcionan usando generadores y promesas.</dd>
+  <dd>&#8226; La 8ª edición, oficialmente conocida como ECMAScript 2017.</dd>
+  <dd>&#8226; Incorporó <code>Object.entries()</code>.</dd>
+  <dd>&#8226; Incorporó <code>Object.values()</code>.</dd>
+  <dd>&#8226; Incorporó JavaScript String Padding.</dd>
+  <dd>&#8226; Incorporó el concepto de memoria compartida.</dd>
+  <dd>&#8226; Incluye constructores <code>async/await</code>, los cuales funcionan usando generadores y promesas.</dd>
   <dt>Editor</dt>
   <dd>Brian Terlson.</dd>
   <dt>
@@ -414,11 +568,11 @@ let public = 1500;        //Esto causará un error.</pre>
   <dt>Fecha de publicación</dt>
   <dd>Junio de 2018.</dd>
   <dt>Cambios desde la edición anterior</dt>
-  <dd>La 9.ª edición, oficialmente conocida como ECMAScript 2018.</dd>
-  <dd>Incluye operadores <code>rest/spread</code> para variables (tres puntos: <code>...identificador</code>).</dd>
-  <dd>Iteración asincrónica.</dd>
-  <dd>Adición de nuevas funcionalidades <code>RegExp</code></dd>
-  <dd>Incorporó <code>Promise.prototype.finally()</code>.</dd>
+  <dd>&#8226; La 9.ª edición, oficialmente conocida como ECMAScript 2018.</dd>
+  <dd>&#8226; Incluye operadores <code>rest/spread</code> para variables (tres puntos: <code>...identificador</code>).</dd>
+  <dd>&#8226; Incorporó iteración asincrónica.</dd>
+  <dd>&#8226; Adición de nuevas funcionalidades <code>RegExp</code></dd>
+  <dd>&#8226; Incorporó <code>Promise.prototype.finally()</code>.</dd>
   <dt>Editor</dt>
   <dd>Brian Terlson.</dd>
   <dt>
@@ -434,14 +588,14 @@ let public = 1500;        //Esto causará un error.</pre>
   <dt>Fecha de publicación</dt>
   <dd>Enero de 2019.</dd>
   <dt>Cambios desde la edición anterior</dt>
-  <dd>La 10.ª edición, oficialmente conocida como ECMAScript 2019.</dd>
-  <dd>Incorporó <code>Array.flat()</code>.</dd>
-  <dd>Incorporó <code>Array.flatMap()</code>.</dd>
-  <dd>Incorporó <code>String.trimStart()</code>.</dd>
-  <dd>Incorporó <code>String.trimEnd()</code>.</dd>
-  <dd>Incorporó <code>Object.fromEntries()</code>.</dd>
-  <dd>Incorporó <code>Symbol.description</code>.</dd>
-  <dd>Errores opcionales en el bloque <code>catch</code>.</dd>
+  <dd>&#8226; La 10.ª edición, oficialmente conocida como ECMAScript 2019.</dd>
+  <dd>&#8226; Incorporó <code>Array.flat()</code>.</dd>
+  <dd>&#8226; Incorporó <code>Array.flatMap()</code>.</dd>
+  <dd>&#8226; Incorporó <code>String.trimStart()</code>.</dd>
+  <dd>&#8226; Incorporó <code>String.trimEnd()</code>.</dd>
+  <dd>&#8226; Incorporó <code>Object.fromEntries()</code>.</dd>
+  <dd>&#8226; Incorporó <code>Symbol.description</code>.</dd>
+  <dd>&#8226; Incorporó errores opcionales en el bloque <code>catch</code>.</dd>
   <dt>Editor</dt>
   <dd>Mathías Bynens.</dd>
   <dt>
@@ -457,11 +611,11 @@ let public = 1500;        //Esto causará un error.</pre>
   <dt>Fecha de publicación</dt>
   <dd>Junio 2020.</dd>
   <dt>Cambios desde la edición anterior</dt>
-  <dd>La 11.ª edición, oficialmente conocida como ECMAScript 2020.</dd>
-  <dd>Incluye el tipo primitivo <code>BigInt</code>.</dd>
-  <dd>Incorporó el operador de unión nula (en inglés, <i>nullish coalescing</i>) (<code>??</code>).</dd>
-  <dd>Incorporó el encadenamiento opcional (en inglés, <i>optional chaining</i>) (<code>?.</code>).</dd>
-  <dd>Incorporó el objeto <code>globalThis</code>.</dd>
+  <dd>&#8226; La 11.ª edición, oficialmente conocida como ECMAScript 2020.</dd>
+  <dd>&#8226; Incluye el tipo primitivo <code>BigInt</code>.</dd>
+  <dd>&#8226; Incorporó el operador de unión nula (en inglés, <i>nullish coalescing</i>) (<code>??</code>).</dd>
+  <dd>&#8226; Incorporó el encadenamiento opcional (en inglés, <i>optional chaining</i>) (<code>?.</code>).</dd>
+  <dd>&#8226; Incorporó el objeto <code>globalThis</code>.</dd>
   <dt>Editor</dt>
   <dd>Jordan Harband.</dd>
   <dd>Kevin Smith.</dd>
