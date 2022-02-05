@@ -56,3 +56,17 @@ a::before {
     content: "\2762";
 }
 
+/*First mobile*/
+@media only screen and (min-width: 700px) {
+    body {
+        background-color: violet;
+        font-size: 50px;
+    }
+}
+
+header {
+    color: white;
+    margin: 200px;
+    padding: 100px;
+    background-color: red;
+}
