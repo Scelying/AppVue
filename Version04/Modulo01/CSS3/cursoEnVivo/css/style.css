@@ -11,6 +11,18 @@
     /*color: rgb(255, 0, 0);*/
 }
 
+a {
+    color: steelblue;
+}
+
+div a {
+    color: black;
+}
+
+p > a {
+    color: yellowgreen;
+}
+
 p {
     color: yellow;
 }
