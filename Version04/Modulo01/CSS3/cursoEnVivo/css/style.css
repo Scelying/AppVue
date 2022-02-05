@@ -1,3 +1,7 @@
+:root {
+    --mi-primera-variable: yellow;
+}
+
 * {
     /*valor propiedad color inicializado como palabra */
     color: red;
@@ -15,6 +19,11 @@ a {
     color: steelblue;
 }
 
+a:hover,
+a:focus {
+    color: var(--mi-primera-variable);
+}
+
 div a {
     color: black;
 }
@@ -23,7 +32,7 @@ p > a {
     color: yellowgreen;
 } 
 
-a + a {
+a ~ a {
     color:wheat;
 }
 
@@ -39,6 +48,11 @@ p {
     color:blueviolet;
 }
 
-[ejemplo] {
+p[ejemplo] {
     color: coral;
 }
+
+a::before {
+    content: "\2762";
+}
+
