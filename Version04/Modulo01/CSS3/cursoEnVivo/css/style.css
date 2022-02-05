@@ -21,6 +21,10 @@ div a {
 
 p > a {
     color: yellowgreen;
+} 
+
+a + a {
+    color:wheat;
 }
 
 p {
