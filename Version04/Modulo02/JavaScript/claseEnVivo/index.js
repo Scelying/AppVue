@@ -188,4 +188,42 @@ var arregloDeDigitosBinarios = new Array(0 , 1);
 //console.log(Array.isArray(arregloDeDigitosHexadecimales), Array.isArray(arregloDeDigitosBinarios), Array.isArray(miPrimeraVariable));
 
 //Instancias
-console.log(arregloDeDigitosHexadecimales instanceof Array, arregloDeDigitosBinarios instanceof Array);
+//console.log(arregloDeDigitosHexadecimales instanceof Array, arregloDeDigitosBinarios instanceof Array);
+
+//Funciones
+//Dos tipos -> funciones en bloque y funciones en variable
+//Funciones Bloque
+/*Sintaxis -> function <nombreFuncion>(<parametro>*) {
+    cuerpo de la funcion
+}*/
+/*function sumar(sumando1, sumando2) {
+    return sumando1 + sumando2;
+};
+
+console.log(sumar(3, 4));*/
+
+//Cuando llamo una funcion, es decir, cuando quiero que se ejecute
+//a ese proceso se le llama invocar.
+//console.log(sumar(3, 4));
+
+//Funciones en variable
+/*Sintaxis -> var <nombreFuncion> = function(<parametro>*) {
+    cuerpo de la funcion 
+}*/
+/*var sumar = function(sumando1, sumando2) {
+    return sumando1 + sumando2;
+};
+
+console.log(sumar(3, 4));*/
+
+//Bucles e iteraciones
+/*Sintaxis -> for(<expresion-inicial>; <condicion>; <expresion-final>) {
+    cuerpo del bucle
+}*/
+//inicio++ -> inicio = inicio + 1;
+//inicio+=5 -> inicio = inicio + 5;
+for(var inicio = 0; inicio < 10; inicio+=1) {
+    console.log(inicio);
+}
+
+console.log(inicio);
