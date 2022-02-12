@@ -141,7 +141,7 @@ Andrea['fecha de nacimiento'] = 1988;
 //console.log(andrea instanceof Object, Andrea instanceof Object);
 
 //Objeto
-/*var persona = {
+var persona = {
     nombre: 'Pepito',
     apellido: 'Perez',
     edad: 32,
@@ -164,7 +164,7 @@ Andrea['fecha de nacimiento'] = 1988;
     }
 }
 
-var nombreColegioSecundariaNotacionPunto = persona.informacionAdicional.escolaridad.secundaria.nombreColegio;
+/*var nombreColegioSecundariaNotacionPunto = persona.informacionAdicional.escolaridad.secundaria.nombreColegio;
 var ciudadColegioSecundariaNotacionPunto = persona.informacionAdicional.escolaridad.secundaria.ciudad;
 console.log(nombreColegioSecundariaNotacionPunto, ciudadColegioSecundariaNotacionPunto);
 
@@ -199,10 +199,20 @@ var personaComplicada = {
     }]
 };
 
-var colegioPersonaComplicada = personaComplicada.informacionAdicional[0].escolaridad[0].primaria[1].nombreColegio;
+/*var colegioPersonaComplicada = personaComplicada.informacionAdicional[0].escolaridad[0].primaria[1].nombreColegio;
 var ciudadPersonaComplicada = personaComplicada.informacionAdicional[0].escolaridad[0].primaria[1].ciudad;
 
-console.log(colegioPersonaComplicada, ciudadPersonaComplicada);
+console.log(colegioPersonaComplicada, ciudadPersonaComplicada);*/
+
+//Object.getOwnPropertyNames(<objeto>);
+var arregloDePropiedadDeUnObjeto = Object.getOwnPropertyNames(persona);
+console.log(arregloDePropiedadDeUnObjeto);
+for(var posicionArreglo = 0; posicionArreglo < arregloDePropiedadDeUnObjeto.length; posicionArreglo++) {
+    console.log(typeof persona[arregloDePropiedadDeUnObjeto[posicionArreglo]]);
+    if(typeof persona[arregloDePropiedadDeUnObjeto[posicionArreglo]] === 'object') {
+        console.log(persona[arregloDePropiedadDeUnObjeto[posicionArreglo]]);
+    }
+}
 
 //Array
 //Objeto global
