@@ -38,11 +38,11 @@ else {
 //Comprarciones == y ===
 // == (Comparación Sencilla)
 //Compara el valor
-console.log(0 == false);
+//console.log(0 == false);
 
 // === (Comparación Esctricta)
 //Compara el valor y el tipo de dato
-console.log(5 === "5");
+//console.log(5 === "5");
 
 //Undefined y Null significan ausencia de valor
 //Undefined es ausencia de valor de forma implicita
@@ -50,11 +50,11 @@ console.log(5 === "5");
 //Declaro la variable pero nunca la inicializo(ausencia de valor)
 //Sintaxis -> var [<variable>]
 var primeraVariable;
+console.log(typeof primeraVariable);
 
 //Null
 //Null es ausencia de valor de forma explicita
 //Declaro la variable y le asigno el valor de nulo(ausencia de valor)
 //Sintaxis -> var [<variable>] = null
 var primeraVariable = null;
-
-
+console.log(typeof primeraVariable);

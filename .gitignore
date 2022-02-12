@@ -6,3 +6,6 @@
 
 #Ficheros macOS
 .DS_Store
+
+#Ficheros init
+*.init*
