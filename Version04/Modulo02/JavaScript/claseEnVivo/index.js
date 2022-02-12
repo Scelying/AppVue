@@ -196,7 +196,10 @@ var arregloDeDigitosBinarios = new Array(0 , 1);
 var arregloUniDimensionalDeFrutas = ['Banano', 'Manzana'];
 //Arreglo de dos dimensiones
 var arregloTresDimensiones = [[1,2,3],[4,5,6],[7,8,9]];
+//Extraer una posicion de un arrglo en mas dos dimensiones
+//Sintaxis -> <arreglo>[][]+;
 //Ejercicio suma diagonales
+console.log(arregloTresDimensiones[0][0]);
 
 //Funciones
 //Dos tipos -> funciones en bloque y funciones en variable
