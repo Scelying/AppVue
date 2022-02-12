@@ -237,4 +237,4 @@ console.log(sumar(3, 4));*/
 console.log(inicio);*/
 
 //Bubles dentro de Bucles
-var arregloNotasMatematicasDePepito = [0, 5, 5, 4, 3, 2];
+var arregloNotasMatematicasDePepito = [0, 5, 5, 4, 3, 2, 3, 5, 2];
