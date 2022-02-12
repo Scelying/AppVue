@@ -198,6 +198,7 @@ var personaComplicada = {
         }]
     }]
 }
+
 //Array
 //Objeto global
 //Cardinalidad -> indices, posiciones y tamaño
