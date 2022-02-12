@@ -199,7 +199,16 @@ var arregloTresDimensiones = [[1,2,3],[4,5,6],[7,8,9]];
 //Extraer una posicion de un arrglo en mas dos dimensiones
 //Sintaxis -> <arreglo>[][]+;
 //Ejercicio suma diagonales
-console.log(arregloTresDimensiones[0][0]);
+//console.log(arregloTresDimensiones[0][0]);
+var sumaDiagonalDerechaAIzquierda = 0;
+var sumaDiagonalIzquierdaADerecha = 0;
+var tamanioMatrizCuadrada = arregloTresDimensiones.length;
+for(var posicionMatrizCuadrada = 0; posicionMatrizCuadrada < tamanioMatrizCuadrada; posicionMatrizCuadrada++) {
+    sumaDiagonalIzquierdaADerecha += arregloTresDimensiones[posicionMatrizCuadrada][posicionMatrizCuadrada];
+    sumaDiagonalDerechaAIzquierda += arregloTresDimensiones[posicionMatrizCuadrada][tamanioMatrizCuadrada - (posicionMatrizCuadrada + 1)];
+};
+
+console.log(sumaDiagonalIzquierdaADerecha + sumaDiagonalDerechaAIzquierda);
 
 //Funciones
 //Dos tipos -> funciones en bloque y funciones en variable
