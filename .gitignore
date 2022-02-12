@@ -7,6 +7,5 @@
 #Ficheros macOS
 .DS_Store
 
-#Ficheros init
-*.init*
+#Ficheros ini
 *.ini*
