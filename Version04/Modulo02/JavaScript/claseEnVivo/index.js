@@ -261,3 +261,20 @@ for(var posicionArreglo = 0; posicionArreglo < arregloNotasMatematicasDePepito.l
 }
 console.log(notaMasBaja);
 
+var notaMasRepetida = -1;
+var cantidadRepeticiones = 0;
+for(var posicionBucleExterior = 0; posicionBucleExterior < arregloNotasMatematicasDePepito.length; posicionBucleExterior++) {
+    var cantidadVecesRepetidasPorIteracion = 0;
+    for(var posicionBucleInterior = posicionBucleExterior + 1; posicionBucleInterior < arregloNotasMatematicasDePepito.length; posicionBucleInterior++) {
+        if(arregloNotasMatematicasDePepito[posicionBucleExterior] == arregloNotasMatematicasDePepito[posicionBucleInterior]) {
+            cantidadVecesRepetidasPorIteracion++;
+        }
+    }
+    
+    if(cantidadVecesRepetidasPorIteracion > cantidadRepeticiones) {
+        notaMasRepetida = arregloNotasMatematicasDePepito[posicionBucleExterior];
+        cantidadRepeticiones = cantidadVecesRepetidasPorIteracion;
+    }
+}
+
+console.log(notaMasRepetida, cantidadRepeticiones);
