@@ -141,7 +141,7 @@ Andrea['fecha de nacimiento'] = 1988;
 //console.log(andrea instanceof Object, Andrea instanceof Object);
 
 //Objeto
-var persona = {
+/*var persona = {
     nombre: 'Pepito',
     apellido: 'Perez',
     edad: 32,
@@ -164,6 +164,40 @@ var persona = {
     }
 }
 
+var nombreColegioSecundariaNotacionPunto = persona.informacionAdicional.escolaridad.secundaria.nombreColegio;
+var ciudadColegioSecundariaNotacionPunto = persona.informacionAdicional.escolaridad.secundaria.ciudad;
+console.log(nombreColegioSecundariaNotacionPunto, ciudadColegioSecundariaNotacionPunto);
+
+var nombreColegioSecundariaNotacionLLavesCuadradas = persona['informacionAdicional']['escolaridad']['secundaria']['nombreColegio'];
+var ciudadColegioSecundariaNotacionLLavesCuadradas  = persona['informacionAdicional']['escolaridad']['secundaria']['ciudad'];
+console.log(nombreColegioSecundariaNotacionLLavesCuadradas, ciudadColegioSecundariaNotacionLLavesCuadradas);*/
+
+var personaComplicada = {
+    nombre: 'Pepito',
+    apellido: 'Perez',
+    edad: 32,
+    informacionAdicional: [{
+        datosDireccion: {
+            ciudad: 'Bogota',
+            barrio: 'Suba',
+            direccion: 'Transveral 99 # 86 - 35'
+        },
+        escolaridad: [{
+            primaria: [{
+                nombreColegio: 'Liceo Buen Infante',
+                ciudad: 'Bogota'
+            },
+            {
+                nombreColegio: 'Colegio Santander',
+                ciudad: 'Bucaramanga'
+            }],
+            secundaria: {
+                nombreColegio: 'Liceo Buen Martin',
+                ciudad: 'Bogota'
+            }
+        }]
+    }]
+}
 //Array
 //Objeto global
 //Cardinalidad -> indices, posiciones y tamaño
