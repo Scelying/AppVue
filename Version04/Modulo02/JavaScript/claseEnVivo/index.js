@@ -148,25 +148,44 @@ var arregloDeDigitosHexadecimales = [1,2,3,4,5,6,7,8,9,'A','B','C','D','E'];
 
 //Agregar un elemento al primer indice a un arreglo
 //Sintaxis -> <arreglo>.unshift(<dato>)
-console.log(arregloDeDigitosHexadecimales);
+//console.log(arregloDeDigitosHexadecimales);
 arregloDeDigitosHexadecimales.unshift(0);
-console.log(arregloDeDigitosHexadecimales);
+//console.log(arregloDeDigitosHexadecimales);
 
 //Agregar un elemento al ultimo indice a un arreglo
 //Sintaxis -> <arreglo>.push(<dato>)
 arregloDeDigitosHexadecimales.push('F');
-console.log(arregloDeDigitosHexadecimales);
+//console.log(arregloDeDigitosHexadecimales);
 
 //Eliminar ultimo indice de un arreglo
 //Sintaxis -> <arreglo>.pop()
 arregloDeDigitosHexadecimales.push('E');
-console.log(arregloDeDigitosHexadecimales);
+//console.log(arregloDeDigitosHexadecimales);
 arregloDeDigitosHexadecimales.pop();
-console.log(arregloDeDigitosHexadecimales);
+//console.log(arregloDeDigitosHexadecimales);
 
 //Eliminar primer indice de un arreglo
 //Sintaxis -> <arreglo>.shift()
 arregloDeDigitosHexadecimales.unshift(-1);
-console.log(arregloDeDigitosHexadecimales);
+//console.log(arregloDeDigitosHexadecimales);
 arregloDeDigitosHexadecimales.shift();
-console.log(arregloDeDigitosHexadecimales);
+//console.log(arregloDeDigitosHexadecimales);
+
+//Extraer datos de un array
+//Sintaxis -> <arreglo>[<posicion>]
+//console.log(arregloDeDigitosHexadecimales[1]);
+
+//new Array()
+//Sintaxis -> new Array(<indice>, <indice>*)
+var arregloDeDigitosBinarios = new Array(0 , 1);
+//console.log(arregloDeDigitosBinarios);
+
+//length -> conocer el tamaño de un array
+//Sintaxis -> <arreglo>.length
+//console.log(arregloDeDigitosHexadecimales.length, typeof arregloDeDigitosHexadecimales);
+
+//ECMAScript5 -> Array.isArray(<variable>)
+//console.log(Array.isArray(arregloDeDigitosHexadecimales), Array.isArray(arregloDeDigitosBinarios), Array.isArray(miPrimeraVariable));
+
+//Instancias
+console.log(arregloDeDigitosHexadecimales instanceof Array, arregloDeDigitosBinarios instanceof Array);
