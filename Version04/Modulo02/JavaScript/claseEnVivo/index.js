@@ -197,7 +197,12 @@ var personaComplicada = {
             }
         }]
     }]
-}
+};
+
+var colegioPersonaComplicada = personaComplicada.informacionAdicional[0].escolaridad[0].primaria[1].nombreColegio;
+var ciudadPersonaComplicada = personaComplicada.informacionAdicional[0].escolaridad[0].primaria[1].ciudad;
+
+console.log(colegioPersonaComplicada, ciudadPersonaComplicada);
 
 //Array
 //Objeto global
