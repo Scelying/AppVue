@@ -191,11 +191,12 @@ var arregloDeDigitosBinarios = new Array(0 , 1);
 //console.log(arregloDeDigitosHexadecimales instanceof Array, arregloDeDigitosBinarios instanceof Array);
 
 //Arreglos en mas de una dimension
-//Sinatxis -> var <arreglo> = [][]+;
+//Sinatxis -> var <arreglo> = [[],[]+];
 //Arreglo en una dimension
 var arregloUniDimensionalDeFrutas = ['Banano', 'Manzana'];
 //Arreglo de dos dimensiones
-//var arregloTresDimensiones = [1,2,3][4,5,6][7,8,9];
+var arregloTresDimensiones = [[1,2,3],[4,5,6],[7,8,9]];
+//Ejercicio suma diagonales
 
 //Funciones
 //Dos tipos -> funciones en bloque y funciones en variable
@@ -235,8 +236,8 @@ console.log(sumar(3, 4));*/
 
 console.log(inicio);*/
 
-//Bubles dentro de Bucles
-var arregloNotasMatematicasDePepito = [0, 5, 5, 4, 3, 2, 3, 5, 2];
+//Bucles dentro de Bucles
+/*var arregloNotasMatematicasDePepito = [0, 5, 5, 4, 3, 2, 3, 5, 2, 2];
 
 var sumatorio = 0;
 for(var posicionArreglo = 0; posicionArreglo < arregloNotasMatematicasDePepito.length; posicionArreglo++) {
@@ -277,4 +278,4 @@ for(var posicionBucleExterior = 0; posicionBucleExterior < arregloNotasMatematic
     }
 }
 
-console.log(notaMasRepetida, cantidadRepeticiones);
+console.log(notaMasRepetida, cantidadRepeticiones);*/
