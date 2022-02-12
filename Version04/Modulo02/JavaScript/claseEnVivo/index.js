@@ -195,8 +195,7 @@ var arregloDeDigitosBinarios = new Array(0 , 1);
 //Arreglo en una dimension
 var arregloUniDimensionalDeFrutas = ['Banano', 'Manzana'];
 //Arreglo de dos dimensiones
-var arregloTresDimensiones = [1,2,3][4,5,6][7,8,9];
-
+//var arregloTresDimensiones = [1,2,3][4,5,6][7,8,9];
 
 //Funciones
 //Dos tipos -> funciones en bloque y funciones en variable
@@ -238,3 +237,26 @@ console.log(inicio);*/
 
 //Bubles dentro de Bucles
 var arregloNotasMatematicasDePepito = [0, 5, 5, 4, 3, 2, 3, 5, 2];
+
+var sumatorio = 0;
+for(var posicionArreglo = 0; posicionArreglo < arregloNotasMatematicasDePepito.length; posicionArreglo++) {
+     sumatorio+=arregloNotasMatematicasDePepito[posicionArreglo];  
+}
+promedio = sumatorio / arregloNotasMatematicasDePepito.length;
+console.log(promedio);
+
+var notaMasAlta=-1;
+for(var posicionArreglo = 0; posicionArreglo < arregloNotasMatematicasDePepito.length; posicionArreglo++) {
+     if(arregloNotasMatematicasDePepito[posicionArreglo] > notaMasAlta) {
+        notaMasAlta = arregloNotasMatematicasDePepito[posicionArreglo];
+    }
+}
+console.log(notaMasAlta);
+
+var notaMasBaja = 6;
+for(var posicionArreglo = 0; posicionArreglo < arregloNotasMatematicasDePepito.length; posicionArreglo++) {
+    if (arregloNotasMatematicasDePepito[posicionArreglo] < notaMasBaja){
+        notaMasBaja = arregloNotasMatematicasDePepito[posicionArreglo];
+       }
+}
+console.log(notaMasBaja);
