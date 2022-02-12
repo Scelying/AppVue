@@ -190,6 +190,14 @@ var arregloDeDigitosBinarios = new Array(0 , 1);
 //Instancias
 //console.log(arregloDeDigitosHexadecimales instanceof Array, arregloDeDigitosBinarios instanceof Array);
 
+//Arreglos en mas de una dimension
+//Sinatxis -> var <arreglo> = [][]+;
+//Arreglo en una dimension
+var arregloUniDimensionalDeFrutas = ['Banano', 'Manzana'];
+//Arreglo de dos dimensiones
+var arregloTresDimensiones = [1,2,3][4,5,6][7,8,9];
+
+
 //Funciones
 //Dos tipos -> funciones en bloque y funciones en variable
 //Funciones Bloque
@@ -222,8 +230,11 @@ console.log(sumar(3, 4));*/
 }*/
 //inicio++ -> inicio = inicio + 1;
 //inicio+=5 -> inicio = inicio + 5;
-for(var inicio = 0; inicio < 10; inicio+=1) {
+/*for(var inicio = 0; inicio < 10; inicio+=1) {
     console.log(inicio);
 }
 
-console.log(inicio);
+console.log(inicio);*/
+
+//Bubles dentro de Bucles
+var arregloNotasMatematicasDePepito = [0, 5, 5, 4, 3, 2];
