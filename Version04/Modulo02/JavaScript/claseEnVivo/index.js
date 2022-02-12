@@ -260,3 +260,4 @@ for(var posicionArreglo = 0; posicionArreglo < arregloNotasMatematicasDePepito.l
        }
 }
 console.log(notaMasBaja);
+
