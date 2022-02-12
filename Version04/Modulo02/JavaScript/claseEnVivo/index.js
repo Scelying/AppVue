@@ -140,6 +140,30 @@ Andrea['fecha de nacimiento'] = 1988;
 //console.log(andrea, Andrea);
 //console.log(andrea instanceof Object, Andrea instanceof Object);
 
+//Objeto
+var persona = {
+    nombre: 'Pepito',
+    apellido: 'Perez',
+    edad: 32,
+    informacionAdicional: {
+        datosDireccion: {
+            ciudad: 'Bogota',
+            barrio: 'Suba',
+            direccion: 'Transveral 99 # 86 - 35'
+        },
+        escolaridad: {
+            primaria: {
+                nombreColegio: 'Liceo Buen Infante',
+                ciudad: 'Bogota'
+            },
+            secundaria: {
+                nombreColegio: 'Liceo Buen Martin',
+                ciudad: 'Bogota'
+            }
+        }
+    }
+}
+
 //Array
 //Objeto global
 //Cardinalidad -> indices, posiciones y tamaño
@@ -200,7 +224,7 @@ var arregloTresDimensiones = [[1,2,3],[4,5,6],[7,8,9]];
 //Sintaxis -> <arreglo>[][]+;
 //Ejercicio suma diagonales
 //console.log(arregloTresDimensiones[0][0]);
-var sumaDiagonalDerechaAIzquierda = 0;
+/*var sumaDiagonalDerechaAIzquierda = 0;
 var sumaDiagonalIzquierdaADerecha = 0;
 var tamanioMatrizCuadrada = arregloTresDimensiones.length;
 for(var posicionMatrizCuadrada = 0; posicionMatrizCuadrada < tamanioMatrizCuadrada; posicionMatrizCuadrada++) {
@@ -208,7 +232,7 @@ for(var posicionMatrizCuadrada = 0; posicionMatrizCuadrada < tamanioMatrizCuadra
     sumaDiagonalDerechaAIzquierda += arregloTresDimensiones[posicionMatrizCuadrada][tamanioMatrizCuadrada - (posicionMatrizCuadrada + 1)];
 };
 
-console.log(sumaDiagonalIzquierdaADerecha + sumaDiagonalDerechaAIzquierda);
+console.log(sumaDiagonalIzquierdaADerecha + sumaDiagonalDerechaAIzquierda);*/
 
 //Funciones
 //Dos tipos -> funciones en bloque y funciones en variable
