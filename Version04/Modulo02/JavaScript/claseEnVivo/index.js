@@ -205,14 +205,14 @@ var ciudadPersonaComplicada = personaComplicada.informacionAdicional[0].escolari
 console.log(colegioPersonaComplicada, ciudadPersonaComplicada);*/
 
 //Object.getOwnPropertyNames(<objeto>);
-var arregloDePropiedadDeUnObjeto = Object.getOwnPropertyNames(persona);
+/*var arregloDePropiedadDeUnObjeto = Object.getOwnPropertyNames(persona);
 console.log(arregloDePropiedadDeUnObjeto);
 for(var posicionArreglo = 0; posicionArreglo < arregloDePropiedadDeUnObjeto.length; posicionArreglo++) {
     console.log(typeof persona[arregloDePropiedadDeUnObjeto[posicionArreglo]]);
     if(typeof persona[arregloDePropiedadDeUnObjeto[posicionArreglo]] === 'object') {
         console.log(persona[arregloDePropiedadDeUnObjeto[posicionArreglo]]);
     }
-}
+}*/
 
 //Array
 //Objeto global
@@ -365,3 +365,27 @@ for(var posicionBucleExterior = 0; posicionBucleExterior < arregloNotasMatematic
 }
 
 console.log(notaMasRepetida, cantidadRepeticiones);*/
+
+//Ciclos
+//for ... in, for ... of
+//for in
+//Recorre las propiedades de un objeto
+/*Sintaxis -> for(<propiedadTemporal> in <nombreObjeto>) {
+    cuerpo del bucle
+}*/
+var arregloDeCiudades = ['Bucaramanga', 'Bogota', 'Cali', 'Medellin', 'Cartagena'];
+/*for(indiceTemporal in arregloDeCiudades) {
+    console.log(indiceTemporal);
+}*/
+for(indiceTemporal in arregloDeCiudades) {
+    console.log(arregloDeCiudades[indiceTemporal]);
+}
+/*for(propiedadTemporal in persona) {
+    console.log(propiedadTemporal);
+}*/
+/*for(propiedadTemporal in personaComplicada) {
+    console.log(propiedadTemporal);
+}*/
+/*
+
+*/
