@@ -628,4 +628,9 @@ cualquierFuncionEvento = () => {
 cualquierSegundaFuncionEvento = (elemento) => {
     elemento.innerHTML = 'valor cambiado';
     console.log(elemento.innerText);
+    //Para adicionar clases
+    //<elemento>.classList.add('<nombreClase');
+    //Para eliminar clases
+    //<elemento>.classList.remove('<nombreClase');
+    elemento.classList.add('button');
 }
