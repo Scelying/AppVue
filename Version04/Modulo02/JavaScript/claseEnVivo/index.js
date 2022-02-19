@@ -377,15 +377,52 @@ var arregloDeCiudades = ['Bucaramanga', 'Bogota', 'Cali', 'Medellin', 'Cartagena
 /*for(indiceTemporal in arregloDeCiudades) {
     console.log(indiceTemporal);
 }*/
-for(indiceTemporal in arregloDeCiudades) {
+/*for(indiceTemporal in arregloDeCiudades) {
     console.log(arregloDeCiudades[indiceTemporal]);
-}
+}*/
 /*for(propiedadTemporal in persona) {
     console.log(propiedadTemporal);
 }*/
 /*for(propiedadTemporal in personaComplicada) {
     console.log(propiedadTemporal);
 }*/
-/*
-
+/*for(propiedadTemporal in personaComplicada) {
+    console.log(personaComplicada[propiedadTemporal]);
+}*/
+//for of
+//Recorre los valores de un objeto iterable || Arrays, Strings, Maps, y demás.
+/*for(valorTemporal of arregloDeCiudades) {
+    console.log(valorTemporal);
+}*/
+//Error porque un objeto no es un elemento iterable.
+/*for(valorTemporal of arregloTresDimensiones) {
+    console.log(valorTemporal);
+}*/
+//forEach
+//Se ejecuta sobre cada indice del array.
+/*Sintaxis -> <arreglo>.forEach(
+    cuerpo del bucle
+)*/
+arregloDeCiudades.forEach(ciudadTemporal => console.log(ciudadTemporal));
+/*Sintaxis -> <arreglo>.forEach(function callback(<valorActual>, <indice>, arreglo) {
+    cuerpo del bucle
+}, <argumentos>)
 */
+
+//Callbacks
+//Una función de callback es una función que se pasa a otra función como un argumento,
+//que luego se invoca dentro de la función externa para completar algún tipo de 
+//rutina o acción.
+function saludar(nombre) {
+    alert('Hola ' + nombre);
+}
+
+function procesarEntradaUsuario(callback) {
+    var nombre = prompt('Por favor escriba su nombre.');
+    callback(nombre);
+}
+//procesarEntradaUsuario(saludar);
+//Stand-By
+/*saludarAlternativa(function(){
+    alert('Hola Mundo!');
+});*/
