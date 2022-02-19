@@ -579,8 +579,24 @@ async function funcionCualquieraAsync(argumento) {
 }
 //console.log(funcionCualquieraAsync(3));
 
-funcionCualquieraAsync(3)
+/*funcionCualquieraAsync(3)
 .then(resultado => console.log(resultado))
-.catch(error => console.error(error));
+.catch(error => console.error(error));*/
 
 //DOM
+//Document Object Model
+//Facilita una representación estructurada de mi documento
+//Manipular la estructura, estilos y contenido de mi documento
+//Grupo de nodos y objetos que tiene propiedades y metodos
+//¿Cómo se accede al DOM?
+//document.getElementById
+//Devuleve una referencia al elemento por su ID
+//ID - Elemento único dentro de mi documento
+//Sintaxis -> document.getElementById('<id>');
+var elementoID = document.getElementById('contenedor');
+//console.log(elementoID);
+//document.getElementsByClassName
+//Retornar un objeto similiar a un array de los elementos
+//hijos que tengan todos los nombres de la clase indicada.
+//Sintaxis -> document.getElementsByClassName('<nombre>+');
+var elementoClase = document.getElementsByClassName('claseContenedor');
