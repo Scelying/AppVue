@@ -629,8 +629,53 @@ cualquierSegundaFuncionEvento = (elemento) => {
     elemento.innerHTML = 'valor cambiado';
     console.log(elemento.innerText);
     //Para adicionar clases
-    //<elemento>.classList.add('<nombreClase');
-    //Para eliminar clases
-    //<elemento>.classList.remove('<nombreClase');
+    //<elemento>.classList.add('<nombreClase>');
     elemento.classList.add('button');
 }
+
+/*eliminarClase = (elemento) => {
+    elemento.innerHTML = 'Cambiar!';
+    console.log(elemento.innerText);
+    //Para eliminar clases
+    //<elemento>.classList.remove('<nombreClase>');
+    console.log(elemento.classList);
+    elemento.classList.remove('button');
+    console.log(elemento.classList);
+}*/
+
+cambiarClase = (elemento) => {
+    //Para clambiar clases
+    //<elemento>.className = <elemento>.className.replace('<nombreClaseAcambiar>, <nuevaClase>');
+    console.log(elemento.className);
+    elemento.className = elemento.className.replace('button', '');
+    console.log(elemento.className);
+}
+
+var contenedorIDBotones = document.getElementById('myDIV');
+var listaBotonesDIV = contenedorIDBotones.getElementsByTagName('button');
+
+//Event Listener
+//addEventListener()
+//Agregar un detector de eventos
+//Sintaxis -> <elemento>.addEventListener('<evento>', <callback>);
+for(botonTemporal of listaBotonesDIV) {
+    botonTemporal.addEventListener('click', function() {
+        var elementoPorDefectoActivo = contenedorIDBotones.getElementsByClassName('active');
+        console.log(elementoPorDefectoActivo[0].innerText);
+        elementoPorDefectoActivo[0].className = elementoPorDefectoActivo[0].className.replace(' active', '');
+        this.className += ' active';
+    })
+};
+
+//crear|eliminar Elementos
+//Creo un elemento, realmente, estan creando un node elemento y luego agregan sobre el
+//nodo el elemento
+//Sintaxis -> document.createElement('<nombreEtiquetaHTML>');
+var nuevoParrafo = document.createElement('p');
+//Crear contenido
+//Sintaxis -> document.createTextNode('<contenido>');
+var contenidoNuevoParrafo = document.createTextNode('Mi primer contenido creado desde DOM');
+//Agregar un elemento
+//Sintaxis -> <elemento>.appendChild('<elemento>');
+nuevoParrafo.appendChild(contenidoNuevoParrafo);
+contenedorIDBotones.appendChild(nuevoParrafo);
