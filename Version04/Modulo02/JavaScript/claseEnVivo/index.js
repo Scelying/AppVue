@@ -482,10 +482,10 @@ function procesarEntradaUsuario(callback) {
 
 //EJEMPLO consumiendo API
 //fetch - web API - Para trabajar con el protocolo HTTP
-fetch('https://jsonplaceholder.typicode.com/todos/1')
+/*fetch('https://jsonplaceholder.typicode.com/todos/1')
   .then(response => response.json())
   .then(json => console.log(json))
-  .catch(console.error('Hubo un error en la comunicación'));
+  .catch(console.error('Hubo un error en la comunicación'));*/
 
 //Promise.all()
 //Devuelve una promesa que termina correctamente cuando todas las promesas concluyen
@@ -497,14 +497,15 @@ var promesaDato3 = new Promise((resolve, reject) => {
     setTimeout(resolve, 1000, 'Resolve!');
 });
 
-var promesaDato4 = fetch('https://jsonplaceholder.typicode.com/todos/1')
+/*var promesaDato4 = fetch('https://jsonplaceholder.typicode.com/todos/1')
   .then(response => response.json())
-  .then(json => console.log(json));
+  .then(json => console.log(json));*/
 
-Promise.all([promesaDato1, dato2, promesaDato3, promesaDato4])
+/*Promise.all([promesaDato1, dato2, promesaDato3, promesaDato4])
 .then(arreglo => console.log(arreglo))
-.catch(error => console.error(error));
+.catch(error => console.error(error));*/
 
 //async / await
+
 
 //DOM
