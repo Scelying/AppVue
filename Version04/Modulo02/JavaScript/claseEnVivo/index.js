@@ -442,7 +442,7 @@ function procesarEntradaUsuario(callback) {
     alert("consumio el servicio");
 }, 2000);*/
 //Infierno de los callbacks
-setTimeout(function() {
+/*setTimeout(function() {
     console.log('Etapa 1 finalizada');
     setTimeout(function() {
         console.log('Etapa 2 finalizada');
@@ -453,4 +453,58 @@ setTimeout(function() {
             }, 4000);
         }, 3000);
     }, 2000);
-}, 1000);
+}, 1000);*/
+
+//Promesas
+//Es un objeto y representa un valor que puede estar disponible ahora, en el futuro,
+//o nunca.
+//Una promesa posee 3 estados
+//Pending(pendiente): Estado inicial, no cumplido ni rechazado.
+//Fulfilled(Cumplido): Que la operación se completó exitosamente.
+//Rejected(Rechazada): Que la operación falló.
+/*Sintaxis -> var <nombrePromesa> = new Promise((<resolve>, <reject>) => {
+ cuerpo de la promesa
+})*/
+/*var miPrimeraPromesa = new Promise((resolve, reject) => {
+    setTimeout(function() {
+        resolve("Se cumplio con exito");
+    }, 1000);
+});*/
+
+/*var miPrimeraPromesa = new Promise((resolve, reject) => {
+    setTimeout(function() {
+        reject("Fallo el consumo");
+    }, 1000);
+});*/
+
+//miPrimeraPromesa.then(message => console.log(message));
+//miPrimeraPromesa.catch(message => console.error(message));
+
+//EJEMPLO consumiendo API
+//fetch - web API - Para trabajar con el protocolo HTTP
+fetch('https://jsonplaceholder.typicode.com/todos/1')
+  .then(response => response.json())
+  .then(json => console.log(json))
+  .catch(console.error('Hubo un error en la comunicación'));
+
+//Promise.all()
+//Devuelve una promesa que termina correctamente cuando todas las promesas concluyen
+//de forma de exitosa.
+//Para consumir mas de una promesa a la vez y se ejecutan en paralelo.
+var promesaDato1 = Promise.resolve('Hola Mundo!');
+var dato2 = 'Diplomado';
+var promesaDato3 = new Promise((resolve, reject) => {
+    setTimeout(resolve, 1000, 'Resolve!');
+});
+
+var promesaDato4 = fetch('https://jsonplaceholder.typicode.com/todos/1')
+  .then(response => response.json())
+  .then(json => console.log(json));
+
+Promise.all([promesaDato1, dato2, promesaDato3, promesaDato4])
+.then(arreglo => console.log(arreglo))
+.catch(error => console.error(error));
+
+//async / await
+
+//DOM
