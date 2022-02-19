@@ -1,20 +1,25 @@
 <!DOCTYPE html>
 <html>
-    <head>
-    </head>
-    <body>
-        <div id="contenedor" class="claseContenedor">
-            <h1 class="claseUno claseDos">Mi primera página web</h1>
-            <p>Hola Mundo!</p>
+
+<head>
+</head>
+
+<body>
+    <div id="contenedor" class="claseContenedor">
+        <h1 class="claseUno claseDos">Mi primera página web</h1>
+        <p>Hola Mundo!</p>
+        <button onclick="cualquierFuncionEvento()">Saludar!</button>
+        <button onclick="cualquierSegundaFuncionEvento(this)">Cambiar!</button>
+    </div>
+    <div id="contenedorDos" class="claseContenedor">
+        <h1 name="titulo">Mi primera página web</h1>
+        <p>Hola Estudiantes!</p>
+        <div id="contenedorTres" class="claseContenedor">
+            <h1>Mi primera página web</h1>
+            <p>Hola Colombia!</p>
         </div>
-        <div id="contenedorDos" class="claseContenedor">
-            <h1 name="titulo">Mi primera página web</h1>
-            <p>Hola Estudiantes!</p>
-            <div id="contenedorTres" class="claseContenedor">
-                <h1>Mi primera página web</h1>
-                <p>Hola Colombia!</p>
-            </div>
-        </div>
-        <script src="index.js"></script>
-    </body>
+    </div>
+    <script src="index.js"></script>
+</body>
+
 </html>

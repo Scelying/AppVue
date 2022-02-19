@@ -613,7 +613,19 @@ var tituloElemento = document.getElementsByName('titulo');
 var listaElementosParrafos = document.getElementsByTagName('p');
 //console.log(listaElementosParrafos);
 var contenidoPrimerParrafo = listaElementosParrafos[0].innerText;
-console.log(contenidoPrimerParrafo);
+//console.log(contenidoPrimerParrafo);
 
 //Cambiar contenido de un elemento
 listaElementosParrafos[0].innerHTML = 'Contenido cambiado';
+
+//Eventos
+//HTML DOM permite que JS reaccione a eventos HTML
+cualquierFuncionEvento = () => {
+    alert('click!');
+    console.log('click!');
+};
+
+cualquierSegundaFuncionEvento = (elemento) => {
+    elemento.innerHTML = 'valor cambiado';
+    console.log(elemento.innerText);
+}
