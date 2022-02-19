@@ -403,11 +403,18 @@ var arregloDeCiudades = ['Bucaramanga', 'Bogota', 'Cali', 'Medellin', 'Cartagena
 /*Sintaxis -> <arreglo>.forEach(
     cuerpo del bucle
 )*/
-arregloDeCiudades.forEach(ciudadTemporal => console.log(ciudadTemporal));
-/*Sintaxis -> <arreglo>.forEach(function callback(<valorActual>, <indice>, arreglo) {
+//arregloDeCiudades.forEach(ciudadTemporal => console.log(ciudadTemporal));
+/*Sintaxis -> <arreglo>.forEach(function callback(<valorActual>, <posicion>, <arreglo>) {
     cuerpo del bucle
 }, <argumentos>)
 */
+function profundizacionForEach(valorActual, posicion, arreglo) {
+    console.log(valorActual, posicion, arreglo);
+}
+
+//arregloDeCiudades.forEach(profundizacionForEach);
+
+arregloDeCiudades.forEach((ciudadTemporal, posicion) => console.log(ciudadTemporal, posicion));
 
 //Callbacks
 //Una función de callback es una función que se pasa a otra función como un argumento,
@@ -421,8 +428,5 @@ function procesarEntradaUsuario(callback) {
     var nombre = prompt('Por favor escriba su nombre.');
     callback(nombre);
 }
-//procesarEntradaUsuario(saludar);
-//Stand-By
-/*saludarAlternativa(function(){
-    alert('Hola Mundo!');
-});*/
+
+procesarEntradaUsuario(saludar);
