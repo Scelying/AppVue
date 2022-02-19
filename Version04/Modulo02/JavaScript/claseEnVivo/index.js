@@ -600,3 +600,20 @@ var elementoID = document.getElementById('contenedor');
 //hijos que tengan todos los nombres de la clase indicada.
 //Sintaxis -> document.getElementsByClassName('<nombre>+');
 var elementoClase = document.getElementsByClassName('claseContenedor');
+//console.log(elementoClase);
+//console.log(elementoID.getElementsByClassName('claseUno claseDos'));
+//document.getElementsByClassName
+//Retorna una lista de nodeList con los elementos encontrados
+//Sinatxis -> <document>.getElementsByName('<ValorAtributoName>');
+var tituloElemento = document.getElementsByName('titulo');
+//console.log(tituloElemento);
+//document.getElementsByClassName
+//Retorna una lista de elementos con un nombre determinado.
+//<document>.getElementsByTagName('<nombreEtiqueta>');
+var listaElementosParrafos = document.getElementsByTagName('p');
+//console.log(listaElementosParrafos);
+var contenidoPrimerParrafo = listaElementosParrafos[0].innerText;
+console.log(contenidoPrimerParrafo);
+
+//Cambiar contenido de un elemento
+listaElementosParrafos[0].innerHTML = 'Contenido cambiado';
