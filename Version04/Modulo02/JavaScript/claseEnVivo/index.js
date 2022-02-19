@@ -506,6 +506,81 @@ var promesaDato3 = new Promise((resolve, reject) => {
 .catch(error => console.error(error));*/
 
 //async / await
+//Funcion async
+//La declaración de async define una funcion asincrona, la cual devuelve un objeto de
+//tipo AsyncFunction
+/*Sintaxis ->  async function <nombreFuncion> (<parametros>*) {
+    cuerpo de la funcion
+}*/
+//Cuando se invoca una función async, esta devuelve un elemento Promise. Cuando la función
+//async devuelve un valor, Promise se resolvera con el valor devuelto. Si la función
+//async genera una excepción, Promise se rechazará con el valor generado.
+//Una función async puede contener un expresión await, la cual pausa la ejecución de la función
+//asincrona y espera la resolucion de la Promise y, reanudar la ejecuación de la función
+//async y devuleve valor.
+function promesaCualquiera(argumento) {
+    return new Promise(resolver => {
+        setTimeout(() => {
+            resolver(argumento);
+        }, 2000);
+    })
+}
 
+/*async function miPrimeraFuncionAsync(argumento) {
+    var numero1 = await promesaCualquiera(1);
+    var numero2 = await promesaCualquiera(2);
+    return numero1 + numero2 + argumento;
+}
+
+miPrimeraFuncionAsync(10).then(respuesta => {
+    console.log(respuesta);
+})*/
+
+async function miSegundaFuncionAsync(argumento) {
+    var numero1 = promesaCualquiera(1);
+    var numero2 = promesaCualquiera(2);
+
+    return await numero1 + await numero2 + argumento;
+}
+
+/*miSegundaFuncionAsync(10).then(respuesta => {
+    console.log(respuesta);
+})*/
+
+//Reescribir una promesa con una función async
+function promesaCualquieraSegundaParte(argumento) {
+    return new Promise((resolver, rechazar) => {
+        setTimeout(() => {
+            if(argumento%2 == 0) {
+                resolver('El número es par');
+            }
+            else {rechazar('El número es impar')};
+        }, 2000);
+    })
+}
+
+/*function funcionCualquiera(argumento) {
+    return promesaCualquieraSegundaParte(argumento)
+    .then(resuelta => {
+        return resuelta;
+    })
+    .catch(error => {
+        return error;
+    })
+}*/
+
+async function funcionCualquieraAsync(argumento) {
+    try {
+        resultado = await promesaCualquieraSegundaParte(argumento);
+        return resultado;
+    } catch(error) {
+        error = await promesaCualquieraSegundaParte(argumento);
+    }
+}
+//console.log(funcionCualquieraAsync(3));
+
+funcionCualquieraAsync(3)
+.then(resultado => console.log(resultado))
+.catch(error => console.error(error));
 
 //DOM
