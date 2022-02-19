@@ -408,15 +408,16 @@ var arregloDeCiudades = ['Bucaramanga', 'Bogota', 'Cali', 'Medellin', 'Cartagena
     cuerpo del bucle
 }, <argumentos>)
 */
-function profundizacionForEach(valorActual, posicion, arreglo) {
+/*function profundizacionForEach(valorActual, posicion, arreglo) {
     console.log(valorActual, posicion, arreglo);
-}
+}*/
 
 //arregloDeCiudades.forEach(profundizacionForEach);
 
-arregloDeCiudades.forEach((ciudadTemporal, posicion) => console.log(ciudadTemporal, posicion));
+//arregloDeCiudades.forEach((ciudadTemporal, posicion) => console.log(ciudadTemporal, posicion));
 
 //Callbacks
+//Ejemplo comunicacion sincrona
 //Una función de callback es una función que se pasa a otra función como un argumento,
 //que luego se invoca dentro de la función externa para completar algún tipo de 
 //rutina o acción.
@@ -429,4 +430,27 @@ function procesarEntradaUsuario(callback) {
     callback(nombre);
 }
 
-procesarEntradaUsuario(saludar);
+//procesarEntradaUsuario(saludar);
+
+//Ejemplo comunicacion asincrona
+//setTimeout()
+/*Sintaxis -> setTimeout(function() {
+    cuerpo del setTimeout
+}, <tiempoMilisegundos>)*/
+//Ejemplo consumo de un API
+/*setTimeout(function() {
+    alert("consumio el servicio");
+}, 2000);*/
+//Infierno de los callbacks
+setTimeout(function() {
+    console.log('Etapa 1 finalizada');
+    setTimeout(function() {
+        console.log('Etapa 2 finalizada');
+        setTimeout(function() {
+            console.log('Etapa 3 finalizada');
+            setTimeout(function() {
+                console.log('Etapa 4 finalizada');
+            }, 4000);
+        }, 3000);
+    }, 2000);
+}, 1000);
