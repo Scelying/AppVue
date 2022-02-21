@@ -7,7 +7,7 @@
 ### Módulo 2
   
 ### Introducción
-####  Toda la referencia aca descrita en adelante se tomo de Developer Mozilla [Ir a profile](https://profile.es/blog/que-es-la-programacion-orient).
+####  Toda la referencia aca descrita en adelante se tomo de Profile [Ir a profile](https://profile.es/blog/que-es-la-programacion-orient).
 <div align="justify">
     <section>
 		<h1>¿Qué es la Programación Orientada a Objetos?</h1>
