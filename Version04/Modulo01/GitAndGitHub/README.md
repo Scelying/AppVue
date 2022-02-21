@@ -9,7 +9,7 @@
 [Ir a la documentación oficial de git](https://git-scm.com/docs)
   
 ### Introducción
-####  Toda la refencia aca descrita en adelante se tomo de atlassian. [Ir a atlassian para mas información](https://www.atlassian.com/es/git/tutorials/what-is-git)
+####  Toda la referencia aca descrita en adelante se tomo de atlassian. [Ir a atlassian para mas información](https://www.atlassian.com/es/git/tutorials/what-is-git)
 <p align="justify"> Hoy en día, Git es, con diferencia, el sistema de control de versiones moderno más utilizado del mundo. Git es un proyecto de código abierto maduro y con un mantenimiento activo que desarrolló originalmente Linus Torvalds, el famoso creador del kernel del sistema operativo Linux, en 2005. Un asombroso número de proyectos de software dependen de Git para el control de versiones, incluidos proyectos comerciales y de código abierto. Los desarrolladores que han trabajado con Git cuentan con una buena representación en la base de talentos disponibles para el desarrollo de software, y este sistema funciona a la perfección en una amplia variedad de sistemas operativos e IDE (entornos de desarrollo integrados).</p>
 
 <p align="justify"> Git, que presenta una arquitectura distribuida, es un ejemplo de DVCS (sistema de control de versiones distribuido, por sus siglas en inglés). En lugar de tener un único espacio para todo el historial de versiones del software, como sucede de manera habitual en los sistemas de control de versiones antaño populares, como CVS o Subversion (también conocido como SVN), en Git, la copia de trabajo del código de cada desarrollador es también un repositorio que puede albergar el historial completo de todos los cambios.</p>
@@ -73,7 +73,7 @@
   
 <p align="justify"> Ahora que entiendes en qué consiste el control de versiones, qué es Git y por qué los equipos de software deberían utilizarlo, sigue leyendo para descubrir los beneficios que Git puede aportar en toda la organización.</p>
   
-####  Toda la refencia aca descrita en adelante se tomo de Git. [Ir a Git para mas información](https://git-scm.com/docs/git)
+####  Toda la referencia aca descrita en adelante se tomo de Git. [Ir a Git para mas información](https://git-scm.com/docs/git)
   
 ### Comandos Básicos
 ```git add```
@@ -136,7 +136,7 @@ Guarda los cambios en un directorio de trabajo sucio.
 ```git status```
 Muestra el estado del árbol de trabajo.
   
-####  Toda la refencia aca descrita en adelante se tomo de Git. [Ir a Git para mas información](https://git-scm.com/book/en/v2/Getting-Started-What-is-Git%3F)
+####  Toda la referencia aca descrita en adelante se tomo de Git. [Ir a Git para mas información](https://git-scm.com/book/en/v2/Getting-Started-What-is-Git%3F)
   
 ### Los tres Estados
   
@@ -171,7 +171,7 @@ Muestra el estado del árbol de trabajo.
 [Ir a la página oficial de Github](https://github.com/)
   
 ### Introducción
-####  Toda la refencia aca descrita en adelante se tomo de Digital.gov. [Ir a Digital.gov para mas información](https://digital.gov/resources/an-introduction-github/)
+####  Toda la referencia aca descrita en adelante se tomo de Digital.gov. [Ir a Digital.gov para mas información](https://digital.gov/resources/an-introduction-github/)
   
 <p align="justify"> GitHub es una interfaz basada en la web que utiliza Git , el software de control de versiones de código abierto que permite que varias personas realicen cambios independientes en las páginas web al mismo tiempo. Como señala Carpenter, debido a que permite la colaboración en tiempo real, GitHub alienta a los equipos a trabajar juntos para crear y editar el contenido de su sitio.</p>
   

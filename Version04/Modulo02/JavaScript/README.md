@@ -3,11 +3,11 @@
 
 ![](https://i.ibb.co/rbzdqdR/FOTO.png)
 
-
+## JavaScript
 ### Módulo 2
   
 ### Introducción
-####  Toda la refencia aca descrita en adelante se tomo de Developer Mozilla [Ir a Developer Mozilla](https://developer.mozilla.org/es/docs/Learn/JavaScript/First_steps/What_is_JavaScript).
+####  Toda la referencia aca descrita en adelante se tomo de Developer Mozilla [Ir a Developer Mozilla](https://developer.mozilla.org/es/docs/Learn/JavaScript/First_steps/What_is_JavaScript).
 
 
 <div align="justify">
@@ -418,7 +418,7 @@
 </div>
 
 ### Tipos de datos y estructuras en JavaScript
-####  Toda la refencia aca descrita en adelante se tomo de Developer Mozilla [Ir a Developer Mozilla](https://developer.mozilla.org/es/docs/Web/JavaScript/Data_structures).
+####  Toda la referencia aca descrita en adelante se tomo de Developer Mozilla [Ir a Developer Mozilla](https://developer.mozilla.org/es/docs/Web/JavaScript/Data_structures).
 
 <div align="justify">
     <article lang="es">
@@ -856,7 +856,7 @@
 </div>
 
 ### Callbacks
-####  Toda la refencia aca descrita en adelante se tomo de Developer Mozilla [Ir a Developer Mozilla](https://developer.mozilla.org/es/docs/Glossary/Callback_function).
+####  Toda la referencia aca descrita en adelante se tomo de Developer Mozilla [Ir a Developer Mozilla](https://developer.mozilla.org/es/docs/Glossary/Callback_function).
 
 <div align="justify">
     <article lang="es">
@@ -897,7 +897,7 @@
 </div>
 
 ### Promesas
-####  Toda la refencia aca descrita en adelante se tomo de Developer Mozilla [Ir a Developer Mozilla](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/Promise).
+####  Toda la referencia aca descrita en adelante se tomo de Developer Mozilla [Ir a Developer Mozilla](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/Promise).
 
 <div align="justify">
     <article lang="es">
@@ -1143,7 +1143,7 @@ miPrimeraPromise<span>.</span><span>then</span><span>(</span><span>(</span><span
 </div>
 
 ### Async / await
-####  Toda la refencia aca descrita en adelante se tomo de Developer Mozilla [Ir a Developer Mozilla](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Statements/async_function).
+####  Toda la referencia aca descrita en adelante se tomo de Developer Mozilla [Ir a Developer Mozilla](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Statements/async_function).
 <div align="justify">
     <article lang="es"><h1>Función async</h1>
         <div>
@@ -1387,7 +1387,7 @@ miPrimeraPromise<span>.</span><span>then</span><span>(</span><span>(</span><span
 </div>
 
 ### Hoisting
-####  Toda la refencia aca descrita en adelante se tomo de Developer Mozilla [Ir a Developer Mozilla](https://developer.mozilla.org/es/docs/Glossary/Hoisting).
+####  Toda la referencia aca descrita en adelante se tomo de Developer Mozilla [Ir a Developer Mozilla](https://developer.mozilla.org/es/docs/Glossary/Hoisting).
 <div align="justify">
     <article lang="es">
         <h1>Hoisting</h1>
@@ -1481,7 +1481,7 @@ y <span>=</span> <span>2</span><span>;</span> <span>// Inicializa y</span>
 </div>
 
 ### DOM
-####  Toda la refencia aca descrita en adelante se tomo de Developer Mozilla [Ir a Developer Mozilla](https://developer.mozilla.org/es/docs/Web/API/Document_Object_Model/Introduction).
+####  Toda la referencia aca descrita en adelante se tomo de Developer Mozilla [Ir a Developer Mozilla](https://developer.mozilla.org/es/docs/Web/API/Document_Object_Model/Introduction).
 
 <div align="justify">
     <article lang="es">

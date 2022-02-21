@@ -9,7 +9,7 @@
 [Ir a la documentación oficial de ECMA-INTERNATIONAL](https://www.ecma-international.org/publications-and-standards/standards/ecma-262/)
   
 ### Introducción
-####  Toda la refencia aca descrita en adelante se tomo de Wikipedia [Ir a Wikipedia](https://es.wikipedia.org/wiki/ECMAScript#ES2020) y de w3Schools [Ir a w3schools](https://www.w3schools.com/js/js_versions.asp)
+####  Toda la referencia aca descrita en adelante se tomo de Wikipedia [Ir a Wikipedia](https://es.wikipedia.org/wiki/ECMAScript#ES2020) y de w3Schools [Ir a w3schools](https://www.w3schools.com/js/js_versions.asp)
   
 <p align="justify"> <strong>ECMAScript</strong> es una especificación de <a href="https://es.wikipedia.org/wiki/Lenguaje_de_programaci%C3%B3n">lenguaje de programación</a> publicada por <a href="https://es.wikipedia.org/wiki/Ecma_International">ECMA International</a>. El desarrollo empezó en 1996 y estuvo basado en el popular lenguaje <a href="https://es.wikipedia.org/wiki/JavaScript">JavaScript</a> propuesto como estándar por <a href="https://es.wikipedia.org/wiki/Netscape_Communications_Corporation">Netscape Communications Corporation</a>. Actualmente está aceptado como el estándar ISO/IEC 22275:2018.</p>
   

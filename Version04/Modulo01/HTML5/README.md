@@ -7,7 +7,7 @@
 ### Módulo 1
   
 ### Introducción
-####  Toda la refencia aca descrita en adelante se tomo de Developer Mozilla. [Ir a Developer Mozilla](https://developer.mozilla.org/es/docs/Web/HTML)
+####  Toda la referencia aca descrita en adelante se tomo de Developer Mozilla. [Ir a Developer Mozilla](https://developer.mozilla.org/es/docs/Web/HTML)
   
 ### HTML: Lenguaje de etiquetas de hipertexto
   
@@ -26,7 +26,7 @@
   <li><a href="https://www.youtube.com/c/GustavoGarciaBlanco"> Canal de youtube de Gustavo Adolfo Garcia Blanco</a></li>
 </ol>
   
-####  Toda la refencia aca descrita en adelante se tomo de Developer Mozilla. [Ir a Developer Mozilla](https://developer.mozilla.org/es/docs/Glossary/HTML5)
+####  Toda la referencia aca descrita en adelante se tomo de Developer Mozilla. [Ir a Developer Mozilla](https://developer.mozilla.org/es/docs/Glossary/HTML5)
   
 ### HTML5
   
@@ -39,7 +39,7 @@
   <li><a href="https://www.youtube.com/c/GustavoGarciaBlanco"> Canal de youtube de Gustavo Adolfo Garcia Blanco</a></li>
 </ol>
   
-####  Toda la refencia aca descrita en adelante se tomo de W3C. [Ir a w3C](https://www.w3.org/standards/semanticweb/)
+####  Toda la referencia aca descrita en adelante se tomo de W3C. [Ir a w3C](https://www.w3.org/standards/semanticweb/)
   
 ### Web Semántica
   

@@ -14,7 +14,7 @@
   [Ir a la documentación oficial de git](https://git-scm.com/docs)
   
   ### Introducción
-  ####  Toda la refencia aca descrita en adelante se tomo de atlassian. [Ir a atlassian para mas información](https://www.atlassian.com/es/git/tutorials/what-is-git)
+  ####  Toda la referencia aca descrita en adelante se tomo de atlassian. [Ir a atlassian para mas información](https://www.atlassian.com/es/git/tutorials/what-is-git)
   <p align="justify"> Hoy en día, Git es, con diferencia, el sistema de control de versiones moderno más utilizado del mundo. Git es un proyecto de código abierto maduro y con un mantenimiento activo que desarrolló originalmente Linus Torvalds, el famoso creador del kernel del sistema operativo Linux, en 2005. Un asombroso número de proyectos de software dependen de Git para el control de versiones, incluidos proyectos comerciales y de código abierto. Los desarrolladores que han trabajado con Git cuentan con una buena representación en la base de talentos disponibles para el desarrollo de software, y este sistema funciona a la perfección en una amplia variedad de sistemas operativos e IDE (entornos de desarrollo integrados).</p>
 
   <p align="justify"> Git, que presenta una arquitectura distribuida, es un ejemplo de DVCS (sistema de control de versiones distribuido, por sus siglas en inglés). En lugar de tener un único espacio para todo el historial de versiones del software, como sucede de manera habitual en los sistemas de control de versiones antaño populares, como CVS o Subversion (también conocido como SVN), en Git, la copia de trabajo del código de cada desarrollador es también un repositorio que puede albergar el historial completo de todos los cambios.</p>
@@ -78,7 +78,7 @@
   
   <p align="justify"> Ahora que entiendes en qué consiste el control de versiones, qué es Git y por qué los equipos de software deberían utilizarlo, sigue leyendo para descubrir los beneficios que Git puede aportar en toda la organización.</p>
   
-  ####  Toda la refencia aca descrita en adelante se tomo de Git. [Ir a Git para mas información](https://git-scm.com/docs/git)
+  ####  Toda la referencia aca descrita en adelante se tomo de Git. [Ir a Git para mas información](https://git-scm.com/docs/git)
   
   ### Comandos Básicos
   ```git add```
@@ -141,7 +141,7 @@
   ```git status```
   Muestra el estado del árbol de trabajo.
   
-  ####  Toda la refencia aca descrita en adelante se tomo de Git. [Ir a Git para mas información](https://git-scm.com/book/en/v2/Getting-Started-What-is-Git%3F)
+  ####  Toda la referencia aca descrita en adelante se tomo de Git. [Ir a Git para mas información](https://git-scm.com/book/en/v2/Getting-Started-What-is-Git%3F)
   
   ### Los tres Estados
   
@@ -177,7 +177,7 @@
   [Ir a la página oficial de Github](https://github.com/)
   
   ### Introducción
-  ####  Toda la refencia aca descrita en adelante se tomo de Digital.gov. [Ir a Digital.gov para mas información](https://digital.gov/resources/an-introduction-github/)
+  ####  Toda la referencia aca descrita en adelante se tomo de Digital.gov. [Ir a Digital.gov para mas información](https://digital.gov/resources/an-introduction-github/)
   
   <p align="justify"> GitHub es una interfaz basada en la web que utiliza Git , el software de control de versiones de código abierto que permite que varias personas realicen cambios independientes en las páginas web al mismo tiempo. Como señala Carpenter, debido a que permite la colaboración en tiempo real, GitHub alienta a los equipos a trabajar juntos para crear y editar el contenido de su sitio.</p>
   
@@ -200,7 +200,7 @@
   [Ir a la página oficial de Developer mozilla para HTML](https://developer.mozilla.org/es/docs/Web/HTML)
   
   ### Introducción
-  ####  Toda la refencia aca descrita en adelante se tomo de Developer Mozilla. [Ir a Developer Mozilla](https://developer.mozilla.org/es/docs/Web/HTML)
+  ####  Toda la referencia aca descrita en adelante se tomo de Developer Mozilla. [Ir a Developer Mozilla](https://developer.mozilla.org/es/docs/Web/HTML)
   
   ### HTML: Lenguaje de etiquetas de hipertexto
   
@@ -219,7 +219,7 @@
     <li><a href="https://www.youtube.com/c/GustavoGarciaBlanco"> Canal de youtube de Gustavo Adolfo Garcia Blanco</a></li>
   </ol>
   
-  ####  Toda la refencia aca descrita en adelante se tomo de Developer Mozilla. [Ir a Developer Mozilla](https://developer.mozilla.org/es/docs/Glossary/HTML5)
+  ####  Toda la referencia aca descrita en adelante se tomo de Developer Mozilla. [Ir a Developer Mozilla](https://developer.mozilla.org/es/docs/Glossary/HTML5)
   
   ### HTML5
   
@@ -232,7 +232,7 @@
     <li><a href="https://www.youtube.com/c/GustavoGarciaBlanco"> Canal de youtube de Gustavo Adolfo Garcia Blanco</a></li>
   </ol>
   
-  ####  Toda la refencia aca descrita en adelante se tomo de W3C. [Ir a w3C](https://www.w3.org/standards/semanticweb/)
+  ####  Toda la referencia aca descrita en adelante se tomo de W3C. [Ir a w3C](https://www.w3.org/standards/semanticweb/)
   
   ### Web Semántica
   
@@ -266,7 +266,7 @@
   [Ir a la página oficial de Developer mozilla para CSS](https://developer.mozilla.org/es/docs/Web/CSS)
   
   ### Introducción
-  ####  Toda la refencia aca descrita en adelante se tomo de Developer Mozilla. [Ir a Developer Mozilla](https://developer.mozilla.org/es/docs/Web/CSS)
+  ####  Toda la referencia aca descrita en adelante se tomo de Developer Mozilla. [Ir a Developer Mozilla](https://developer.mozilla.org/es/docs/Web/CSS)
   
   ### CSS
   
@@ -309,7 +309,7 @@
   </ol>
   
   ### Selectores CSS
-  ####  Toda la refencia aca descrita en adelante se tomo de Developer Mozilla. [Ir a Developer Mozilla](https://developer.mozilla.org/es/docs/Web/CSS/CSS_Selectors)
+  ####  Toda la referencia aca descrita en adelante se tomo de Developer Mozilla. [Ir a Developer Mozilla](https://developer.mozilla.org/es/docs/Web/CSS/CSS_Selectors)
   
   <p align="justify"> Los <strong>selectores</strong> definen sobre qué elementos se aplicará un conjunto de reglas CSS.</p>
   
@@ -338,7 +338,7 @@
   </dl>
   
   ### Combinadores CSS
-  ####  Toda la refencia aca descrita en adelante se tomo de Developer Mozilla. [Ir a Developer Mozilla](https://developer.mozilla.org/es/docs/Web/CSS/CSS_Selectors)
+  ####  Toda la referencia aca descrita en adelante se tomo de Developer Mozilla. [Ir a Developer Mozilla](https://developer.mozilla.org/es/docs/Web/CSS/CSS_Selectors)
   
   <dl align="justify">
     <dt><a href="https://developer.mozilla.org/es/docs/Web/CSS/Adjacent_sibling_combinator">Combinador de hermanos adyacentes</a></dt>
@@ -364,7 +364,7 @@
   </dl>
   
   ### Pseudoclases
-  ####  Toda la refencia aca descrita en adelante se tomo de Developer Mozilla. [Ir a Developer Mozilla](https://developer.mozilla.org/es/docs/Web/CSS/Pseudo-classes)
+  ####  Toda la referencia aca descrita en adelante se tomo de Developer Mozilla. [Ir a Developer Mozilla](https://developer.mozilla.org/es/docs/Web/CSS/Pseudo-classes)
   
   <p align="justify"> Una <strong>pseudoclase CSS</strong> es una palabra clave que se añade a los selectores y que especifica un estado especial del elemento seleccionado. Por ejemplo, <a href="https://developer.mozilla.org/es/docs/Web/CSS/:hover"><code>:hover</code></a> aplicará un estilo cuando el usuario haga hover sobre el elemento especificado por el selector.</p>
   
@@ -381,7 +381,7 @@
   <p align="justify">Al igual que las clases, se pueden concatenar la cantidad de pseudoclases que se deseen en un selector</p>
   
   ### Pseudoelementos
-  ####  Toda la refencia aca descrita en adelante se tomo de Developer Mozilla. [Ir a Developer Mozilla](https://developer.mozilla.org/es/docs/Web/CSS/Pseudo-elements)
+  ####  Toda la referencia aca descrita en adelante se tomo de Developer Mozilla. [Ir a Developer Mozilla](https://developer.mozilla.org/es/docs/Web/CSS/Pseudo-elements)
   
   <p align="justify"> Al igual que las <a href="https://developer.mozilla.org/es/docs/Web/CSS/Pseudo-classes"><code>pseudo-classes</code></a>, los pseudo-elementos se añaden a los selectores, pero en cambio, no describen un estado especial sino que, permiten añadir estilos a una parte concreta del documento. Por ejemplo, el pseudoelemento <a href="https://developer.mozilla.org/es/docs/Web/CSS/::first-line"><code>::first-line</code></a> selecciona solo la primera línea del elemento especificado por el selector.</p>
   
@@ -398,7 +398,7 @@
   <p align="justify">Solo se puede usar un pseudo-elemento por selector. Debe aparecer después del selector simple..</p>
   
   ### Especificidad
-  ####  Toda la refencia aca descrita en adelante se tomo de Developer Mozilla. [Ir a Developer Mozilla](https://developer.mozilla.org/es/docs/Web/CSS/Specificity)
+  ####  Toda la referencia aca descrita en adelante se tomo de Developer Mozilla. [Ir a Developer Mozilla](https://developer.mozilla.org/es/docs/Web/CSS/Specificity)
   
   <p align="justify"> La <strong>especificidad</strong> es la manera mediante la cual los navegadores deciden qué valores de una propiedad CSS son más relevantes para un elemento y, por lo tanto, serán aplicados. La especificidad está basada en las reglas de coincidencia que están compuestas por diferentes tipos de selectores CSS.</p>
   
@@ -428,7 +428,7 @@
   <p align="justify">Cuando se emplea important en una declaración de estilo, esta declaración sobrescribe a cualquier otra. Aunque técnicamente <code>!important</code>  no tiene nada que ver con especificidad, interactúa directamente con esta. Sin embargo, el uso de <code>!important</code> es una <strong>mala práctica</strong> y debería evitarse porque hace que el código sea más difícil de depurar al romper la <a href="cascada">(artículo en inglés) </a> natural de las hojas de estilo. Cuando dos declaraciones en conflicto con el <code>!important</code> son aplicadas al mismo elemento, se aplicará la declaración con mayor especificidad. </p>
   
   ### Propiedad display
-  ####  Toda la refencia aca descrita en adelante se tomo de Developer Mozilla. [Ir a Developer Mozilla](https://developer.mozilla.org/es/docs/Web/CSS/display)
+  ####  Toda la referencia aca descrita en adelante se tomo de Developer Mozilla. [Ir a Developer Mozilla](https://developer.mozilla.org/es/docs/Web/CSS/display)
   
   <p align="justify"> La propiedad CSS <strong>display</strong> especifica si un elemento es tratado como <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flow_Layout">block or inline element</a> y el diseño usado por sus hijos, como <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flow_Layout">flow layout(Diseño de Flujo)</a>, <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout">grid</a>(Cuadricula) o <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout">flex</a>(Flexible). </p>
   
@@ -454,7 +454,7 @@
   <p align="justify"> En la actualidad, es mejor especificar <code>display</code> utilizando una sola palabra clave; aunque las últimas especificaciones permiten combinar algunas palabras clave, esto aún no está bien soportado por los navegadores.</p>
   
   ### Propiedad position
-  ####  Toda la refencia aca descrita en adelante se tomo de Developer Mozilla. [Ir a Developer Mozilla](https://developer.mozilla.org/es/docs/Web/CSS/position)
+  ####  Toda la referencia aca descrita en adelante se tomo de Developer Mozilla. [Ir a Developer Mozilla](https://developer.mozilla.org/es/docs/Web/CSS/position)
   
   <p align="justify"> La propiedad <strong>position</strong> de <a href="https://developer.mozilla.org/en-US/docs/Web/CSS">CSS</a> especifica cómo un elemento es posicionado en el documento. Las propiedades <a href="https://developer.mozilla.org/es/docs/Web/CSS/top">top</a>, <a href="https://developer.mozilla.org/es/docs/Web/CSS/right">right</a>, <a href="https://developer.mozilla.org/es/docs/Web/CSS/bottom">bottom</a>, y <a href="https://developer.mozilla.org/es/docs/Web/CSS/left">left</a> determinan la ubicación final de los elementos posicionados. </p>
     
@@ -503,7 +503,7 @@
   <p align="justify"> <code>static <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Value_definition_syntax#single_bar">| (en-US)</a> relative <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Value_definition_syntax#single_bar">| (en-US)</a> absolute <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Value_definition_syntax#single_bar">| (en-US)</a> sticky <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Value_definition_syntax#single_bar">| (en-US)</a> fixed</code></p>
 
   ### BEM
-  #### Toda la refencia aca descrita en adelante se tomo de Get BEM. [Ir a Get BEM](http://getbem.com/)
+  #### Toda la referencia aca descrita en adelante se tomo de Get BEM. [Ir a Get BEM](http://getbem.com/)
   
   <p align="justify"> BEM: Block Element Modifier es una metodología que lo ayuda a crear componentes reutilizables y compartir código en el desarrollo front-end.</p>
 
