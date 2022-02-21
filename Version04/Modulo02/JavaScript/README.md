@@ -50,7 +50,7 @@
     <span>text-transform</span><span>:</span> uppercase<span>;</span>
     <span>text-align</span><span>:</span> center<span>;</span>
     <span>border</span><span>:</span> 2px solid <span>rgba</span><span>(</span>0<span>,</span>0<span>,</span>200<span>,</span>0.6<span>)</span><span>;</span>
-    <span>background</span><span >:</span><span>rgba</span><span>(</span>0<span>,</span>0<span>,</span>200<span>,</span>0.3<span>)</span><span>;</span>
+    <span>background</span><span>:</span><span>rgba</span><span>(</span>0<span>,</span>0<span>,</span>200<span>,</span>0.3<span>)</span><span>;</span>
     <span>color</span><span>:</span><span>rgba</span><span>(</span>0<span>,</span>0<span>,</span>200<span>,</span>0.6<span>)</span><span>;</span>
     <span>box-shadow</span><span>:</span> 1px 1px 2px <span>rgba</span><span>(</span>0<span>,</span>0<span>,</span>200<span>,</span>0.4<span>)</span><span>;</span>
     <span>border-radius</span><span>:</span>10px<span>;</span>
@@ -66,7 +66,7 @@
     <span>para.</span><span>addEventListener</span><span>(</span><span>'click'</span><span>,</span> updateName<span>)</span><span>;</span>
     <span></span> 
     <span>function</span> <span>updateName</span><span>(</span><span>)</span> <span>{</span>
-        <span>let</span> name <span>=</span> <span>prompt</span><span>(</span><span >'Enter a new name'</span><span>)</span><span>;</span>
+        <span>let</span> name <span>=</span> <span>prompt</span><span>(</span><span>'Enter a new name'</span><span>)</span><span>;</span>
         <span>para.</span>textContent <span>=</span> <span>'Player 1: '</span> <span>+</span> name<span>;</span>
     <span>}</span>
 </code></pre>
@@ -94,7 +94,7 @@
                 <li>La <a href="https://developer.mozilla.org/en/docs/Web/API/Document_Object_Model" title=" API del DOM (<code>Document Object Model</code>)"><code> API del DOM (<code>Document Object Model</code>)</code></a> te permite manipular HTML y CSS, crear, eliminar y cambiar el HTML, aplicar dinámicamente nuevos estilos a tu página, etc. Cada vez que ves aparecer una ventana emergente en una página, o se muestra algún nuevo contenido (como vimos anteriormente en nuestra sencilla demostración), por ejemplo, ese es el DOM en acción.</li>
                 <li>La <a title="La documentación acerca de este tema no ha sido escrita todavía . ¡Por favor  considera contribuir !"><code>API de Geolocalización</code></a> recupera información geográfica. Así es como <a href="https://www.google.com/maps" rel="noopener">Google Maps</a> puede encontrar tu ubicación y trazarla en un mapa.</li>
                 <li>Las APIs <a href="https://developer.mozilla.org/en/docs/Web/API/Canvas_API" title="Canvas"><code>Canvas</code></a> y <a href="https://developer.mozilla.org/en/docs/Web/API/WebGL_API" title="WebGL"><code>WebGL</code></a> te permiten crear gráficos animados en 2D y 3D. Las personas están haciendo cosas increíbles con estas tecnologías web — consulta <a href="https://www.chromeexperiments.com" rel="noopener">Experimentos de Chrome</a> y <a href="https://webglsamples.org/" rel="noopener">webglsamples</a>.</li>
-                <li><a href="https://developer.mozilla.org/en/Apps/Fundamentals/Audio_and_video_delivery">APIs de audio y video</a> como <a href="https://developer.mozilla.org/en/docs/Web/API/HTMLMediaElement"><code>HTMLMediaElement</code></a> y <a href="https://developer.mozilla.org/en/docs/Web/API/WebRTC_API" title="WebRTC"><code>WebRTC</code></a> te permiten hacer cosas realmente interesantes con multimedia, como reproducir audio y video directamente en una página web, o tomar video de tu cámara web y mostrarlo en la computadora de otra persona (prueba nuestra sencilla <a href="http://chrisdavidmills.github.io/snapshot/" rel=" noopener">demostración instantánea</a> para hacerte una idea).</li>
+                <li><a href="https://developer.mozilla.org/en/Apps/Fundamentals/Audio_and_video_delivery">APIs de audio y video</a> como <a href="https://developer.mozilla.org/en/docs/Web/API/HTMLMediaElement"><code>HTMLMediaElement</code></a> y <a href="https://developer.mozilla.org/en/docs/Web/API/WebRTC_API" title="WebRTC"><code>WebRTC</code></a> te permiten hacer cosas realmente interesantes con multimedia, como reproducir audio y video directamente en una página web, o tomar video de tu cámara web y mostrarlo en la computadora de otra persona (prueba nuestra sencilla <a href="http://chrisdavidmills.github.io/snapshot/" rel="noopener">demostración instantánea</a> para hacerte una idea).</li>
             </ul>
             <div>
                 <p><strong>Nota</strong>: Muchas de las demostraciones anteriores no funcionarán en un navegador antiguo — al experimentar, es una buena idea utilizar un navegador moderno como Firefox, Chrome, Edge u Opera para ejecutar tu código. Deberás considerar las <a href="https://developer.mozilla.org/en/docs/Learn/Tools_and_testing/Cross_browser_testing">pruebas en varios navegadores</a> con más detalle cuando estés más cerca de entregar el código de producción (es decir, código real que usarán los clientes reales).</p>
@@ -200,7 +200,7 @@
     document<span>.</span>body<span>.</span><span>appendChild</span><span>(</span>para<span>)</span><span>;</span>
   <span>}</span>
   <span></span>
-  <span>const</span> buttons <span>=</span> document<span>.</span><span>querySelectorAll</span><span>(</span><span>'button'</span><span >)</span><span>;</span>
+  <span>const</span> buttons <span>=</span> document<span>.</span><span>querySelectorAll</span><span>(</span><span>'button'</span><span>)</span><span>;</span>
   <span></span>
   <span>for</span><span>(</span><span>let</span> i <span>=</span> <span>0</span><span>;</span> i <span>&lt;</span> buttons<span>.</span>length <span>;</span> i<span>++</span><span>)</span> <span>{</span>
     buttons<span>[</span>i<span>]</span><span>.</span><span>addEventListener</span><span>(</span><span>'click'</span><span>,</span> createParagraph<span>)</span><span>;</span>
@@ -848,9 +848,875 @@
         </h2>
         <div>
             <ul>
-                <li><a class="link-https external" href="https://github.com/nzakas/computer-science-in-javascript/" rel="noopener">Colección de estructura de datos común y algoritmos comunes en JavaScript de Nicholas Zakas.</a></li>
+                <li><a  href="https://github.com/nzakas/computer-science-in-javascript/" rel="noopener">Colección de estructura de datos común y algoritmos comunes en JavaScript de Nicholas Zakas.</a></li>
                 <li><a href="https://github.com/monmohan/DataStructures_In_Javascript" rel="noopener">Estructuras de datos implementadas en JavaScript</a></li>
             </ul>
+        </div>
+    </article>
+</div>
+
+### Callbacks
+####  Toda la refencia aca descrita en adelante se tomo de Developer Mozilla [Ir a Developer Mozilla](https://developer.mozilla.org/es/docs/Glossary/Callback_function).
+
+<div align="justify">
+    <article lang="es">
+        <h1>Función Callback</h1>
+        <div>
+            <p>Una función de callback es una función que se pasa a otra función como un argumento, que luego se invoca dentro de la función externa para completar algún tipo de rutina o acción.</p>
+            <p>Ejemplo:</p>
+            <div>
+            <pre><code><span>function</span> <span>saludar</span><span>(</span><span>nombre</span><span>)</span> <span>{</span>
+  <span>alert</span><span>(</span><span>'Hola '</span> <span>+</span> nombre<span>)</span><span>;</span>
+<span>}</span>
+<span></span>
+<span>function</span> <span>procesarEntradaUsuario</span><span>(</span><span>callback</span><span>)</span> <span>{</span>
+  <span>var</span> nombre <span>=</span> <span>prompt</span><span>(</span><span>'Por favor ingresa tu nombre.'</span><span>)</span><span>;</span>
+  <span>callback</span><span>(</span>nombre<span>)</span><span>;</span>
+<span>}</span>
+<span></span>
+<span>procesarEntradaUsuario</span><span>(</span>saludar<span>)</span><span>;</span></code></pre>
+            </div>
+            <p>El ejemplo anterior es una callback sincrónica, ya que se ejecuta inmediatamente.</p>
+            <p>Sin embargo,&nbsp;tenga en&nbsp;cuenta que las callbacks a menudo se utilizan para continuar con la ejecución del código después de que se&nbsp;haya completado&nbsp;una&nbsp;operación a sincrónica&nbsp; — estas se denominan devoluciones de llamada asincrónicas.&nbsp;Por ejemplo, nuestro sencillo ejemplo de <a href="https://github.com/mdn/learning-area/blob/master/javascript/apis/introduction/maps-example.html" rel="noopener">maps-example.html</a>&nbsp;(<a href="https://mdn.github.io/learning-area/javascript/apis/introduction/maps-example.html" rel="noopener">ver en vivo</a>)&nbsp;utiliza la API de Google Maps y la API de geolocalización para mostrar un mapa de la ubicación actual de su dispositivo.</p>
+            <p>Como obtener las coordenadas del dispositivo de su GPS es asíncrono (no sabemos exactamente cuándo se devolverán los datos), el método&nbsp;<a href="https://developer.mozilla.org/en/docs/Web/API/Geolocation/getCurrentPosition"><code>Geolocation.getCurrentPosition()</code></a> toma una función de devolución de llamada anónima como parámetro, que a su vez toma los datos de coordenadas devueltos como un parámetro.&nbsp;Esta función solo se ejecuta cuando se devuelven los datos de coordenadas.
+            </p>
+        </div>
+        <h2 id="aprende_más">
+            <a href="#aprende_más" title="Permalink to Aprende más"><strong>Aprende más</strong></a>
+        </h2>
+        <div></div>
+        <h3 id="conocimientos_generales">
+            <a href="#conocimientos_generales" title="Permalink to Conocimientos generales"><strong>Conocimientos generales</strong></a>
+        </h3>
+        <div>
+            <ul>
+                <li><a href="https://es.wikipedia.org/wiki/Callback_(inform%C3%A1tica)" rel="noopener">Callback</a>&nbsp;en Wikipedia</li>
+            </ul>
+        </div>
+    </article>
+</div>
+
+### Promesas
+####  Toda la refencia aca descrita en adelante se tomo de Developer Mozilla [Ir a Developer Mozilla](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/Promise).
+
+<div align="justify">
+    <article lang="es">
+        <h1>Promise</h1>
+        <div>
+            <div id="sect1"></div>
+            <p>El objeto <strong><code>Promise</code></strong> (Promesa) es usado para computaciones asíncronas. Una promesa representa un valor que puede estar disponible ahora, en el futuro, o nunca.</p>
+        </div>
+        <h2 id="sintaxis">
+            <a href="#sintaxis" title="Permalink to Sintaxis">Sintaxis</a>
+        </h2>
+        <div>
+            <pre>new Promise( /* ejecutor */ function(resolver, rechazar) { ... } );</pre>
+        </div>
+        <h3 id="parámetros">
+            <a href="#parámetros" title="Permalink to Parámetros">Parámetros</a>
+        </h3>
+        <div>
+            <dl>
+                <dt id="ejecutor">ejecutor</dt>
+                <dd>Una función con los argumentos <code>resolver</code> y <code>rechazar</code>. La función <code>ejecutor</code> es ejecutada inmediatamente por la implementación de la Promesa, pasándole las funciones <code>resolver</code> y <code>rechazar</code> (el ejecutor es llamado incluso antes de que el constructor de la <code>Promesa</code> devuelva el objeto creado). Las funciones <code>resolver</code> y <code>rechazar</code>, al ser llamadas, resuelven o rechazan la promesa, respectivamente. Normalmente el ejecutor inicia un trabajo asíncrono, y luego, una vez que es completado, llama a la función <code>resolver</code> para resolver la promesa o la rechaza si ha ocurrido un error.<br>
+                Si un error es lanzado en la función ejecutor, la promesa es rechazada y el valor de retorno del ejecutor es rechazado.</dd>
+            </dl>
+        </div>
+        <h2 id="descripción">
+            <a href="#descripción" title="Permalink to Descripción">Descripción</a>
+        </h2>
+        <div>
+            <p>Una <strong>Promesa</strong> es un proxy para un valor no necesariamente conocido en el momento que es creada la promesa. Permite asociar manejadores que actuarán asincrónicamente sobre un eventual valor en caso de éxito, o la razón de falla en caso de una falla. Esto permite que métodos asíncronos devuelvan valores como si fueran síncronos: en vez de inmediatamente retornar el valor final, el método asíncrono devuelve una <em>promesa</em> de suministrar el valor en algún momento en el futuro.</p>
+            <p>Una <code>Promesa</code> se encuentra en uno de los siguientes estados:</p>
+            <ul>
+                <li><em>pendiente (pending)</em>: estado inicial, no cumplida o rechazada.</li>
+                <li><em>cumplida (fulfilled)</em>: significa que la operación se completó satisfactoriamente.</li>
+                <li><em>rechazada (rejected)</em>: significa que la operación falló.</li>
+            </ul>
+            <p>Una promesa pendiente puede ser <em>cumplida</em> con un valor, o <em>rechazada</em> con una razón (error). Cuando cualquiera de estas dos opciones sucede, los métodos asociados, encolados por el método <em>then</em> de la promesa, son llamados. (Si la promesa ya ha sido cumplida o rechazada en el momento que es anexado su correspondiente manejador, el manejador será llamado, de tal manera que no exista una condición de carrera entre la operación asíncrona siendo completada y los manejadores siendo anexados)</p>
+            <p>Como los métodos <code><a href="https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Promise/then"><code>Promise.prototype.then()</code></a></code> y <code><a href="https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Promise/catch"><code>Promise.prototype.catch()</code></a></code> retornan promesas, éstas pueden ser encadenadas.</p>
+            <p><img alt="" src="https://mdn.mozillademos.org/files/8633/promises.png" loading="lazy"></p>
+            <div id="sect2">
+            <p><strong>No confundir con:</strong> Varios lenguajes tienen mecanismos para evaluar perezosamente y postergar una computación, a los que también les llaman "promesas" - p.ej.: Scheme. Las promesas en JavaScript representan procesos que ya están sucediendo, y pueden ser encadenados con funciones callback. Si lo que se busca es evaluar perezosamente una expresión, se debe considerar la función <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions">flecha </a> (arrow function) sin argumentos: <code>f = () =&gt;&nbsp;<em>expresión</em></code> para crear la expresión evaluada perezosamente, y <code>f()</code> para evaluar.</p>
+        </div>
+        <div id="settlednote">
+            <p><strong>Nota</strong>: Una promesa se dice que está <em>determinada (settled)</em> si se ha cumplido o si se ha rechazado, pero no está pendiente. Con promesas también se usa el término <em>resuelta</em> — esto significa que la promesa está determinada, o que se encuentra bloqueada dentro de una cadena de promesas. <a href="https://github.com/domenic/promises-unwrapping/blob/master/docs/states-and-fates.md" rel="noopener">States and fates</a> de Domenic Denicola contiene mas detalles sobre la terminología de las promesas.</p>
+        </div>
+    </div>
+    <h2 id="propiedades">
+        <a href="#propiedades" title="Permalink to Propiedades">Propiedades</a>
+    </h2>
+    <div>
+        <dl>
+            <dt id="promise.length"><code>Promise.length</code></dt>
+            <dd>Propiedad longitud cuyo valor es siempre 1 (numero de argumentos del constructor).</dd>
+            <dt id="promise.prototype_en-us"><a title="Currently only available in English (US)" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise"><code>Promise.prototype</code> <small>(en-US)</small></a></dt>
+            <dd>Representa el prototipo del constructor&nbsp;<code>Promise</code>.</dd>
+        </dl>
+    </div>
+    <h2 id="métodos">
+        <a href="#métodos" title="Permalink to Métodos">Métodos</a>
+    </h2>
+    <div>
+        <dl>
+            <dt id="promise.alliterable"><a href="https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Promise/all"><code>Promise.all(iterable)</code></a></dt>
+            <dd>Devuelve una de dos promesas: una que se cumple cuando todas las promesas en el argumento iterable han sido cumplidas, o una que se rechaza tan pronto como una de las promesas del argumento iterable es rechazada. Si la promesa retornada es cumplida, lo hace&nbsp;con un&nbsp;arreglo de los valores de las promesas cumplidas en el mismo orden definido en el iterable. Si la promesa retornada es rechazada, es rechazada con la razón de la primera promesa rechazada en el iterable. Este método puede ser útil para agregar resultados de múltiples promesas</dd>
+            <dt id="promise.raceiterable"><a href="https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Promise/race"><code>Promise.race(iterable)</code></a></dt>
+            <dd>Devuelve una promesa que se cumple o rechaza tan pronto como una de las promesas del iterable se cumple o rechaza, con el valor o razón de esa promesa.</dd>
+        </dl>
+        <dl>
+            <dt id="promise.rejectreason"><a href="https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Promise/reject"><code>Promise.reject(reason)</code></a></dt>
+            <dd>Devuelve un objeto&nbsp;<code>Promise</code>&nbsp;que es rechazado con la razón dada.</dd>
+        </dl>
+        <dl>
+            <dt id="promise.resolvevalue"><a href="https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Promise/resolve"><code>Promise.resolve(value)</code></a></dt>
+            <dd>Devuelve un objeto&nbsp;<code>Promise</code>&nbsp;que es resuelto con el valor dado. Si el valor es un&nbsp;<em>thenable</em> (p.ej. tiene un método&nbsp;<code>then</code>), la promesa devuelta "seguirá"&nbsp;este&nbsp;thenable, adoptando su eventual estado; de lo contrario la promesa devuelta será cumplida con el valor. Generalmente, si se quiere saber si un valor es una promesa o no, se podría usar - <a href="https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Promise/resolve"><code>Promise.resolve(value)</code></a> y trabajar con el valor devuelto como una promesa.</dd>
+        </dl>
+        </div>
+            <h2 id="prototipo_promise">
+                <a href="#prototipo_promise" title="Permalink to Prototipo&nbsp;Promise">Prototipo&nbsp;<code>Promise</code></a>
+            </h2>
+            <div></div>
+            <h3 id="propiedades_2">
+                <a href="#propiedades_2" title="Permalink to Propiedades">Propiedades</a>
+            </h3>
+            <div>
+                <p>{{page('en-US/Web/JavaScript/Reference/Global_Objects/Promise/prototype','Properties')}}</p>
+            </div>
+            <h3 id="métodos_2">
+                <a href="#métodos_2" title="Permalink to Métodos">Métodos</a>
+            </h3>
+            <div>
+                <p>{{page('en-US/Web/JavaScript/Reference/Global_Objects/Promise/prototype','Methods')}}</p>
+            </div>
+            <h2 id="ejemplos">
+                <a href="#ejemplos" title="Permalink to Ejemplos">Ejemplos</a>
+            </h2>
+            <div></div>
+            <h3 id="súper_simple_¡10_líneas!">
+                <a href="#súper_simple_¡10_líneas!" title="Permalink to Súper simple (¡10 líneas!)">Súper simple (¡10 líneas!)</a>
+            </h3>
+            <div>
+                <div>
+                <pre><code><span>let</span> miPrimeraPromise <span>=</span> <span>new</span> <span>Promise</span><span>(</span><span>(</span><span>resolve<span>,</span> reject</span><span>)</span> <span>=&gt;</span> <span>{</span>
+  <span>// Llamamos a resolve(...) cuando lo que estabamos haciendo finaliza con éxito, y reject(...) cuando falla.</span>
+  <span>// En este ejemplo, usamos setTimeout(...) para simular código asíncrono.</span>
+  <span>// En la vida real, probablemente uses algo como XHR o una API HTML5.</span>
+  <span>setTimeout</span><span>(</span><span>function</span><span>(</span><span>)</span><span>{</span>
+    <span>resolve</span><span>(</span><span>"¡Éxito!"</span><span>)</span><span>;</span> <span>// ¡Todo salió bien!</span>
+  <span>}</span><span>,</span> <span>250</span><span>)</span><span>;</span>
+<span>}</span><span>)</span><span>;</span>
+
+miPrimeraPromise<span>.</span><span>then</span><span>(</span><span>(</span><span>successMessage</span><span>)</span> <span>=&gt;</span> <span>{</span>
+  <span>// succesMessage es lo que sea que pasamos en la función resolve(...) de arriba.</span>
+  <span>// No tiene por qué ser un string, pero si solo es un mensaje de éxito, probablemente lo sea.</span>
+  console<span>.</span><span>log</span><span>(</span><span>"¡Sí! "</span> <span>+</span> successMessage<span>)</span><span>;</span>
+<span>}</span><span>)</span><span>;</span></code></pre>
+                </div>
+            </div>
+            <h3 id="creando_una_promise">
+                <a href="#creando_una_promise" title="Permalink to Creando una Promise">Creando una Promise</a>
+            </h3>
+            <div>
+                <p>Este pequeño ejemplo muestra el mecanismo de una <code>Promise</code>. El método <code>testPromise()</code>&nbsp;se llama cada vez que se pulsa el <a href="https://developer.mozilla.org/en/docs/Web/HTML/Element/button"><code>&lt;button&gt;</code></a>. Esto crea una promesa que se cumplirá, aplicando <a title="Currently only available in English (US)" href="https://developer.mozilla.org/en-US/docs/Web/API/setTimeout"><code>window.setTimeout()</code> <small>(en-US)</small></a>, al contador de la promesa (partiendo desde 1) aleatoriamente cada 1-3 segundos. El constructor de la Promise() es usado para crear dicha promesa.</p>
+                <p>El cumplimiento de la promesa simplemente se registra, a través de una llamada de retorno al cumplirse&nbsp;utilizando <a href="https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Promise/then"><code>p1.then()</code></a>. A los pocos registros muestra cómo la parte síncrona del método se desacopla de la finalización asíncrona de la promesa.</p>
+                <div>
+                <pre><code><span>'use strict'</span><span>;</span>
+<span>var</span> promiseCount <span>=</span> <span>0</span><span>;</span>
+<span></span>
+<span>function</span> <span>testPromise</span><span>(</span><span>)</span> <span>{</span>
+  <span>var</span> thisPromiseCount <span>=</span> <span>++</span>promiseCount<span>;</span>
+<span></span>
+  <span>var</span> log <span>=</span> document<span>.</span><span>getElementById</span><span>(</span><span>'log'</span><span>)</span><span>;</span>
+  log<span>.</span><span>insertAdjacentHTML</span><span>(</span><span>'beforeend'</span><span>,</span> thisPromiseCount <span>+</span>
+    <span>') Comenzó (&lt;small&gt;Comenzó el código sincrónico&lt;/small&gt;)&lt;br/&gt;'</span><span>)</span><span>;</span>
+<span></span>
+  <span>// Hacemos una promesa: prometemos un contador numérico de esta promesa,</span>
+  <span>// empezando por 1 (después de esperar 3s)</span>
+  <span>var</span> p1 <span>=</span> <span>new</span> <span>Promise</span><span>(</span>
+    <span>// La función resolvedora es llamada con la</span>
+    <span>// habilidad de resolver o rechazar la promesa</span>
+    <span>function</span><span>(</span><span>resolve<span>,</span> reject</span><span>)</span> <span>{</span>
+      log<span>.</span><span>insertAdjacentHTML</span><span>(</span><span>'beforeend'</span><span>,</span> thisPromiseCount <span>+</span>
+        <span>') Comenzó la promesa (&lt;small&gt;Código asíncrono comenzó&lt;/small&gt;)&lt;br/&gt;'</span><span>)</span><span>;</span>
+<span></span>
+      <span>// Esto es solo un ejemplo para crear asincronismo</span>
+      window<span>.</span><span>setTimeout</span><span>(</span>
+        <span>function</span><span>(</span><span>)</span> <span>{</span>
+          <span>// ¡Cumplimos la promesa!</span>
+          <span>resolve</span><span>(</span>thisPromiseCount<span>)</span><span>;</span>
+        <span>}</span><span>,</span> Math<span>.</span><span>random</span><span>(</span><span>)</span> <span>*</span> <span>2000</span> <span>+</span> <span">1000</span><span>)</span><span>;</span>
+    <span>}</span>
+  <span>)</span><span>;</span>
+<span></span>
+  <span>// Definimos qué hacer cuando la promesa es resuelta/cumplida con la llamada</span>
+  <span>// al método then(). La llamada al método catch() define qué hacer si</span>
+  <span>// la promesa es rechazada</span>
+  p1<span>.</span><span>then</span><span>(</span>
+    <span>// Registrar el valor de la promesa cumplida</span>
+    <span>function</span><span>(</span><span>val</span><span>)</span> <span>{</span>
+      log<span>.</span><span>insertAdjacentHTML</span><span>(</span><span>'beforeend'</span><span>,</span> val <span>+</span>
+        <span>') Promesa cumplida (&lt;small&gt;Código asíncrono terminado.&lt;/small&gt;)&lt;br/&gt;'</span><span>)</span><span>;</span>
+    <span>}</span><span>)</span>
+  <span>.</span><span>catch</span><span>(</span>
+    <span>// Registrar la razón del rechazo</span>
+    <span>function</span><span>(</span><span>reason</span><span>)</span> <span>{</span>
+      console<span>.</span><span>log</span><span>(</span><span>'Manejar promesa rechazada ('</span><span>+</span>reason<span>+</span><span>') aquí.'</span><span>)</span><span>;</span>
+    <span>}</span><span>)</span><span>;</span>
+
+  log<span>.</span><span>insertAdjacentHTML</span><span>(</span><span>'beforeend'</span><span>,</span> thisPromiseCount <span>+</span>
+    <span>') Promesa hecha (&lt;small&gt;Código síncrono terminado. &lt;/small&gt;)&lt;br/&gt;'</span><span>)</span><span>;</span>
+<span>}</span>
+</code></pre>
+                </div>
+                <div>
+                <pre><code><span>if</span> <span>(</span><span>"Promise"</span> <span>in</span> window<span>)</span> <span>{</span>
+  <span>var</span> btn <span>=</span> document<span>.</span><span>getElementById</span><span>(</span><span>"btn"</span><span>)</span><span>;</span>
+  btn<span>.</span><span>addEventListener</span><span>(</span><span>"click"</span><span>,</span>testPromise<span>)</span><span>;</span>
+<span>}</span> <span>else</span> <span>{</span>
+  log <span>=</span> document<span>.</span><span>getElementById</span><span>(</span><span>'log'</span><span>)</span><span>;</span>
+  log<span>.</span>innerHTML <span>=</span> <span>"El ejemplo en vivo no está disponible ya que tu navegador no soporta la interfaz &lt;code&gt;Promise&lt;code&gt;."</span><span>;</span>
+<span>}</span>
+</code></pre>
+                </div>
+                <p>Este ejemplo es ejecutado cuando pulsas el botón. Necesitas un navegador que soporte <code>Promise</code>. Al pulsar el botón varias veces en un período corto de tiempo, verás las diferentes promesas siendo cumplidas una tras otra.</p>  
+                <p></p>
+            </div>
+            <h2 id="cargando_una_imagen_con_xhr">
+                <a href="#cargando_una_imagen_con_xhr" title="Permalink to Cargando una imagen con&nbsp;XHR">Cargando una imagen con&nbsp;XHR</a>
+            </h2>
+            <div>
+                <p>Otro ejemplo sencillo utilizando <code>Promise</code> y <code><a href="https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest">XMLHttpRequest</a></code> para cargar una imagen está disponible en el repositorio <a href="https://github.com/mdn/js-examples/tree/master/promises-test"  rel="noopener">js-examples</a> de MDN en GitHub. También puedes <a href="https://mdn.github.io/js-examples/promises-test/"  rel="noopener">verlo en acción</a>. Cada paso está comentado y te permite seguir de cerca la arquitectura detrás de las Promesas y XHR.</p>
+            </div>
+            <h2 id="especificaciones">
+                <a href="#especificaciones" title="Permalink to Especificaciones">Especificaciones</a>
+            </h2>
+            <div>
+                <table>
+                    <tbody>
+                        <tr>
+                            <th scope="col">Specification</th>
+                            <th scope="col">Status</th>
+                            <th scope="col">Comment</th>
+                        </tr>
+                    <tr>
+                        <td><a href="https://www.ecma-international.org/ecma-262/6.0/#sec-promise-objects" hreflang="en" lang="en"  rel="noopener">ECMAScript 2015 (6th Edition, ECMA-262)<br><small lang="es">La definición de 'Promise' en esta especificación.</small></a></td>
+                        <td><span>Standard</span></td>
+                        <td>Initial definition in an ECMA standard.</td>
+                    </tr>
+                    <tr>
+                        <td><a href="https://tc39.es/ecma262/#sec-promise-objects" hreflang="en" lang="en" rel="noopener">ECMAScript (ECMA-262)<br><small lang="es">La definición de 'Promise' en esta especificación.</small></a></td>
+                        <td><span>Living Standard</span></td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <h2 id="compatibilidad_de_navegadores">
+            <a href="#compatibilidad_de_navegadores" title="Permalink to Compatibilidad de navegadores">Compatibilidad de navegadores</a>
+        </h2>
+        <div>
+            <p>No compatibility data found for <code>javascript/promise</code>.<br><a href="#on-github">Check for problems with this page</a> or contribute missing data to <a href="https://github.com/mdn/browser-compat-data">mdn/browser-compat-data</a>.</p>
+        </div>
+        <div>
+            <p></p>
+            <p></p>
+        </div>
+        <h2 id="ver_también">
+            <a href="#ver_también" title="Permalink to Ver también">Ver también</a>
+        </h2>
+        <div>
+            <ul>
+                <li><a href="https://promisesaplus.com/"  rel="noopener">Promises/A+ specification</a></li>
+                <li><a href="https://medium.com/@ramsunvtech/promises-of-promise-part-1-53f769245a53"  rel="noopener">Venkatraman.R - JS Promise (Part 1,&nbsp;Basics)</a></li>
+                <li><a href="https://medium.com/@ramsunvtech/js-promise-part-2-q-js-when-js-and-rsvp-js-af596232525c#.dzlqh6ski"  rel="noopener">Venkatraman.R - JS Promise (Part 2 - Using Q.js, When.js and&nbsp;RSVP.js)</a></li>
+                <li><a href="https://www.html5rocks.com/en/tutorials/es6/promises/"  rel="noopener">Jake Archibald: JavaScript Promises: There and Back Again</a></li>
+                <li><a href="https://de.slideshare.net/domenicdenicola/callbacks-promises-and-coroutines-oh-my-the-evolution-of-asynchronicity-in-javascript"  rel="noopener">Domenic Denicola: Callbacks, Promises, and Coroutines – Asynchronous Programming Patterns in JavaScript</a></li>
+                <li><a href="https://www.mattgreer.org/articles/promises-in-wicked-detail/"  rel="noopener">Matt Greer: JavaScript Promises ... In Wicked Detail</a></li>
+                <li><a href="https://www.promisejs.org/"  rel="noopener">Forbes Lindesay: promisejs.org</a></li>
+                <li><a href="https://pouchdb.com/2015/05/18/we-have-a-problem-with-promises.html"  rel="noopener">Nolan Lawson: We have a problem with promises — Common mistakes with promises</a></li>
+                <li><a href="https://github.com/jakearchibald/es6-promise/"  rel="noopener">Promise polyfill</a></li>
+                <li><a href="https://www.udacity.com/course/javascript-promises--ud898"  rel="noopener">Udacity: JavaScript Promises</a></li>
+            </ul>
+        </div>
+    </article>
+</div>
+
+### Async / await
+####  Toda la refencia aca descrita en adelante se tomo de Developer Mozilla [Ir a Developer Mozilla](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Statements/async_function).
+<div align="justify">
+    <article lang="es"><h1>Función async</h1>
+        <div>
+            <div id="sect1">
+                <div id="sect2"></div>
+                <p>La declaración de función&nbsp;<code><strong>async</strong></code>&nbsp;define&nbsp;una&nbsp;<em>función asíncrona</em>, la cual devuelve un objeto <a href="https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/AsyncFunction"><code>AsyncFunction</code></a>.</p>
+                <div id="sect3">
+                    <p>Es posible definir también funciones asíncronas a través de una&nbsp;<a href="https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Operators/async_function">expresión de función async</a>.</p>
+                </div>
+            </div>
+            <div id="sect4"></div>
+            <p>The source for this interactive demo is stored in a GitHub repository. If you'd like to contribute to the interactive demo project, please clone <a href="https://github.com/mdn/interactive-examples" rel="noopener">https://github.com/mdn/interactive-examples</a> and send us a pull request.</p>
+        </div>
+        <h2 id="sintaxis">
+            <a href="#sintaxis" title="Permalink to Sintaxis">Sintaxis</a>
+        </h2>
+        <div>
+        <pre>async function <em>name</em>([<em>param</em>[, <em>param</em>[, ... <em>param</em>]]]) {
+   <em>statements</em>
+}
+</pre>
+        </div>
+        <h3 id="parámetros">
+            <a href="#parámetros" title="Permalink to Parámetros">Parámetros</a>
+        </h3>
+        <div>
+            <dl>
+                <dt id="name"><code>name</code></dt>
+                <dd>El nombre de la función.</dd>
+            </dl>
+            <dl>
+                <dt id="param"><code>param</code></dt>
+                <dd>El nombre de un argumento que se debe pasar a la función.</dd>
+            </dl>
+            <dl>
+                <dt id="statements"><code>statements</code></dt>
+                <dd>Las declaraciones que conforman el cuerpo de la función.</dd>
+            </dl>
+        </div>
+        <h3 id="valor_de_retorno">
+            <a href="#valor_de_retorno" title="Permalink to Valor de retorno">Valor de retorno</a>
+        </h3>
+        <div>
+            <p>Un objeto <a href="https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/AsyncFunction"><code>AsyncFunction</code></a>, que representa una función asíncrona que ejecuta el código contenido dentro de la función.</p>
+        </div>
+        <h2 id="descripción">
+            <a href="#descripción" title="Permalink to Descripción">Descripción</a>
+        </h2>
+        <div>
+            <p>Cuando se llama a una función&nbsp;<code>async</code>, esta devuelve un elemento&nbsp;<a href="https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Promise"><code>Promise</code></a>. Cuando la función&nbsp;<code>async</code> devuelve un valor,&nbsp;<code>Promise</code> se resolverá con el valor devuelto.&nbsp;Si la función&nbsp;<code>async</code> genera una excepción o algún valor, <code>Promise</code> se rechazará con el valor generado.</p>
+            <p>Una función&nbsp;<code>async</code>&nbsp;puede contener una expresión <a href="https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Operators/await"><code>await</code></a>, la cual pausa la ejecución de la función asíncrona y espera la resolución de la&nbsp;<code>Promise</code>&nbsp;pasada y, a continuación, reanuda la ejecución de la función&nbsp;<code>async</code> y devuelve el valor resuelto.</p>
+            <div id="sect5">
+                <p>La finalidad de las funciones&nbsp;<code>async</code>/<code>await</code> es simplificar el comportamiento del uso síncrono de promesas y realizar algún comportamiento específico en un grupo de&nbsp;<code>Promises</code>. Del mismo modo que las&nbsp;<code>Promises</code>&nbsp;son semejantes a las devoluciones de llamadas estructuradas, <code>async</code>/<code>await</code>&nbsp;se asemejan a una combinación de generadores y promesas.</p>
+            </div>
+        </div>
+        <h2 id="ejemplos">
+            <a href="#ejemplos" title="Permalink to Ejemplos">Ejemplos</a>
+        </h2>
+        <div></div>
+        <h3 id="ejemplo_sencillo">
+            <a href="#ejemplo_sencillo" title="Permalink to Ejemplo sencillo">Ejemplo sencillo</a>
+        </h3>
+        <div>
+            <div>
+            <pre><code><span>function</span> <span>resolveAfter2Seconds</span><span>(</span><span>x</span><span>)</span> <span>{</span>
+  <span>return</span> <span>new</span> <span>Promise</span><span>(</span><span>resolve</span> <span>=&gt;</span> <span>{</span>
+    <span>setTimeout</span><span>(</span><span>(</span><span>)</span> <span>=&gt;</span> <span>{</span>
+      <span>resolve</span><span>(</span>x<span>)</span><span>;</span>
+    <span>}</span><span>,</span> <span>2000</span><span>)</span><span>;</span>
+  <span>}</span><span>)</span><span>;</span>
+<span>}</span>
+<span></span>
+<span>async</span> <span>function</span> <span>add1</span><span>(</span><span>x</span><span>)</span> <span>{</span>
+  <span>const</span> a <span>=</span> <span>await</span> <span>resolveAfter2Seconds</span><span>(</span><span>20</span><span>)</span><span>;</span>
+  <span>const</span> b <span>=</span> <span>await</span> <span>resolveAfter2Seconds</span><span>(</span><span>30</span><span>)</span><span>;</span>
+  <span>return</span> x <span>+</span> a <span>+</span> b<span>;</span>
+<span>}</span>
+<span></span>
+<span>add1</span><span>(</span><span>10</span><span>)</span><span>.</span><span>then</span><span>(</span><span>v</span> <span>=&gt;</span> <span>{</span>
+  console<span>.</span><span>log</span><span>(</span>v<span>)</span><span>;</span>  <span>>// prints 60 after 4 seconds.</span>
+<span>}</span><span>)</span><span>;</span>
+<span></span>
+<span>async</span> <span>function</span> <span>add2</span><span>(</span><span>x</span><span>)</span> <span>{</span>
+  <span>const</span> p_a <span>=</span> <span>resolveAfter2Seconds</span><span>(</span><span>20</span><span>)</span><span>;</span>
+  <span>const</span> p_b <span>=</span> <span>resolveAfter2Seconds</span><span>(</span><span>30</span><span>)</span><span>;</span>
+  <span>return</span> x <span>+</span> <span>await</span> p_a <span>+</span> <span>await</span> p_b<span>;</span>
+<span>}</span>
+<span></span>
+<span>add2</span><span>(</span><span>10</span><span>)</span><span>.</span><span>then</span><span>(</span><span>v</span> <span>=&gt;</span> <span>{</span>
+  console<span>.</span><span>log</span><span>(</span>v<span>)</span><span>;</span>  <span>>// prints 60 after 2 seconds.</span>
+<span>}</span><span>)</span><span>;</span>
+</code></pre>
+            </div>
+            <div id="sect6">
+                <p><strong>No se deben confundir&nbsp;await y Promise.all:</strong> En <code>add1</code>, la ejecución se suspende durante dos segundos correspondientes al primer operador&nbsp;<code>await</code>, y luego durante otros dos segundos correspondientes al segundo&nbsp;<code>await</code>. El segundo temporizador no se crea hasta que el primero no se haya disparado ya. En <code>add2</code>, ambos temporizadores se crean y, acto seguido, ambos reciben&nbsp;<code>await</code>. Esto provoca la resolución en dos segundos y no cuatro, ya que los temporizadores se ejecutaron de manera simultánea. Sin embargo, ambas llamadas&nbsp;<code>await</code>&nbsp;aún pueden ejecutarse en series, no en paralelo: esto&nbsp;<strong>no</strong>&nbsp;constituye ninguna aplicación automática de&nbsp;<code>Promise.all</code>. Si se desea aplicar&nbsp;<code>await</code>&nbsp;a dos o más promesas en paralelo, es preciso utilizar&nbsp;<code>Promise.all</code>.</p>
+            </div>
+        </div>
+        <h3 id="reescritura_de_una_cadena_de_promesas_con_una_función_async">
+            <a href="#reescritura_de_una_cadena_de_promesas_con_una_función_async" title="Permalink to Reescritura de una cadena de promesas con una función&nbsp;async">Reescritura de una cadena de promesas con una función&nbsp;<code>async</code></a>
+        </h3>
+        <div>
+            <p>Una API que devuelva una&nbsp;<a href="https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Promise"><code>Promise</code></a> tendrá como resultado una cadena de promesas, y dividirá la función en muchas partes.&nbsp;Estudie este código:</p>
+            <div>
+            <pre><code><span>function</span> <span>getProcessedData</span><span>(</span><span>url</span><span>)</span> <span>{</span>
+  <span>return</span> <span>downloadData</span><span>(</span>url<span>)</span> <span>>// returns a promise</span>
+    <span>.</span><span>catch</span><span>(</span><span>e</span> <span>=&gt;</span> <span>{</span>
+      <span>return</span> <span>downloadFallbackData</span><span>(</span>url<span>)</span>  <span>>// returns a promise</span>
+    <span>}</span><span>)</span>
+    <span>.</span><span>then</span><span>(</span><span>v</span> <span>=&gt;</span> <span>{</span>
+      <span>return</span> <span>processDataInWorker</span><span>(</span>v<span>)</span><span>;</span> <span>>// returns a promise</span>
+    <span>}</span><span>)</span><span>;</span>
+<span>}</span>
+</code></pre>
+            </div>
+            <p>Es posible reescribirlo utilizando un solo operador&nbsp;<code>async</code> de esta manera:</p>
+            <div>
+            <pre><code><span>async</span> <span>function</span> <span>getProcessedData</span><span>(</span><span>url</span><span>)</span> <span>{</span>
+  <span>let</span> v<span>;</span>
+  <span>try</span> <span>{</span>
+    v <span>=</span> <span>await</span> <span>downloadData</span><span>(</span>url<span>)</span><span>;</span>
+  <span>}</span> <span>catch</span><span>(</span>e<span>)</span> <span>{</span>
+    v <span>=</span> <span>await</span> <span>downloadFallbackData</span><span>(</span>url<span>)</span><span>;</span>
+  <span>}</span>
+  <span>return</span> <span>processDataInWorker</span><span>(</span>v<span>)</span><span>;</span>
+<span>}</span>
+</code></pre>
+            </div>
+            <p>Observe que, en el ejemplo anterior, no hay ninguna instrucción&nbsp;<code>await</code> dentro de la instrucción&nbsp;<code>return</code>, porque el valor de retorno de una&nbsp;<code>async function</code>&nbsp;queda implícitamente dentro de un <a href="https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Promise/resolve"><code>Promise.resolve</code></a>.</p>
+        </div>
+        <h2 id="especificaciones">
+            <a href="#especificaciones" title="Permalink to Especificaciones">Especificaciones</a>
+        </h2>
+        <div>
+            <table>
+                <thead>
+                    <tr>
+                        <th scope="col">Especificación</th>
+                        <th scope="col">Estado</th>
+                        <th scope="col">Comentario</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><a href="https://tc39.es/ecma262/#sec-async-function-definitions" hreflang="en" lang="en"  rel="noopener">ECMAScript (ECMA-262)<br><small lang="es">La definición de 'Función async' en esta especificación.</small></a></td>
+                        <td><span>Living Standard</span></td>
+                        <td>Definición inicial en ES2017.</td>
+                        </tr>
+                        <tr>
+                        <td><a href="https://www.ecma-international.org/ecma-262/8.0/#sec-async-function-definitions" hreflang="en" lang="en"  rel="noopener">ECMAScript 2017 (ECMA-262)<br><small lang="es">La definición de 'Función async' en esta especificación.</small></a></td>
+                        <td><span>Standard</span></td>
+                        <td>&nbsp;</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <h2 id="compatibilidad_entre_navegadores">
+            <a href="#compatibilidad_entre_navegadores" title="Permalink to Compatibilidad entre navegadores">Compatibilidad entre navegadores</a>
+        </h2>
+        <a href="https://github.com/mdn/browser-compat-data/issues/new?body=%3C%21--+Tips%3A+where+applicable%2C+specify+browser+name%2C+browser+version%2C+and+mobile+operating+system+version+--%3E%0A%0A%23%23%23%23+What+information+was+incorrect%2C+unhelpful%2C+or+incomplete%3F%0A%0A%23%23%23%23+What+did+you+expect+to+see%3F%0A%0A%23%23%23%23+Did+you+test+this%3F+If+so%2C+how%3F%0A%0A%0A%3C%21--+Do+not+make+changes+below+this+line+--%3E%0A%3Cdetails%3E%0A%3Csummary%3EMDN+page+report+details%3C%2Fsummary%3E%0A%0A*+Query%3A+%60javascript.statements.async_function%60%0A*+MDN+URL%3A+https%3A%2F%2Fdeveloper.mozilla.org%2Fes%2Fdocs%2FWeb%2FJavaScript%2FReference%2FStatements%2Fasync_function%0A*+Report+started%3A+2022-02-21T20%3A08%3A00.958Z%0A%0A%3C%2Fdetails%3E&amp;title=javascript.statements.async_function+-+%3CPUT+TITLE+HERE%3E" target="_blank" rel="noopener noreferrer" title="Report an issue with this compatibility data">Report problems with this compatibility data on GitHub</a>
+        <table>
+            <thead>
+                <tr>
+                    <td></td>
+                    <th colspan="6" title="desktop"><span>desktop</span></th>
+                    <th colspan="6" title="mobile"><span>mobile</span></th>
+                    <th colspan="2" title="server"><span>server</span></th>
+                </tr>
+                <tr>
+                    <td></td>
+                    <th><span>Chrome</span></th>
+                    <th><span>Edge</span></th>
+                    <th><span>Firefox</span></th>
+                    <th><span>Internet Explorer</span></th>
+                    <th><span>Opera</span></th>
+                    <th><span>Safari</span></th>
+                    <th><span>WebView Android</span></th>
+                    <th><span>Chrome Android</span></th>
+                    <th><span>Firefox for Android</span></th>
+                    <th><span>Opera Android</span></th>
+                    <th><span>Safari on iOS</span></th>
+                    <th><span>Samsung Internet</span></th>
+                    <th><span>Deno</span></th>
+                    <th><span>Node.js</span></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row"><div><span><code>async function</code> statement</span></div></th>
+                    <td aria-expanded="false" title="Released 2016-12-01"><span>Chrome</span><abbr title="Full support"><span>Full support</span></abbr><span>55</span><div></div></td>
+                    <td aria-expanded="false" title="Released 2017-04-05"><span>Edge</span><abbr title="Full support"><span>Full support</span></abbr><span>15</span><div></div></td>
+                    <td aria-expanded="false" title="Released 2017-03-07"><span>Firefox</span><abbr title="Full support"><span>Full support</span></abbr><span>52</span><div></div></td>
+                    <td aria-expanded="false"><span>Internet Explorer</span><abbr title="No support"><span>No support</span></abbr><span>No</span><div></div></td>
+                    <td aria-expanded="false" title="Released 2016-12-13"><span>Opera</span><abbr title="Full support"><span>Full support</span></abbr><span>42</span><div></div></td>
+                    <td aria-expanded="false" title="Released 2017-03-27"><span >Safari</span><abbr title="Full support"><span>Full support</span></abbr><span>10.1</span><div></div></td>
+                    <td aria-expanded="false" title="Released 2016-12-06"><span >WebView Android</span><abbr title="Full support"><span>Full support</span></abbr><span>55</span><div></div></td>
+                    <td aria-expanded="false" title="Released 2016-12-06"><span>Chrome Android</span><abbr title="Full support"><span>Full support</span></abbr><span>55</span><div></div></td>
+                    <td aria-expanded="false" title="Released 2017-03-07"><span>Firefox for Android</span><abbr title="Full support"><span>Full support</span></abbr><span>52</span><div></div></td>
+                    <td aria-expanded="false" title="Released 2017-01-21"><span >Opera Android</span><abbr  title="Full support"><span>Full support</span></abbr><span>42</span><div></div></td>
+                    <td aria-expanded="false" title="Released 2017-03-27"><span >Safari on iOS</span><abbr title="Full support"><span>Full support</span></abbr><span>10.3</span><div></div></td>
+                    <td aria-expanded="false" title="Released 2017-08-23"><span >Samsung Internet</span><abbr title="Full support"><span>Full support</span></abbr><span>6.0</span><div></div></td>
+                    <td aria-expanded="false" title="Released 2020-05-13"><span>Deno</span><abbr title="Full support"><span>Full support</span></abbr><span>1.0</span><div></div></td>
+                    <td aria-expanded="false" tabindex="0" title="Released 2017-02-21"><span >Node.js</span><abbr title="Full support"><span>Full support</span></abbr><span>7.6.0</span><div></div><button type="button" title="Open implementation notes" ><span>Open</span><i aria-hidden="true"></i></button></td>
+                </tr>
+            </tbody>
+        </table>
+        <section>
+            <h3 id="Legend">Legend</h3>
+            <dl>
+                <div>
+                    <dt><span><abbr title="Full support"><span>Full support</span></abbr></span></dt>
+                    <dd>Full support</dd>
+                </div>
+                <div>
+                    <dt><span><abbr title="No support"><span>No support</span></abbr></span></dt>
+                    <dd>No support</dd>
+                </div>
+                <div>
+                    <dt><abbr title="User must explicitly enable this feature."></abbr></dt>
+                    <dd>User must explicitly enable this feature.</dd>
+                </div>
+            </dl>
+        </section>
+        <div>
+            <div id="sect7">
+                <p></p>
+                <p></p>
+            </div>
+        </div>
+        <h2 id="véase_también">
+            <a href="#véase_también" title="Permalink to Véase también">Véase también</a>
+        </h2>
+        <div>
+            <ul>
+                <li><a href="https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Operators/async_function"><code>Expresión de función async</code></a></li>
+                <li>Objeto <a href="https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/AsyncFunction"><code>AsyncFunction</code></a></li>
+                <li><a href="https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Operators/await"><code>await</code></a></li>
+                <li><a href="https://innolitics.com/10x/javascript-decorators-for-promise-returning-functions/" rel="noopener">«Decorar funciones&nbsp;async de JavaScript» en innolitics.com</a>&nbsp;(en inglés)</li>
+            </ul>
+        </div>
+    </article>
+</div>
+
+### Hoisting
+####  Toda la refencia aca descrita en adelante se tomo de Developer Mozilla [Ir a Developer Mozilla](https://developer.mozilla.org/es/docs/Glossary/Hoisting).
+<div align="justify">
+    <article lang="es">
+        <h1>Hoisting</h1>
+        <div>
+            <p>Hoisting es un término que&nbsp;<em>no</em>&nbsp;encontrará&nbsp;utilizado en ninguna especificación previa a&nbsp;<a href="https://www.ecma-international.org/ecma-262/6.0/index.html"  rel="noopener">ECMAScript® 2015 Language Specification</a>. El concepto de Hoisting fue pensado como una manera general de referirse a cómo funcionan los contextos de ejecución en JavaScript (específicamente las fases de creación y ejecución). Sin embargo, el concepto puede ser un poco confuso al principio.</p>
+            <p>Conceptualmente,&nbsp;por ejemplo, una estricta definición de&nbsp;hoisting sugiere que&nbsp;las declaraciones de variables y funciones son físicamente movidas al comienzo del código, pero esto no es lo que ocurre en realidad. Lo que sucede es que las declaraciones de variables y funciones son <strong>asignadas en memoria</strong> durante la fase de <u>compilación,</u>&nbsp;pero quedan exactamente en dónde las has escrito en el código.</p>
+        </div>
+        <h2 id="aprenda_más">
+            <a href="#aprenda_más" title="Permalink to Aprenda más">Aprenda más</a>
+        </h2>
+        <div></div>
+        <h3 id="ejemplo_técnico">
+            <a href="#ejemplo_técnico" title="Permalink to Ejemplo técnico">Ejemplo técnico</a>
+        </h3>
+        <div>
+            <p>Una de las ventajas en JavaScript de colocar (<strong>ponerlas en memoria</strong>) las declaraciones de funciones antes de ejecutar cualquier otro segmento de código es que permite utilizar una función antes de declararla en el código. Por ejemplo:&nbsp;</p>
+            <div>
+            <pre><code><span>function</span> <span>nombreDelGato</span><span>(</span><span>nombre</span><span>)</span> <span>{</span>
+  console<span>.</span><span>log</span><span>(</span><span>"El nombre de mi gato es "</span> <span>+</span> nombre<span>)</span><span>;</span>
+<span>}</span>
+<span></span>
+<span>nombreDelGato</span><span>(</span><span>"Maurizzio"</span><span>)</span><span>;</span>
+<span>/*
+El resultado del código es: "El nombre de mi gato es Maurizzio"
+*/</span>
+</code></pre>
+            </div>
+            <p>El código escrito arriba está escrito de la manera que sería esperada para que funcione. Ahora, veamos qué sucede cuando llamamos a la función antes de escribirla:</p>
+            <div>
+            <pre><code><span>nombreDelGato</span><span>(</span><span>"Dumas"</span><span>)</span><span>;</span>
+<span></span>
+<span>function</span> <span>nombreDelGato</span><span>(</span><span>nombre</span><span>)</span> <span>{</span>
+  console<span>.</span><span>log</span><span>(</span><span>"El nombre de mi gato es "</span> <span>+</span> nombre<span>)</span><span>;</span>
+<span>}</span>
+<span>/*
+El resultado del código es: "El nombre de mi gato es Dumas"
+*/</span>
+</code></pre>
+            </div>
+            <p>Como se puede observar, aunque&nbsp;primero llamamos a la función en el código, antes de que sea escrita, el código aún funciona. Esto sucede por la manera en la que el contexto de ejecución trabaja en JavaScript.&nbsp;</p>
+            <p>Hoisting se lleva también bien con otros tipos&nbsp;de datos y variables.&nbsp;Observemos&nbsp;el siguiente ejemplo:</p></div><h3 id="ejemplo_técnico_2"><a href="#ejemplo_técnico_2" title="Permalink to Ejemplo técnico">Ejemplo técnico</a></h3><div><div><pre><code><span>var</span> x <span>=</span> <span>5</span><span>;</span>
+<span></span>
+<span>(</span><span>function</span> <span>(</span><span>)</span> <span>{</span>
+    console<span>.</span><span>log</span><span>(</span><span>"x:"</span><span>,</span> x<span>)</span><span>;</span> <span>// no obtenemos '5' sino 'undefined'</span>
+    <span>var</span> x <span>=</span> <span>10</span><span>;</span>
+    console<span>.</span><span>log</span><span>(</span><span>"x:"</span><span>,</span> x<span>)</span><span>;</span> <span>// 10</span>
+<span>}</span><span>(</span><span>)</span><span>)</span><span>;</span>
+</code></pre>
+            </div>
+            <p>¿No hemos obtenido lo esperado?, como&nbsp;la declaración de variables se procesa antes de ejecutar cualquier código, declarar una variable en cualquier parte del código es igual a declararla al inicio del mismo. Lo que ocurre aquí y para que se entienda, es que hipotéticamente la variable se <strong>eleva</strong> y pasa a declararse <strong>al comienzo de su contexto</strong>, en este caso la función que la contiene.</p>
+            <p>El&nbsp;ejemplo anterior se entiende implícitamente como:</p>
+            <div>
+            <pre><code><span>var</span> x <span>=</span> <span>5</span><span>;</span>
+<span></span>
+<span>(</span><span>function</span> <span>(</span><span>)</span> <span>{</span>
+    <span>var</span> x<span>;</span> <span>// Se elevo la declaración</span>
+    console<span>.</span><span>log</span><span>(</span><span>"x:"</span><span>,</span> x<span>)</span><span>;</span> <span>// undefined</span>
+    x <span>=</span> <span>10</span><span>;</span>
+    console<span>.</span><span>log</span><span>(</span><span>"x:"</span><span>,</span> x<span>)</span><span>;</span> <span>// 10</span>
+<span>}</span><span>(</span><span>)</span><span>)</span><span>;</span>
+</code></pre>
+            </div>
+            <p>JavaScript sólo utiliza el hoisting&nbsp;en <strong>declaraciones</strong>, no&nbsp;inicializaciones. Si está utilizando una variable que <strong>es declarada e inicializada después &nbsp;</strong>(está después en el código)&nbsp;<strong>de usarla</strong>, el valor será <code>undefined</code>. El siguiente ejemplo demuestra ese comportamiento:</p>
+            <div>
+            <pre><code><span>var</span> x <span>=</span> <span>1</span><span>;</span> <span>// Inicializa x</span>
+console<span>.</span><span>log</span><span>(</span>x <span>+</span> <span>" "</span> <span>+</span> y<span>)</span><span>;</span> <span>// '1 undefined'</span>
+<span>var</span> y <span>=</span> <span>2</span><span>;</span> <span>// Inicializa y</span>
+</code></pre>
+            </div>
+            <p>Como se puede apreciar&nbsp;<strong>la elevación afecta la declaración</strong>&nbsp;de variables, pero&nbsp;<strong>no su inicialización</strong>. El valor será asignado&nbsp;exactamente cuando la sentencia de asignación sea alcanzada.</p>
+            <p>El&nbsp;ejemplo anterior se entiende implícitamente como:</p>
+            <div>
+            <pre><code><span>var</span> x <span>=</span> <span>1</span><span>;</span> <span>// Inicializa x</span>
+<span>var</span> y<span>;</span><span>// Se elevo la declaración</span>
+console<span>.</span><span>log</span><span>(</span>x <span>+</span> <span>" "</span> <span>+</span> y<span>)</span><span>;</span> <span>// '1 undefined'</span>
+y <span>=</span> <span>2</span><span>;</span> <span>// Inicializa y</span>
+</code></pre>
+            </div>
+        </div>
+        <h3 id="referencia_técnica">
+            <a href="#referencia_técnica" title="Permalink to Referencia técnica">Referencia técnica</a>
+        </h3>
+        <div>
+            <ul>
+                <li><a href="https://www.udemy.com/understand-javascript/"  rel="noopener">JavaScript: Understanding the Weird Parts</a> - Udemy.com Course</li>
+                <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/var">var statement</a> - MDN</li>
+                <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/function">function statement</a> - MDN</li>
+            </ul>
+        </div>
+    </article>
+</div>
+
+### DOM
+####  Toda la refencia aca descrita en adelante se tomo de Developer Mozilla [Ir a Developer Mozilla](https://developer.mozilla.org/es/docs/Web/API/Document_Object_Model/Introduction).
+
+<div align="justify">
+    <article lang="es">
+        <h1>Introducción</h1>
+        <div>
+            <p>&nbsp;</p>
+            <p>Ésta sección da una breve introducción conceptual del <a href="https://developer.mozilla.org/en/DOM">DOM</a>: qué es, cómo proporciona la estructura para los documentos <a href="https://developer.mozilla.org/en/HTML">HTML</a> y <a href="https://developer.mozilla.org/en/XML">XML</a>, cómo se accede a él, y cómo esta <a href="https://es.wikipedia.org/wiki/Interfaz_de_programaci%C3%B3n_de_aplicaciones" rel="noopener">"API"</a> presenta la información de referencia y ejemplos.</p>
+        </div>
+        <h2 id=".c2.bfqu.c3.a9_es_el_dom.3f">
+            <a href="#.c2.bfqu.c3.a9_es_el_dom.3f" title="Permalink to ¿Qué es el DOM?">¿Qué es el DOM?</a>
+        </h2>
+        <div>
+            <p>El modelo de objeto de documento (DOM) es una interfaz de programación para los documentos HTML y XML. Facilita una representación estructurada del documento y define de qué manera los programas pueden acceder, al fin de modificar, tanto su estructura, estilo y contenido. El DOM da una representación del documento como un grupo de nodos y objetos estructurados que tienen propiedades y métodos. Esencialmente, conecta las páginas web a scripts o lenguajes de programación.</p>
+            <p>Una página web es un documento. Éste documento puede exhibirse en la ventana de un navegador o también como código fuente HTML. Pero, en los dos casos, es el mismo documento. El modelo de objeto de documento (DOM) proporciona otras formas de presentar, guardar y manipular este mismo documento. El DOM es una representación completamente orientada al objeto de la página web y puede ser modificado con un lenguaje de script como JavaScript.</p>
+            <p>El <a href="https://www.w3.org/DOM/" rel="noopener">W3C DOM</a> estándar forma la base del funcionamiento del DOM en muchos navegadores modernos. Varios navegadores ofrecen extensiones más allá del estándar W3C, hay que ir con extremo cuidado al utilizarlas en la web, ya que los documentos pueden ser consultados por navegadores que tienen DOMs diferentes.</p>
+            <p>Por ejemplo, el DOM de W3C especifica que el método <code>getElementsByTagName</code> en el código de abajo debe devolver una lista de todos los elementos <code>&lt;p&gt;</code> del documento:</p>
+            <div>
+            <pre><code>paragraphs <span>=</span> document<span>.</span><span>getElementsByTagName</span> <span>(</span><span>"p"</span><span>)</span><span>;</span>
+<span>// paragraphs[0] es el primer elemento &lt;p&gt;</span>
+<span>// paragraphs[1] es el segundo elemento &lt;p&gt;, etc.</span>
+<span>alert</span> <span>(</span>paragraphs <span>[</span><span>0</span><span>]</span><span>.</span>nodeName<span>)</span><span>;</span>
+</code></pre>
+            </div>
+            <p>Todas las propiedades, métodos y eventos disponibles para la manipulación y la creación de páginas web está organizado dentro de objetos. Un ejemplo: el objeto <code>document</code> representa al documento mismo, el objeto <code>table</code> hace funcionar la interfaz especial <code>HTMLTableElement</code> del DOM para acceder a tablas HTML, y así sucesivamente. Ésta documentación procura una relación objeto-por-objeto del DOM que funciona con los navegadores basados en Gecko.</p>
+        </div>
+        <h2 id="dom_y_javascript">
+            <a href="#dom_y_javascript" title="Permalink to DOM y JavaScript">DOM y JavaScript</a>
+        </h2>
+        <div>
+            <p>El ejemplo corto de abajo, como casi todos los ejemplos de esta referencia, es <a href="https://developer.mozilla.org/en/JavaScript">JavaScript</a>. Es decir, es <em>escrito</em> en JavaScript pero <em>utiliza</em> el DOM para acceder al documento y a sus elementos. El DOM no es un lenguaje de programación pero sin él, el lenguaje JavaScript no tiene ningún modelo o noción de las páginas web, de la páginas XML ni de los elementos con los cuales es usualmente relacionado. Cada elemento -"el documento íntegro, el título, las tablas dentro del documento, los títulos de las tablas, el texto dentro de las celdas de las tablas"- es parte del modelo de objeto del documento para cada documento, así se puede acceder y manipularlos utilizando el DOM y un lenguaje de escritura, como JavaScript.</p>
+            <p>En el comienzo, JavaScript y el DOM estaban herméticamente enlazados, pero después se desarrollaron como entidades separadas. El contenido de la página es almacenado en DOM y el acceso y la manipulación se hace vía JavaScript, podría representarse aproximadamente así:</p>
+            <p>API(web o página XML) = DOM + JS(lenguaje de script)</p>
+            <p>El DOM fue diseñado para ser independiente de cualquier lenguaje de programación particular, hace que la presentación estructural del documento sea disponible desde un simple y consistente API. Aunque en este manual nos centramos exclusivamente en JavaScript, la directrices del DOM pueden construirse para cualquier lenguaje, así lo demuestra el siguiente ejemplo de Python:</p>
+            <div>
+            <pre><code><span># Ejemplo DOM de Python</span>
+<span>import</span> xml<span>.</span>dom<span>.</span>minidom <span>as</span> m
+doc <span>=</span> m<span>.</span>parse<span>(</span><span>"C:\\Projects\\Py\\chap1.xml"</span><span>)</span><span>;</span>
+doc<span>.</span>nodeName <span># Propiedad DOM del objeto document;</span>
+p_list <span>=</span> doc<span>.</span>getElementsByTagName<span>(</span><span>"para"</span><span>)</span><span>;</span></code></pre>
+            </div>
+        </div>
+        <h2 id=".c2.bfc.c3.b3mo_se_accede_al_dom.3f">
+            <a href="#.c2.bfc.c3.b3mo_se_accede_al_dom.3f" title="Permalink to ¿Cómo se accede al DOM?">¿Cómo se accede al DOM?</a>
+        </h2>
+        <div>
+            <p>No se tiene que hacer nada especial para empezar a utilizar el DOM. Los diferentes navegadores tienen directrices DOM distintas, y éstas directrices tienen diversos grados de conformidad al actual estándar DOM (un tema que se intenta evitar en este manual), pero todos los navegadores web usan el modelo de objeto de documento para hacer accesibles las páginas web al script.</p>
+            <p>Cuando se crea un script –esté en un elemento <code>&lt;SCRIPT&gt;</code> o incluido en una página web por la instrucción de cargar un script– inmediatamente está disponible para usarlo con el API, accediendo así a los elementos <code><a href="https://developer.mozilla.org/en/DOM/document">document</a></code> o <code><a href="https://developer.mozilla.org/en/DOM/window">window</a></code>, para manipular el documento mismo o sus diferentes partes, las cuales son los varios elementos de una página web. La programación DOM hace algo tan simple como lo siguiente, lo cual abre un mensaje de alerta usando la función <code><a href="https://developer.mozilla.org/en/DOM/window.alert">alert()</a></code> desde el objeto <code><a href="https://developer.mozilla.org/en/DOM/window">window</a></code>, o permite métodos DOM más sofisticados para crear realmente un nuevo contenido, como en el largo ejemplo de más abajo.</p>
+            <div>
+            <pre><code><span><span><span>&lt;</span>body</span> <span><span>onload</span><span><span>=</span><span>"</span><span>window<span>.</span><span>alert</span><span>(</span><span>'Bienvenido a mi página!'</span><span>)</span><span>;</span></span><span>"</span></span></span><span>&gt;</span></span>
+</code></pre>
+            </div>
+            <p>Aparte del elemento <code>&lt;script&gt;</code> en el cual JavaScript es definido, el ejemplo siguiente muestra la función a ejecutar cuando el documento se está cargando (y que el DOM completo es disponible para su uso). Esta función crea un nuevo elemento <code>H1</code>, le pone texto y después lo agrega al árbol del documento:</p>
+            <div>
+            <pre><code><span><span><span>&lt;</span>html</span><span>&gt;</span></span>
+  <span><span><span>&lt;</span>head</span><span>&gt;</span></span>
+    <span><span><span>&lt;</span>script</span><span>&gt;</span></span><span><span>
+       <span>// ejecuta esta función cuando se cargue el documento</span>
+       window<span>.</span><span>onload</span> <span>=</span> <span>function</span><span>(</span><span>)</span> <span>{</span>
+<span></span>
+         <span>// crea dinámicamente un par de elementos HTML en una página vacia</span>
+         <span>var</span> heading <span>=</span> document<span>.</span><span>createElement</span><span>(</span><span>"h1"</span><span>)</span><span>;</span>
+         <span>var</span> heading_text <span>=</span> document<span>.</span><span>createTextNode</span><span>(</span><span>"el texto que desee"</span><span>)</span><span>;</span>
+         heading<span>.</span><span>appendChild</span><span>(</span>heading_text<span>)</span><span>;</span>
+         document<span>.</span>body<span>.</span><span>appendChild</span><span>(</span>heading<span>)</span><span>;</span>
+      <span>}</span>
+    </span></span><span><span><span>&lt;/</span>script</span><span>&gt;</span></span>
+  <span><span><span>&lt;/</span>head</span><span>&gt;</span></span>
+  <span><span><span>&lt;</span>body</span><span>&gt;</span></span>
+  <span><span><span>&lt;/</span>body</span><span>&gt;</span></span>
+<span><span><span>&lt;/</span>html</span><span>&gt;</span></span></code></pre>
+            </div>
+        </div>
+        <h2 id="tipos_de_datos_importantes">
+            <a href="#tipos_de_datos_importantes" title="Permalink to Tipos de datos importantes">Tipos de datos importantes</a>
+        </h2>
+        <div>
+            <p>Esta parte intenta describir, de la manera más simple posible, los diferentes objetos y tipos. Pero hay que conocer una cantidad de tipos de datos diferentes que son utilizados por el API. Para simplificarlo, los ejemplos de sintaxis en esta API se refieren a nodos como <code>elements</code>, a una lista de nodos como <code>nodeLists</code> (o simples <code>elementos</code>) y a nodos de <code>atributo</code> como <code>attributes</code>.</p>
+            <p>La siguiente tabla describe brevemente estos tipos de datos.</p>
+            <table>
+                <tbody>
+                    <tr>
+                        <td><code>document</code></td>
+                        <td>Cuando un miembro devuelve un objeto del tipo <code>document</code> (por ejemplo, la propiedad <strong>ownerDocument</strong> de un elemento devuelve el documento "<code>document</code>" al cual pertenece), este objeto es la raíz del objeto documento en sí mismo. El capítulo <a href="https://developer.mozilla.org/en/DOM/documento">La referencia al documento (<code>document</code>) de DOM</a> lo explica con más detalles.</td>
+                    </tr>
+                    <tr>
+                        <td><code>element</code></td>
+                        <td><code>element</code> se refiere a un elemento o a un nodo de tipo de elemento "<code>element</code>" devuelto por un miembro del API de DOM. Dicho de otra manera, por ejemplo, el método <code>document.createElement()</code> devuelve un objeto referido a un <code>nodo</code>, lo que significa que este método devuelve el elemento que acaba de ser creado en el DOM. Los objetos <code>element</code> ponen en funcionamiento a la interfaz <code>Element</code> del DOM y también a la interfaz de nodo "<code>Node</code>" más básica, las cuales son incluidas en esta referencia.</td>
+                    </tr>
+                    <tr>
+                        <td><code>nodeList</code></td>
+                        <td>Una "<code>nodeList</code>" es una serie de elementos, parecido a lo que devuelve el método <code>document.getElementsByTagName()</code>. Se accede a los items de la <code>nodeList</code> de cualquiera de las siguientes dos formas:
+                            <ul>
+                            <li>list.item (1)</li>
+                            <li>lista [1]</li>
+                            </ul>
+                        <p>Ambas maneras son equivalentes. En la primera, <strong>item()</strong> es el método del objeto <code>nodeList</code>. En la última se utiliza la típica sintaxis de acceso a listas para llegar al segundo ítem de la lista.</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><code>attribute</code></td>
+                        <td>Cuando un atributo ("<code>attribute</code>") es devuelto por un miembro (por ej., por el método <strong>createAttribute()</strong>), es una referencia a un objeto que expone una interfaz particular (aunque limitada) a los atributos. Los atributos son nodos en el DOM igual que los elementos, pero no suelen usarse así.</td>
+                    </tr>
+                    <tr>
+                        <td><code>NamedNodeMap</code></td>
+                        <td>Un <code>namedNodeMap</code> es una serie, pero los ítems son accesibles tanto por el nombre o por un índice, este último caso es meramente una conveniencia para enumerar ya que no están en ningún orden en particular en la lista. Un <code>NamedNodeMap</code> es un método de ítem() por esa razón, y permite poner o quitar ítems en un <code>NamedNodeMap</code></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <h2 id="interfaces_del_dom">
+            <a href="#interfaces_del_dom" title="Permalink to Interfaces del DOM">Interfaces del DOM</a>
+        </h2>
+        <div>
+            <p>Uno de los propósitos de esta guía es minimizar el hablar de interfaces abstractas, heredadas y otros detalles de funcionamiento. Más bien, concentrarse sobre los objetos en el DOM y sobre las actuales <em>cosas</em> que se pueden usar para manipular la jerarquía de DOM. Desde el punto de vista del programador web, es bastante indiferente saber que la representación del objeto del elemento <code>HTML form</code> toma la propidedad <strong>name</strong> desde la interfaz <code>HTMLFormElement</code> pero que las propiedades <code><strong>className</strong> </code>se toman desde la propia interfaz <code>HTMLElement</code>. En ambos casos, la propiedad está sólo en el objeto <code>form</code>.</p>
+            <p>Pero puede resultar confuso el funcionamiento de la fuerte relación entre objetos e interfaces en el DOM, por eso esta sección intentará hablar un poquito sobre las interfaces actuales en la especificación del DOM y de como se dispone de ellas.</p>
+        </div>
+        <h2 id="interfaces_y_objetos">
+            <a href="#interfaces_y_objetos" title="Permalink to Interfaces y objetos">Interfaces y objetos</a>
+        </h2>
+        <div>
+            <p>En algunos casos un objeto pone en ejecución a una sola interfaz. Pero a menudo un objeto toma prestada una tabla HTML (<code>table</code>) desde muchas interfaces diversas. El objeto table, por ejemplo, pone en funcionamiento una <a href="https://developer.mozilla.org/en/DOM/tabla">Interfaz especial del elemento table HTML</a>, la cual incluye métodos como <code>createCaption</code> y <code>insertRow</code>. Pero como también es un elemento HTML, table pone en marcha a la interfaz del <code>Element</code> descrita en el capítulo <a href="https://developer.mozilla.org/en/Referencia_DOM_de_Gecko/elemento">La referencia al elemento del DOM</a>. Y finalmente, puesto que un elemento HTML es también, por lo que concierna al DOM, un nodo en el árbol de nodos que hace el modelo de objeto para una página web o XML, el elemento de table hace funcionar la interfaz más básica de <code>Node</code>, desde el cual deriva <code>Element</code>.</p>
+            <p>La referencia a un objeto <code>table</code>, como en el ejemplo siguiente, utiliza estas interfaces intercambiables sobre el objeto.</p>
+            <div>
+            <pre><code><span>var</span> table <span>=</span> document<span>.</span><span>getElementById</span><span>(</span><span>"table"</span><span>)</span><span>;</span>
+<span>var</span> tableAttrs <span>=</span> table<span>.</span>attributes<span>;</span> <span>// Node/interfaz Element</span>
+<span>for</span> <span>(</span><span>var</span> i <span>=</span> <span>0</span><span>;</span> i <span>&lt;</span> tableAttrs<span>.</span>length<span>;</span> i<span>++</span><span>)</span> <span>{</span>
+  <span>// interfaz HTMLTableElement: atributo border</span>
+  <span>if</span><span>(</span>tableAttrs<span>[</span>i<span>]</span><span>.</span>nodeName<span>.</span><span>toLowerCase</span><span>(</span><span>)</span> <span>==</span> <span>"border"</span><span>)</span>
+    table<span>.</span>border <span>=</span> <span>"1"</span><span>;</span>
+<span>}</span>
+<span>// interfaz HTMLTableElement: atributo summary</span>
+table<span>.</span>summary <span>=</span> <span>"nota: borde aumentado"</span><span>;</span></code></pre>
+            </div>
+        </div>
+        <h2 id="interfaces_esenciales_en_el_dom">
+            <a href="#interfaces_esenciales_en_el_dom" title="Permalink to Interfaces esenciales en el DOM">Interfaces esenciales en el DOM</a>
+        </h2>
+        <div>
+            <p>Esta sección lista las interfaces más comúnmente utilizadas en el DOM. La idea no es describir qué hacen estas APIs pero sí dar una idea de las clases de métodos y propiedades que se encuentran con el uso del DOM. Muchos ejemplos de uso común de esta API se encuentran en el capítulo <a href="https://developer.mozilla.org/es/Referencia_DOM_de_Gecko/Ejemplos">Ejemplos DOM</a> al final de este manual.</p>
+            <p><code>document</code> y <code>window</code> son objetos cuya interfaces son generalmente muy usadas en la programación de DOM. En término simple, el objeto <code>window</code> representa algo como podría ser el navegador, y el objeto <code>document</code> es la raíz del documento en sí. <code>Element</code> hereda de la interfaz genérica <code>Node</code>, y juntos, estas dos interfaces proporcionan muchos métodos y propiedades utilizables sobre los elementos individuales. Éstos elementos pueden igualmente tener interfaces específicas según el tipo de datos representados, como en el ejemplo anterior del objeto <code>table</code>. Lo siguiente es una breve lista de los APIS comunes en la web y en las páginas escritas en XML utilizando el DOM.</p>
+            <ul>
+                <li><code><a href="https://developer.mozilla.org/en/DOM/document.getElementById">document.getElementById</a>(id)</code></li>
+                <li><code>element.<a href="https://developer.mozilla.org/en/DOM/element.getElementsByTagName">getElementsByTagName</a>(name)</code></li>
+                <li><code><a href="https://developer.mozilla.org/en/DOM/document.createElement">document.createElement</a>(name)</code></li>
+                <li><code>parentNode.<a href="https://developer.mozilla.org/en/DOM/element.appendChild">appendChild</a>(node)</code></li>
+                <li><code>element.<a href="https://developer.mozilla.org/en/DOM/element.innerHTML">innerHTML</a></code></li>
+                <li><code>element.<a href="https://developer.mozilla.org/en/DOM/element.style">style</a>.left</code></li>
+                <li><code>element.<a href="https://developer.mozilla.org/en/DOM/element.setAttribute">setAttribute</a></code></li>
+                <li><code>element.<a href="https://developer.mozilla.org/en/DOM/element.getAttribute">element.getAttribute</a></code></li>
+                <li><code>element.<a href="https://developer.mozilla.org/en/DOM/element.addEventListener">addEventListener</a></code></li>
+                <li><code><a href="https://developer.mozilla.org/en/DOM/window.content">window.content</a></code></li>
+                <li><code><a href="https://developer.mozilla.org/en/DOM/window.onload">window.onload</a></code></li>
+                <li><code><a href="https://developer.mozilla.org/en/DOM/window.dump">window.dump</a></code></li>
+                <li><code><a href="https://developer.mozilla.org/en/DOM/window.scrollTo">window.scrollTo</a></code></li>
+            </ul>
+        </div>
+        <h2 id="probando_el_api_del_dom">
+            <a href="#probando_el_api_del_dom" title="Permalink to Probando el API del DOM">Probando el API del DOM</a>
+        </h2>
+        <div>
+            <p>Ésta parte procura ejemplos para todas las interfaces usadas en el desarrollo web. En algunos casos, los ejemplos son páginas HTML enteras, con el acceso del DOM a un elemento de &lt;script&gt;, la interfaz necesaria (por ejemplo, botones) para la ejecución del script en un formulario, y también que los elementos HTML sobre los cuales opera el DOM se listen. Según el caso, los ejemplos se pueden copiar y pegar en un documento web para probarlos.</p>
+            <p>No es el caso donde los ejemplos son muchos más concisos. Para la ejecución de estos ejemplos que sólo demuestran la relación básica entre la interfaz y los elementos HTML, resulta útil tener una página de prueba en la cual las interfaces serán fácilmente accesibles por los scripts. La muy simple página siguiente proporciona en las cabeceras un elemento de script en el cual se pondrán las funciones para testar la interfaz elegida, algunos elementos HTML con atributos que se puedan leer, editar y también manipular, así como la interfaz web necesaria para llamar esas funciones desde el navegador.</p>
+            <p>Para probar y ver como trabajan en la plataforma del navegador las interfaces del DOM, esta página de prueba o una nueva similar son factibles. El contenido de la función <code>test()</code> se puede actualizar según la necesidad, para crear más botones o poner más elementos.</p>
+            <div>
+            <pre><code><span><span><span>&lt;</span>html</span><span>&gt;</span></span>
+  <span><span><span>&lt;</span>head</span><span>&gt;</span></span>
+    <span><span><span>&lt;</span>title</span><span>&gt;</span></span>Pruebas DOM<span><span><span>&lt;/</span>title</span><span>&gt;</span></span>
+    <span><span><span>&lt;</span>script</span> <span>type</span><span><span>=</span><span>"</span>application/javascript<span>"</span></span><span>&gt;</span></span><span><span>
+    <span>function</span> <span>setBodyAttr</span><span>(</span><span>attr<span>,</span> value</span><span>)</span><span>{</span>
+      <span>if</span> <span>(</span>document<span>.</span>body<span>)</span> <span>eval</span><span>(</span><span>'document.body.'</span><span>+</span>attr<span>+</span><span>'="'</span><span>+</span>value<span>+</span><span>'"'</span><span>)</span><span>;</span>
+      <span>else</span> <span>notSupported</span><span>(</span><span>)</span><span>;</span>
+    <span>}</span>
+    </span></span><span><span><span>&lt;/</span>script</span><span>&gt;</span></span>
+  <span><span><span>&lt;/</span>head</span><span>&gt;</span></span>
+  <span><span><span>&lt;</span>body</span><span>&gt;</span></span>
+    <span><span><span>&lt;</span>div</span> <span><span>style</span><span><span>=</span><span>"</span><span><span>margin</span><span>:</span> .5in<span>;</span> <span>height</span><span>:</span> 400<span>;</span></span><span>"</span></span></span><span>&gt;</span></span>
+      <span><span><span>&lt;</span>p</span><span>&gt;</span></span><span><span><span>&lt;</span>b</span><span>&gt;</span></span><span><span><span>&lt;</span>tt</span><span>&gt;</span></span>texto<span><span><span>&lt;/</span>tt</span><span>&gt;</span></span><span><span><span>&lt;/</span>b</span><span>&gt;</span></span><span><span><span>&lt;/</span>p</span><span>&gt;</span></span>
+      <span><span><span>&lt;</span>form</span><span>&gt;</span></span>
+        <span><span><span>&lt;</span>select</span> <span><span>onChange</span><span><span>=</span><span>"</span><span><span>setBodyAttr</span><span>(</span><span>'text'</span><span>,</span>
+        <span>this</span><span>.</span>options<span>[</span><span>this</span><span>.</span>selectedIndex<span>]</span><span>.</span>value<span>)</span><span>;</span></span><span>"</span></span></span><span>&gt;</span></span>
+          <span><span><span>&lt;</span>option</span> <span>value</span><span><span>=</span><span>"</span>black<span>"</span></span><span>&gt;</span></span>negro
+          <span><span><span>&lt;</span>option</span> <span>value</span><span><span>=</span><span>"</span>darkblue<span>"</span></span><span>&gt;</span></span>azul oscuro
+        <span><span><span>&lt;/</span>select</span><span>&gt;</span></span>
+        <span><span><span>&lt;</span>p</span><span>&gt;</span></span><span><span><span>&lt;</span>b</span><span>&gt;</span></span><span><span><span>&lt;</span>tt</span><span>&gt;</span></span>bgColor<span><span><span>&lt;/</span>tt</span><span>&gt;</span></span><span><span><span>&lt;/</span>b</span><span>&gt;</span></span><span><span><span>&lt;/</span>p</span><span>&gt;</span></span>
+        <span><span><span>&lt;</span>select</span> <span><span>onChange</span><span><span>=</span><span>"</span><span><span>setBodyAttr</span><span>(</span><span>'bgColor'</span><span>,</span>
+        <span>this</span><span>.</span>options<span>[</span><span>this</span><span>.</span>selectedIndex<span>]</span><span>.</span>value<span>)</span><span>;</span></span><span>"</span></span></span><span>&gt;</span></span>
+          <span><span><span>&lt;</span>option</span> <span>value</span><span><span>=</span><span>"</span>white<span>"</span></span><span>&gt;</span></span>blanco
+          <span><span><span>&lt;</span>option</span> <span>value</span><span><span>=</span><span>"</span>lightgrey<span>"</span></span><span>&gt;</span></span>gris
+        <span><span><span>&lt;/</span>select</span><span>&gt;</span></span>
+        <span><span><span>&lt;</span>p</span><span>&gt;</span></span><span><span><span>&lt;</span>b</span><span>&gt;</span></span><span><span><span>&lt;</span>tt</span><span>&gt;</span></span>link<span><span><span>&lt;/</span>tt</span><span>&gt;</span></span><span><span><span>&lt;/</span>b</span><span>&gt;</span></span><span><span><span>&lt;/</span>p</span><span>&gt;</span></span>
+        <span><span><span>&lt;</span>select</span> <span><span>onChange</span><span><span>=</span><span>"</span><span><span>setBodyAttr</span><span>(</span><span>'link'</span><span>,</span>
+        <span>this</span><span>.</span>options<span>[</span><span>this</span><span>.</span>selectedIndex<span>]</span><span>.</span>value<span>)</span><span>;</span></span><span>"</span></span></span><span>&gt;</span></span>
+          <span><span><span>&lt;</span>option</span> <span>value</span><span><span>=</span><span>"</span>blue<span>"</span></span><span>&gt;</span></span>azul
+          <span><span><span>&lt;</span>option</span> <span>value</span><span><span>=</span><span>"</span>green<span>"</span></span><span>&gt;</span></span>verde
+        <span><span><span>&lt;/</span>select</span><span>&gt;</span></span>  <span><span><span>&lt;</span>small</span><span>&gt;</span></span>
+        <span><span><span>&lt;</span>a</span> <span>href</span><span><span>=</span><span>"</span>http://www.brownhen.com/dom_api_top.html<span>"</span></span> <span>id</span><span><span>=</span><span>"</span>sample<span>"</span></span><span>&gt;</span></span>
+        (sample link)<span><span><span>&lt;/</span>a</span><span>&gt;</span></span><span><span><span>&lt;/</span>small</span><span>&gt;</span></span><span><span><span>&lt;</span>br</span><span>&gt;</span></span>
+      <span><span><span>&lt;/</span>form</span><span>&gt;</span></span>
+      <span><span><span>&lt;</span>form</span><span>&gt;</span></span>
+        <span><span><span>&lt;</span>input</span> <span>type</span><span><span>=</span><span>"</span>button<span>"</span></span> <span>value</span><span><span>=</span><span>"</span>version<span>"</span></span> <span><span>onclick</span><span><span>=</span><span>"</span><span><span>ver</span><span>(</span><span>)</span></span><span>"</span></span></span> <span>/&gt;</span></span>
+      <span><span><span>&lt;/</span>form</span><span>&gt;</span></span>
+    <span><span><span>&lt;/</span>div</span><span>&gt;</span></span>
+  <span><span><span>&lt;/</span>body</span><span>&gt;</span></span>
+<span><span><span>&lt;/</span>html</span><span>&gt;</span></span></code></pre>
+            </div>
+            <p>La creación de una página de prueba con una paleta de botones, campos de texto u otros elementos HTML, permitirá testar una gran cantidad de interfaces en un mismo documento, por ejemplo una serie de propiedades que afectan a los colores de una página web. Lo siguiente permite hacerse una idea de como pueden agruparse las interfaces para probarlas.</p>
+            <p>Figura 0.1 Muestra DOM página de prueba</p>
+            <p><img alt="" src="https://developer.mozilla.org/@api/deki/files/173/=DOM_Ref_Introduction_to_the_DOM.gif" loading="lazy"></p>
+            <p>En este ejemplo, los menúes desplegables actualizan dinámicamente los aspectos de la página web accesibles al DOM como el color de fondo (<code>bgColor</code>), de los hiper-enlaces (<code>aLink</code>), y el del texto (<code>text</code>). El hecho de diseñar páginas, testar las interfaces que se encuentren a lo largo de la lectura son una parte importante del aprendizaje para una utilización eficaz del DOM.</p>
+        </div>
+        <h2 id="otros_enlaces">
+            <a href="#otros_enlaces" title="Permalink to Otros enlaces"><strong>Otros enlaces</strong></a>
+        </h2>
+        <div>
+            <ul>
+                <li><a href="https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model">Referencia DOM</a></li>
+                <li><a href="https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model/Introduction">Introducción al DOM</a></li>
+                <li><a href="https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model/Events">Eventos y el DOM</a></li>
+                <li><a href="https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model/Examples">Ejemplos</a></li>
+            </ul>
+            <div id="s3gt_translate_tooltip_mini" style="background: initial !important; border: initial !important; border-radius: initial !important; border-collapse: initial !important; direction: ltr !important; font-weight: initial !important; height: initial !important; letter-spacing: initial !important; max-width: initial !important; min-height: initial !important; margin: auto !important; outline: initial !important; padding: initial !important; position: absolute; text-align: initial !important; text-shadow: initial !important; width: initial !important; display: initial !important; color: inherit !important; font-size: 13px !important; font-family: X-LocaleSpecific,sans-serif,Tahoma,Helvetica !important; line-height: 13px !important; vertical-align: top !important; white-space: inherit !important; left: 10px; top: 35px; opacity: 0.85;">
+                <div id="s3gt_translate_tooltip_mini_logo" title="Traducir texto seleccionado">&nbsp;</div>
+                <div id="s3gt_translate_tooltip_mini_sound" title="Reproducir">&nbsp;</div>
+                <div id="s3gt_translate_tooltip_mini_copy" title="Copy text to Clipboard">&nbsp;</div>
+            </div>
+            <div id="s3gt_translate_tooltip_mini" style="background: initial !important; border: initial !important; border-radius: initial !important; border-collapse: initial !important; direction: ltr !important; font-weight: initial !important; height: initial !important; letter-spacing: initial !important; max-width: initial !important; min-height: initial !important; margin: auto !important; outline: initial !important; padding: initial !important; position: absolute; text-align: initial !important; text-shadow: initial !important; width: initial !important; display: initial !important; color: inherit !important; font-size: 13px !important; font-family: X-LocaleSpecific,sans-serif,Tahoma,Helvetica !important; line-height: 13px !important; vertical-align: top !important; white-space: inherit !important; left: 39px; top: 1952px; opacity: 0.45;">
+                <div id="s3gt_translate_tooltip_mini_logo" title="Traducir texto seleccionado">&nbsp;</div>
+                <div id="s3gt_translate_tooltip_mini_sound" title="Escuchar">&nbsp;</div>
+                <div id="s3gt_translate_tooltip_mini_copy" title="Copiar texto al Portapapeles">&nbsp;</div>
+            </div>
+            <div id="s3gt_translate_tooltip_mini" style="background: initial !important; border: initial !important; border-radius: initial !important; border-collapse: initial !important; direction: ltr !important; font-weight: initial !important; height: initial !important; letter-spacing: initial !important; max-width: initial !important; min-height: initial !important; margin: auto !important; outline: initial !important; padding: initial !important; position: absolute; text-align: initial !important; text-shadow: initial !important; width: initial !important; display: initial !important; color: inherit !important; font-size: 13px !important; font-family: X-LocaleSpecific,sans-serif,Tahoma,Helvetica !important; line-height: 13px !important; vertical-align: top !important; white-space: inherit !important; left: 307px; top: 1961px; opacity: 0;">
+                <div id="s3gt_translate_tooltip_mini_logo" title="Traducir texto seleccionado">&nbsp;</div>
+                <div id="s3gt_translate_tooltip_mini_sound" title="Escuchar">&nbsp;</div>
+                <div id="s3gt_translate_tooltip_mini_copy" title="Copiar texto al Portapapeles">&nbsp;</div>
+            </div>
         </div>
     </article>
 </div>
