@@ -30,12 +30,12 @@
             <a href="#una_definición_de_alto_nivel" title="Permalink to Una definición de alto nivel">Una definición de alto nivel</a>
         </h2>
         <div>
-            <p>JavaScript es un lenguaje de programación o de secuencias de comandos que te permite implementar funciones complejas en páginas web, cada vez que una página web hace algo más que sentarse allí y mostrar información estática para que la veas, muestra oportunas actualizaciones de contenido, mapas interactivos, animación de Gráficos 2D/3D, desplazamiento de máquinas reproductoras de vídeo, etc., puedes apostar que probablemente JavaScript está involucrado. Es la tercera capa del pastel de las tecnologías web estándar, dos de las cuales (<a href="https://developer.mozilla.org/es/docs/Learn/HTML">HTML</a> y <a href="https://developer.mozilla.org/es/docs/Learn/CSS">CSS</a>) hemos cubierto con mucho más detalle en otras partes del Área de aprendizaje.</p>
+            <p>JavaScript es un lenguaje de programación o de secuencias de comandos que te permite implementar funciones complejas en páginas web, cada vez que una página web hace algo más que sentarse allí y mostrar información estática para que la veas, muestra oportunas actualizaciones de contenido, mapas interactivos, animación de Gráficos 2D/3D, desplazamiento de máquinas reproductoras de vídeo, etc., puedes apostar que probablemente JavaScript está involucrado. Es la tercera capa del pastel de las tecnologías web estándar, dos de las cuales (<a href="https://developer.mozilla.org/en/docs/Learn/HTML">HTML</a> y <a href="https://developer.mozilla.org/en/docs/Learn/CSS">CSS</a>) hemos cubierto con mucho más detalle en otras partes del Área de aprendizaje.</p>
             <p><img alt="" src="https://mdn.mozillademos.org/files/13502/cake.png" style="display: block; margin: 0 auto;" loading="lazy"></p>
             <ul>
-                <li><a href="https://developer.mozilla.org/es/docs/Glossary/HTML">HTML</a> es el lenguaje de marcado que usamos para estructurar y dar significado a nuestro contenido web, por ejemplo, definiendo párrafos, encabezados y tablas de datos, o insertando imágenes y videos en la página.</li>
-                <li><a href="https://developer.mozilla.org/es/docs/Glossary/CSS">CSS</a> es un lenguaje de reglas de estilo que usamos para aplicar estilo a nuestro contenido HTML, por ejemplo, establecer colores de fondo y tipos de letra, y distribuir nuestro contenido en múltiples columnas.</li>
-                <li><a href="https://developer.mozilla.org/es/docs/Glossary/JavaScript">JavaScript</a> es un lenguaje de secuencias de comandos que te permite crear contenido de actualización dinámica, controlar multimedia, animar imágenes y prácticamente todo lo demás. (Está bien, no todo, pero es sorprendente lo que puedes lograr con unas pocas líneas de código JavaScript).</li>
+                <li><a href="https://developer.mozilla.org/en/docs/Glossary/HTML">HTML</a> es el lenguaje de marcado que usamos para estructurar y dar significado a nuestro contenido web, por ejemplo, definiendo párrafos, encabezados y tablas de datos, o insertando imágenes y videos en la página.</li>
+                <li><a href="https://developer.mozilla.org/en/docs/Glossary/CSS">CSS</a> es un lenguaje de reglas de estilo que usamos para aplicar estilo a nuestro contenido HTML, por ejemplo, establecer colores de fondo y tipos de letra, y distribuir nuestro contenido en múltiples columnas.</li>
+                <li><a href="https://developer.mozilla.org/en/docs/Glossary/JavaScript">JavaScript</a> es un lenguaje de secuencias de comandos que te permite crear contenido de actualización dinámica, controlar multimedia, animar imágenes y prácticamente todo lo demás. (Está bien, no todo, pero es sorprendente lo que puedes lograr con unas pocas líneas de código JavaScript).</li>
             </ul>
             <p>Las tres capas se superponen muy bien. Tomemos una etiqueta de texto simple como ejemplo. Podemos marcarla usando HTML para darle estructura y propósito:</p>
             <div>
@@ -82,7 +82,7 @@
             <ul>
                 <li>Almacenar valores útiles dentro de variables. En el ejemplo anterior, por ejemplo, pedimos que ingreses un nuevo nombre y luego almacenamos ese nombre en una variable llamada <code>name</code>.</li>
                 <li>Operaciones sobre fragmentos de texto (conocidas como "cadenas" (<code>strings</code>) en programación). En el ejemplo anterior, tomamos la cadena "<code>Player1</code>:" y la unimos a la variable <code>name</code> para crear la etiqueta de texto completa, p. ej. ''<code>Player1: Chris</code>".</li>
-                <li>Y ejecuta código en respuesta a ciertos eventos que ocurren en una página web. Usamos un evento <code><a href="https://developer.mozilla.org/es/docs/Web/API/Element/click_event" title="https://developer.mozilla.org/es/docs/Web/Reference/Events/click">click</a></code> en nuestro ejemplo anterior para detectar cuándo se hace clic en el botón y luego ejecutar el código que actualiza la etiqueta de texto.</li>
+                <li>Y ejecuta código en respuesta a ciertos eventos que ocurren en una página web. Usamos un evento <code><a href="https://developer.mozilla.org/en/docs/Web/API/Element/click_event" title="https://developer.mozilla.org/en/docs/Web/Reference/Events/click">click</a></code> en nuestro ejemplo anterior para detectar cuándo se hace clic en el botón y luego ejecutar el código que actualiza la etiqueta de texto.</li>
                 <li>¡Y mucho más!</li>
             </ul>
             <p>Sin embargo, lo que aún es más emocionante es la funcionalidad construida sobre el lenguaje JavaScript de lado del cliente. Las denominadas <strong>interfaces de programación de aplicaciones</strong> (<strong>API</strong>) te proporcionan superpoderes adicionales para utilizar en tu código JavaScript.</p>
@@ -91,13 +91,13 @@
             <p><img alt="" src="https://mdn.mozillademos.org/files/13508/browser.png" style="display: block; margin: 0px auto;" loading="lazy"></p>
             <p>Las <strong>APIs del navegador</strong> están integradas en tu navegador web y pueden exponer datos del entorno informático circundante o realizar tareas complejas y útiles. Por ejemplo:</p>
             <ul>
-                <li>La <a href="https://developer.mozilla.org/es/docs/Web/API/Document_Object_Model" title=" API del DOM (<code>Document Object Model</code>)"><code> API del DOM (<code>Document Object Model</code>)</code></a> te permite manipular HTML y CSS, crear, eliminar y cambiar el HTML, aplicar dinámicamente nuevos estilos a tu página, etc. Cada vez que ves aparecer una ventana emergente en una página, o se muestra algún nuevo contenido (como vimos anteriormente en nuestra sencilla demostración), por ejemplo, ese es el DOM en acción.</li>
+                <li>La <a href="https://developer.mozilla.org/en/docs/Web/API/Document_Object_Model" title=" API del DOM (<code>Document Object Model</code>)"><code> API del DOM (<code>Document Object Model</code>)</code></a> te permite manipular HTML y CSS, crear, eliminar y cambiar el HTML, aplicar dinámicamente nuevos estilos a tu página, etc. Cada vez que ves aparecer una ventana emergente en una página, o se muestra algún nuevo contenido (como vimos anteriormente en nuestra sencilla demostración), por ejemplo, ese es el DOM en acción.</li>
                 <li>La <a title="La documentación acerca de este tema no ha sido escrita todavía . ¡Por favor  considera contribuir !"><code>API de Geolocalización</code></a> recupera información geográfica. Así es como <a href="https://www.google.com/maps" rel="noopener">Google Maps</a> puede encontrar tu ubicación y trazarla en un mapa.</li>
-                <li>Las APIs <a href="https://developer.mozilla.org/es/docs/Web/API/Canvas_API" title="Canvas"><code>Canvas</code></a> y <a href="https://developer.mozilla.org/es/docs/Web/API/WebGL_API" title="WebGL"><code>WebGL</code></a> te permiten crear gráficos animados en 2D y 3D. Las personas están haciendo cosas increíbles con estas tecnologías web — consulta <a href="https://www.chromeexperiments.com" rel="noopener">Experimentos de Chrome</a> y <a href="https://webglsamples.org/" rel="noopener">webglsamples</a>.</li>
-                <li><a href="https://developer.mozilla.org/es/Apps/Fundamentals/Audio_and_video_delivery">APIs de audio y video</a> como <a href="https://developer.mozilla.org/es/docs/Web/API/HTMLMediaElement"><code>HTMLMediaElement</code></a> y <a href="/es/docs/Web/API/WebRTC_API" title="WebRTC"><code>WebRTC</code></a> te permiten hacer cosas realmente interesantes con multimedia, como reproducir audio y video directamente en una página web, o tomar video de tu cámara web y mostrarlo en la computadora de otra persona (prueba nuestra sencilla <a href="http://chrisdavidmills.github.io/snapshot/" rel=" noopener">demostración instantánea</a> para hacerte una idea).</li>
+                <li>Las APIs <a href="https://developer.mozilla.org/en/docs/Web/API/Canvas_API" title="Canvas"><code>Canvas</code></a> y <a href="https://developer.mozilla.org/en/docs/Web/API/WebGL_API" title="WebGL"><code>WebGL</code></a> te permiten crear gráficos animados en 2D y 3D. Las personas están haciendo cosas increíbles con estas tecnologías web — consulta <a href="https://www.chromeexperiments.com" rel="noopener">Experimentos de Chrome</a> y <a href="https://webglsamples.org/" rel="noopener">webglsamples</a>.</li>
+                <li><a href="https://developer.mozilla.org/en/Apps/Fundamentals/Audio_and_video_delivery">APIs de audio y video</a> como <a href="https://developer.mozilla.org/en/docs/Web/API/HTMLMediaElement"><code>HTMLMediaElement</code></a> y <a href="https://developer.mozilla.org/en/docs/Web/API/WebRTC_API" title="WebRTC"><code>WebRTC</code></a> te permiten hacer cosas realmente interesantes con multimedia, como reproducir audio y video directamente en una página web, o tomar video de tu cámara web y mostrarlo en la computadora de otra persona (prueba nuestra sencilla <a href="http://chrisdavidmills.github.io/snapshot/" rel=" noopener">demostración instantánea</a> para hacerte una idea).</li>
             </ul>
             <div>
-                <p><strong>Nota</strong>: Muchas de las demostraciones anteriores no funcionarán en un navegador antiguo — al experimentar, es una buena idea utilizar un navegador moderno como Firefox, Chrome, Edge u Opera para ejecutar tu código. Deberás considerar las <a href="https://developer.mozilla.org/es/docs/Learn/Tools_and_testing/Cross_browser_testing">pruebas en varios navegadores</a> con más detalle cuando estés más cerca de entregar el código de producción (es decir, código real que usarán los clientes reales).</p>
+                <p><strong>Nota</strong>: Muchas de las demostraciones anteriores no funcionarán en un navegador antiguo — al experimentar, es una buena idea utilizar un navegador moderno como Firefox, Chrome, Edge u Opera para ejecutar tu código. Deberás considerar las <a href="https://developer.mozilla.org/en/docs/Learn/Tools_and_testing/Cross_browser_testing">pruebas en varios navegadores</a> con más detalle cuando estés más cerca de entregar el código de producción (es decir, código real que usarán los clientes reales).</p>
             </div>
             <p>Las <strong>APIs de terceros</strong> no están integradas en el navegador de forma predeterminada y, por lo general, debes obtener su código e información de algún lugar de la Web. Por ejemplo:</p>
             <ul>
@@ -105,7 +105,7 @@
                 <li>La <a href="https://developers.google.com/maps/" rel="noopener">API de Google Maps</a> y la <a href="https://wiki.openstreetmap.org/wiki/API" rel="noopener">API de OpenStreetMap</a> te permiten insertar mapas personalizados en tu sitio web y otras funciones similares.</li>
             </ul>
             <div>
-                <p><strong>Nota</strong>: estas APIs son avanzadas y no cubriremos ninguna de ellas en este módulo. Puedes obtener más información sobre estas en nuestro <a href="https://developer.mozilla.org/es/docs/Learn/JavaScript/Client-side_web_APIs">módulo de APIs web de lado del cliente</a>.</p>
+                <p><strong>Nota</strong>: estas APIs son avanzadas y no cubriremos ninguna de ellas en este módulo. Puedes obtener más información sobre estas en nuestro <a href="https://developer.mozilla.org/en/docs/Learn/JavaScript/Client-side_web_APIs">módulo de APIs web de lado del cliente</a>.</p>
             </div>
             <p>¡También hay mucho más disponible! Sin embargo, no te emociones demasiado todavía. No podrás crear el próximo Facebook, Google Maps o Instagram después de estudiar JavaScript durante 24 horas — hay muchos conceptos básicos que cubrir primero. Y es por eso que estás aquí — ¡sigamos adelante!</p>
         </div>
@@ -114,9 +114,9 @@
         </h2>
         <div>
             <p>Aquí, de hecho, comenzaremos a ver algo de código y, mientras lo hacemos, exploraremos lo que realmente sucede cuando ejecutas JavaScript en tu página.</p>
-            <p>Recapitulemos brevemente sobre la historia de lo que sucede cuando cargas una página web en un navegador (de lo que hablamos por primera vez en nuestro artículo <a href="https://developer.mozilla.org/es/docs/Learn/CSS/Introduction_to_CSS/How_CSS_works#how_does_css_actually_work">Cómo funciona CSS</a>). Cuando cargas una página web en tu navegador, estás ejecutando tu código (HTML, CSS y JavaScript) dentro de un entorno de ejecución (la pestaña del navegador). Esto es como una fábrica que toma materias primas (el código) y genera un producto (la página web).</p>
+            <p>Recapitulemos brevemente sobre la historia de lo que sucede cuando cargas una página web en un navegador (de lo que hablamos por primera vez en nuestro artículo <a href="https://developer.mozilla.org/en/docs/Learn/CSS/Introduction_to_CSS/How_CSS_works#how_does_css_actually_work">Cómo funciona CSS</a>). Cuando cargas una página web en tu navegador, estás ejecutando tu código (HTML, CSS y JavaScript) dentro de un entorno de ejecución (la pestaña del navegador). Esto es como una fábrica que toma materias primas (el código) y genera un producto (la página web).</p>
             <p><img alt="" src="https://mdn.mozillademos.org/files/13504/execution.png" style="display: block; margin: 0 auto;" loading="lazy"></p>
-            <p>Un uso muy común de JavaScript es modificar dinámicamente HTML y CSS para actualizar una interfaz de usuario, a través de la API del modelo de objetos del documento (como se mencionó anteriormente). Ten en cuenta que el código de tus documentos web generalmente se cargan y ejecutan en el orden en que aparece en la página. Si JavaScript se carga e intenta ejecutarse antes de que se hayan cargado el HTML y el CSS al que afecta, pueden producirse errores. Aprenderás formas de evitar esto más adelante en el artículo, en la sección <a href="https://developer.mozilla.org/es/docs/Learn/JavaScript/First_steps/What_is_JavaScript#Script_loading_strategies" aria-current="page">Estrategias de carga de scripts</a>.</p>
+            <p>Un uso muy común de JavaScript es modificar dinámicamente HTML y CSS para actualizar una interfaz de usuario, a través de la API del modelo de objetos del documento (como se mencionó anteriormente). Ten en cuenta que el código de tus documentos web generalmente se cargan y ejecutan en el orden en que aparece en la página. Si JavaScript se carga e intenta ejecutarse antes de que se hayan cargado el HTML y el CSS al que afecta, pueden producirse errores. Aprenderás formas de evitar esto más adelante en el artículo, en la sección <a href="https://developer.mozilla.org/en/docs/Learn/JavaScript/First_steps/What_is_JavaScript#Script_loading_strategies" aria-current="page">Estrategias de carga de scripts</a>.</p>
         </div>
         <h3 id="seguridad_del_navegador">
             <a href="#seguridad_del_navegador" title="Permalink to Seguridad del navegador">Seguridad del navegador</a>
@@ -143,7 +143,7 @@
 <span>}</span></code></pre>
             </div>
             <p>Aquí seleccionamos un párrafo de texto (línea 1), luego adjuntamos un detector de eventos (línea 3) de modo que cuando se hace clic en el párrafo, el bloque de código <code>updateName()</code> (líneas 5-8) se ejecuta. El bloque de código <code>updateName()</code> (estos tipos de bloques de código reutilizables se denominan "funciones") pide al usuario un nuevo nombre y luego inserta ese nombre en el párrafo para actualizar la pantalla.</p>
-            <p>Si cambiaras el orden de las dos primeras líneas de código, ya no funcionaría — en su lugar, obtendrías un error en la <a href="https://developer.mozilla.org/es/docs/Learn/Common_questions/What_are_browser_developer_tools">consola del desarrollador del navegador</a> — <code>TypeError: para is undefined</code>. Esto significa que el objeto <code>para</code> aún no existe, por lo que no podemos agregarle un detector de eventos.</p>
+            <p>Si cambiaras el orden de las dos primeras líneas de código, ya no funcionaría — en su lugar, obtendrías un error en la <a href="https://developer.mozilla.org/en/docs/Learn/Common_questions/What_are_browser_developer_tools">consola del desarrollador del navegador</a> — <code>TypeError: para is undefined</code>. Esto significa que el objeto <code>para</code> aún no existe, por lo que no podemos agregarle un detector de eventos.</p>
             <div>
                 <p><strong>Nota</strong>: Este es un error muy común; debes tener cuidado de que los objetos a los que se hace referencia en tu código existan antes de intentar hacer algo con ellos.</p>
             </div>
@@ -162,7 +162,7 @@
         </h3>
         <div>
             <p>También puedes escuchar los términos código <strong>de lado del servidor</strong> y <strong>de lado del cliente</strong>, especialmente en el contexto del desarrollo web. El código de lado del cliente es un código que se ejecuta en la computadora del usuario — cuando se ve una página web, el código de lado del cliente de la página se descarga, luego se ejecuta y se muestra en el navegador. En este módulo estamos hablando explícitamente de <strong>JavaScript de lado del cliente</strong>.</p>
-            <p>El código de lado del servidor, por otro lado, se ejecuta en el servidor, luego sus resultados se descargan y se muestran en el navegador. Ejemplos de lenguajes web populares de lado del servidor incluyen a ¡PHP, Python, Ruby, ASP.NET y... JavaScript! JavaScript también se puede utilizar como lenguaje de lado del servidor, por ejemplo, en el popular entorno Node.js — puedes obtener más información sobre JavaScript de lado del servidor en nuestro tema <a href="https://developer.mozilla.org/es/docs/Learn/Server-side">Sitios web dinámicos — Programación de lado del servidor</a>.</p>
+            <p>El código de lado del servidor, por otro lado, se ejecuta en el servidor, luego sus resultados se descargan y se muestran en el navegador. Ejemplos de lenguajes web populares de lado del servidor incluyen a ¡PHP, Python, Ruby, ASP.NET y... JavaScript! JavaScript también se puede utilizar como lenguaje de lado del servidor, por ejemplo, en el popular entorno Node.js — puedes obtener más información sobre JavaScript de lado del servidor en nuestro tema <a href="https://developer.mozilla.org/en/docs/Learn/Server-side">Sitios web dinámicos — Programación de lado del servidor</a>.</p>
         </div>
         <h3>
             <a href="#código_dinámico_versus_estático" title="Permalink to Código dinámico versus estático">Código dinámico versus estático</a>
@@ -175,7 +175,7 @@
             <a href="#¿cómo_agregas_javascript_a_tu_página" title="Permalink to ¿Cómo agregas JavaScript a tu página?">¿Cómo agregas JavaScript a tu página?</a>
         </h2>
         <div>
-            <p>JavaScript se aplica a tu página HTML de manera similar a CSS. Mientras que CSS usa elementos <a href="https://developer.mozilla.org/es/docs/Web/HTML/Element/link"><code>&lt;link&gt;</code></a> para aplicar hojas de estilo externas y elementos <a href="https://developer.mozilla.org/es/docs/Web/HTML/Element/style"><code>&lt;style&gt;</code></a> para aplicar hojas de estilo internas a HTML, JavaScript solo necesita un amigo en el mundo de HTML: el elemento {htmlelement("script")}}. Aprendamos cómo funciona esto.</p>
+            <p>JavaScript se aplica a tu página HTML de manera similar a CSS. Mientras que CSS usa elementos <a href="https://developer.mozilla.org/en/docs/Web/HTML/Element/link"><code>&lt;link&gt;</code></a> para aplicar hojas de estilo externas y elementos <a href="https://developer.mozilla.org/en/docs/Web/HTML/Element/style"><code>&lt;style&gt;</code></a> para aplicar hojas de estilo internas a HTML, JavaScript solo necesita un amigo en el mundo de HTML: el elemento {htmlelement("script")}}. Aprendamos cómo funciona esto.</p>
         </div>
         <h3 id="javascript_interno">
         <a href="#javascript_interno" title="Permalink to JavaScript interno">JavaScript interno</a>
@@ -268,7 +268,7 @@
                 </div>
             </div>
             <p>Puedes probar esta versión de nuestra demostración a continuación.</p>
-            <p>Esta demostración tiene exactamente la misma funcionalidad que en las dos secciones anteriores, excepto que el elemento <a href="https://developer.mozilla.org/es/docs/Web/HTML/Element/button"><code>&lt;button&gt;</code></a> incluye un controlador <code>onclick</code> en línea para que la función se ejecute cuando se presiona el botón .</p>
+            <p>Esta demostración tiene exactamente la misma funcionalidad que en las dos secciones anteriores, excepto que el elemento <a href="https://developer.mozilla.org/en/docs/Web/HTML/Element/button"><code>&lt;button&gt;</code></a> incluye un controlador <code>onclick</code> en línea para que la función se ejecute cuando se presiona el botón .</p>
             <p><strong>Sin embargo, no hagas esto</strong>. Es una mala práctica contaminar tu HTML con JavaScript, y es ineficiente; tendrías que incluir el atributo <code>onclick="createParagraph()"</code> en cada botón al que desees que se aplique JavaScript.</p>
             <p>El uso de una construcción de JavaScript pura te permite seleccionar todos los botones usando una instrucción. El código que usamos anteriormente para cumplir este propósito se ve así:</p>
             <div>
@@ -393,8 +393,8 @@
             </ul>
             <p></p>
             <ul>
-                <li><a href="https://developer.mozilla.org/es/docs/Learn/JavaScript/First_steps"> Overview: First steps</a></li>
-                <li><a href="https://developer.mozilla.org/es/docs/Learn/JavaScript/First_steps/A_first_splash"> Siguiente  </a></li>
+                <li><a href="https://developer.mozilla.org/en/docs/Learn/JavaScript/First_steps"> Overview: First steps</a></li>
+                <li><a href="https://developer.mozilla.org/en/docs/Learn/JavaScript/First_steps/A_first_splash"> Siguiente  </a></li>
             </ul>
             <p></p>
         </div>
@@ -403,15 +403,15 @@
         </h2>
         <div>
             <ul>
-                <li><a href="https://developer.mozilla.org/es/docs/Learn/JavaScript/First_steps/What_is_JavaScript" aria-current="page">¿Qué es JavaScript?</a></li>
-                <li><a href="https://developer.mozilla.org/es/docs/Learn/JavaScript/First_steps/A_first_splash">Primer contacto con JavaScript</a></li>
-                <li><a href="https://developer.mozilla.org/es/docs/Learn/JavaScript/First_steps/What_went_wrong">¿Qué salió mal? Solución de problemas de JavaScript</a></li>
-                <li><a href="https://developer.mozilla.org/es/docs/Learn/JavaScript/First_steps/Variables">Almacenamiento de la información que necesita — Variables</a></li>
-                <li><a href="https://developer.mozilla.org/es/docs/Learn/JavaScript/First_steps/Math">Matemáticas básicas en JavaScript — números y operadores</a></li>
-                <li><a href="https://developer.mozilla.org/es/docs/Learn/JavaScript/First_steps/Strings">Manejo de texto — cadenas en JavaScript</a></li>
-                <li><a href="https://developer.mozilla.org/es/docs/Learn/JavaScript/First_steps/Useful_string_methods">Métodos de cadena útiles</a></li>
-                <li><a href="https://developer.mozilla.org/es/docs/Learn/JavaScript/First_steps/Arrays">Arreglos</a></li>
-                <li><a href="https://developer.mozilla.org/es/docs/Learn/JavaScript/First_steps/Silly_story_generator">Evaluación: Generador de historias tontas</a></li>
+                <li><a href="https://developer.mozilla.org/en/docs/Learn/JavaScript/First_steps/What_is_JavaScript" aria-current="page">¿Qué es JavaScript?</a></li>
+                <li><a href="https://developer.mozilla.org/en/docs/Learn/JavaScript/First_steps/A_first_splash">Primer contacto con JavaScript</a></li>
+                <li><a href="https://developer.mozilla.org/en/docs/Learn/JavaScript/First_steps/What_went_wrong">¿Qué salió mal? Solución de problemas de JavaScript</a></li>
+                <li><a href="https://developer.mozilla.org/en/docs/Learn/JavaScript/First_steps/Variables">Almacenamiento de la información que necesita — Variables</a></li>
+                <li><a href="https://developer.mozilla.org/en/docs/Learn/JavaScript/First_steps/Math">Matemáticas básicas en JavaScript — números y operadores</a></li>
+                <li><a href="https://developer.mozilla.org/en/docs/Learn/JavaScript/First_steps/Strings">Manejo de texto — cadenas en JavaScript</a></li>
+                <li><a href="https://developer.mozilla.org/en/docs/Learn/JavaScript/First_steps/Useful_string_methods">Métodos de cadena útiles</a></li>
+                <li><a href="https://developer.mozilla.org/en/docs/Learn/JavaScript/First_steps/Arrays">Arreglos</a></li>
+                <li><a href="https://developer.mozilla.org/en/docs/Learn/JavaScript/First_steps/Silly_story_generator">Evaluación: Generador de historias tontas</a></li>
             </ul>
         </div>
     </article>
