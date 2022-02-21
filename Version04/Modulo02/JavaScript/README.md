@@ -416,3 +416,441 @@
         </div>
     </article>
 </div>
+
+### Tipos de datos y estructuras en JavaScript
+####  Toda la refencia aca descrita en adelante se tomo de Developer Mozilla [Ir a Developer Mozilla](https://developer.mozilla.org/es/docs/Web/JavaScript/Data_structures).
+
+<div align="justify">
+    <article lang="es">
+        <h1>Tipos de datos y estructuras en JavaScript</h1>
+        <div>
+            <div></div>
+            <p>Todos los lenguajes de programación tienen estructuras de datos integradas, pero estas a menudo difieren de un lenguaje a otro. Este artículo intenta enumerar las estructuras de datos integradas disponibles en JavaScript y las propiedades que tienen. Estas se pueden utilizar para construir otras estructuras de datos. Siempre que es posible, se hacen comparaciones con otros lenguajes.</p>
+        </div>
+        <h2 id="tipado_dinámico">
+            <a href="#tipado_dinámico" title="Permalink to Tipado dinámico">Tipado dinámico</a>
+        </h2>
+        <div>
+            <p>JavaScript es un lenguaje <em>débilmente tipado</em> y <em>dinámico</em>. Las variables en JavaScript no están asociadas directamente con ningún tipo de valor en particular, y a cualquier variable se le puede asignar (y reasignar) valores de todos los tipos:</p>
+            <div>
+            <pre><code><span>let</span> foo <span>=</span> <span>42</span><span>;</span>    <span>// foo ahora es un número</span>
+<span>foo =</span> <span>'bar'</span><span>;</span> <span>// foo ahora es un string</span>
+<span>foo =</span> <span>true</span><span>;</span>  <span>// foo ahora es un booleano</span>
+</code></pre>
+            </div>
+        </div>
+        <h2 id="estructuras_y_tipos_de_datos">
+            <a href="#estructuras_y_tipos_de_datos" title="Permalink to Estructuras y tipos de datos">Estructuras y tipos de datos</a>
+        </h2>
+        <div>
+            <p>El último estándar ECMAScript define nueve tipos:</p>
+            <ul>
+                <li>Seis <strong>tipos de datos</strong> <a href="https://developer.mozilla.org/en/docs/Glossary/Primitive">primitivos</a>, controlados por el <a href="https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Operators/typeof"><code>operador typeof</code></a>
+                <ul>
+                    <li><a href="https://developer.mozilla.org/en/docs/Glossary/undefined">Undefined</a>: <code>typeof instance === "undefined"</code></li>
+                    <li><a href="https://developer.mozilla.org/en/docs/Glossary/Boolean">Boolean</a>: <code>typeof instance === "boolean"</code></li>
+                    <li><a href="https://developer.mozilla.org/en/docs/Glossary/Number">Number</a>: <code>typeof instance === "number"</code></li>
+                    <li><a href="https://developer.mozilla.org/en/docs/Glossary/String">String</a>: <code>typeof instance === "string"</code></li>
+                    <li><a href="https://developer.mozilla.org/en/docs/Glossary/BigInt">BigInt</a>: <code>typeof instance === "bigint"</code></li>
+                    <li><a href="https://developer.mozilla.org/en/docs/Glossary/Symbol">Symbol</a>: <code>typeof instance === "symbol"</code></li>
+                </ul>
+                </li>
+                <li><a href="https://developer.mozilla.org/en/docs/Glossary/Null">Null</a>: <code>typeof instance === "object"</code>. Tipo <a href="https://developer.mozilla.org/en/docs/Glossary/Primitive">primitivo</a> especial que tiene un uso adicional para su valor: si el objeto no se hereda, se muestra <code>null</code>;</li>
+                <li><a href="https://developer.mozilla.org/en/docs/Glossary/Object">Object</a>: <code>typeof instance === "object"</code>. Tipo estructural especial que no es de datos pero para cualquier instancia de objeto <a href="https://developer.mozilla.org/en/docs/Learn/JavaScript/Objects#the_constructor">construido</a> que también se utiliza como estructuras de datos: new <a href="https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Object"><code>Object</code></a>, new <a href="https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Array"><code>Array</code></a>, new <a title="La documentación acerca de este tema no ha sido escrita todavía . ¡Por favor  considera contribuir !"><code>Map</code></a>, new <a href="https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Set"><code>Set</code></a>, new <a href="https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/WeakMap"><code>WeakMap</code></a>, new <a href="https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/WeakSet"><code>WeakSet</code></a>, new <a href="/es/docs/Web/JavaScript/Reference/Global_Objects/Date"><code>Date</code></a> y casi todo lo hecho con la <a href="https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Operators/new">palabra clave <code>new</code></a>;</li>
+                <li><a href="https://developer.mozilla.org/en/docs/Glossary/Function">Function</a><span>: una estructura sin datos, aunque también responde al operador <code>typeof</code>: </span><code>typeof instance === "function"</code>. Esta simplemente es una forma abreviada para funciones, aunque cada constructor de funciones se deriva del constructor <code>Object</code>.</li>
+            </ul>
+            <p>Ten en cuenta que el único propósito valioso del uso del operador <code>typeof</code> es verificar el tipo de dato. Si deseamos verificar cualquier Tipo Estructural derivado de <code>Object</code>, no tiene sentido usar <code>typeof</code> para eso, ya que siempre recibiremos "<code>object</code>". La forma correcta de comprobar qué tipo de Objeto estamos usando es la palabra clave <a href="https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Operators/instanceof"><code>instanceof</code></a>. Pero incluso en ese caso, puede haber conceptos erróneos.</p>
+        </div>
+        <h2 id="valores_primitivos">
+            <a href="#valores_primitivos" title="Permalink to Valores primitivos">Valores primitivos</a>
+        </h2>
+        <div>
+            <p>Todos los tipos, excepto los objetos, definen valores inmutables (es decir, valores que no se pueden cambiar). Por ejemplo (y a diferencia de C), las cadenas son inmutables. Nos referimos a los valores de estos tipos como "<em>valores primitivos</em>".</p>
+        </div>
+        <h3 id="tipo_boolean">
+            <a href="#tipo_boolean" title="Permalink to Tipo Boolean">Tipo <code>Boolean</code></a>
+        </h3>
+        <div>
+            <p><code>Boolean</code> representa una entidad lógica y puede tener dos valores: <code>true</code> y <code>false</code>. Consulta <a href="https://developer.mozilla.org/en/docs/Glossary/Boolean">Boolean</a> y <a href="https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Boolean"><code>Boolean</code></a> para obtener más detalles.</p>
+        </div>
+        <h3 id="tipo_null">
+            <a href="#tipo_null" title="Permalink to Tipo Null">Tipo <code>Null</code></a>
+        </h3>
+        <div>
+            <p>El tipo <code>Null</code> tiene exactamente un valor: <code>null</code>. Consulta <a href="https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/null"><code>null</code></a> y <a href="https://developer.mozilla.org/en/docs/Glossary/Null">Null</a> para obtener más detalles.</p>
+        </div>
+        <h3 id="tipo_undefined">
+            <a href="#tipo_undefined" title="Permalink to Tipo Undefined">Tipo <code>Undefined</code></a>
+        </h3>
+        <div>
+            <p>Una variable a la que no se le ha asignado un valor tiene el valor <code>undefined</code>. Consulta <a href="https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/undefined"><code>undefined</code></a> y <a href="https://developer.mozilla.org/en/docs/Glossary/undefined">Undefined</a> para obtener más detalles.</p>
+        </div>
+        <h3 id="tipo_number">
+            <a href="#tipo_number" title="Permalink to Tipo Number">Tipo <code>Number</code></a>
+        </h3>
+        <div>
+            <p>ECMAScript tiene dos tipos numéricos integrados: <strong><code>Number</code></strong> y <strong><code>BigInt</code></strong> (ve más abajo).</p>
+            <p>El tipo <code>Number</code> es un <a href="https://es.wikipedia.org/wiki/Formato_en_coma_flotante_de_doble_precisión" rel="noopener">valor en formato binario de 64 bits de doble precisión IEEE 754</a> (números entre -(2<sup>53</sup> - 1) y 2<sup>53</sup> - 1). Además de representar números de punto flotante, el tipo <code>Number</code> tiene tres valores simbólicos: <code>+Infinity</code>, <code>-Infinity</code> y <a href="https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/NaN"><code>NaN</code></a> ("<strong>N</strong>ot a <strong>N</strong>umber" o No es un número).</p>
+            <p>Para verificar el valor disponible más grande o el valor más pequeño disponible dentro de <a href="https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Infinity"><code>±Infinity</code></a>, puedes usar las constantes <a href="https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Number/MAX_VALUE"><code>Number.MAX_VALUE</code></a> o <a href="https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Number/MIN_VALUE"><code>Number.MIN_VALUE</code></a>.</p>
+            <div id="sect2">
+                <p><strong>A partir de ECMAScript 2015</strong>, también puedes comprobar si un número está en el rango de números de punto flotante de doble precisión mediante <a href="https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Number/isSafeInteger"><code>Number.isSafeInteger()</code></a> así como <a href="https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Number/MAX_SAFE_INTEGER"><code>Number.MAX_SAFE_INTEGER</code></a> y <a title="Currently only available in English (US)" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number/MIN_SAFE_INTEGER"><code>Number.MIN_SAFE_INTEGER</code> <small>(en-US)</small></a>.</p>
+                <p>Más allá de este rango, los enteros en JavaScript ya no son seguros y serán una aproximación de punto flotante de doble precisión del valor.</p>
+            </div>
+            <p>El tipo <code>number</code> solo tiene un entero con dos representaciones: <code>0</code> se representa como <code>-0</code> y <code>+0</code>. (<code>0</code> es un alias de <code>+0</code>).</p>
+            <p>En la praxis, esto casi no tiene impacto. Por ejemplo, <code>+0 === -0</code> es <code>true</code>. Sin embargo, puedes notar esto cuando divides entre cero:</p>
+            <div>
+            <pre><code><span>&gt;</span> <span>42</span> <span>/</span> <span>+</span><span>0</span>
+<span>Infinity</span>
+<span>&gt;</span> <span>42</span> <span>/</span> <span>-</span><span>0</span>
+<span>-</span><span>Infinity</span>
+</code></pre>
+            </div>
+            <p>Aunque un <code>number</code> a menudo representa solo su valor, JavaScript proporciona <a title="Currently only available in English (US)" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators"><code>operadores binarios (bitwise)</code> <small>(en-US)</small></a>.</p>
+            <div id="sect3">
+                <p><strong>Precaución</strong>: Aunque los operadores bit a bit se <em>pueden</em> usar para representar múltiples valores Booleanos dentro de un solo número usando el <a href="https://es.wikipedia.org/wiki/Máscara_(informática)" rel="noopener">enmascaramiento de bits</a>, esto generalmente se considera una mala práctica. JavaScript ofrece otros medios para representar un conjunto de valores booleanos (como un arreglo de valores booleanos o un objeto con valores booleanos asignados a propiedades con nombre). El enmascaramiento de bits también tiende a hacer que el código sea más difícil de leer, comprender y mantener.</p>
+            </div>
+            <p>Posiblemente sea necesario utilizar estas técnicas en entornos muy restringidos, como cuando se intenta hacer frente a las limitaciones del almacenamiento local, o en casos extremos (como cuando cada bit de la red cuenta). Esta técnica solo se debe considerar cuando sea la última medida que se pueda tomar para optimizar el tamaño.</p>
+        </div>
+        <h3 id="tipo_bigint">
+            <a href="#tipo_bigint" title="Permalink to Tipo BigInt">Tipo <code>BigInt</code></a>
+        </h3>
+        <div>
+            <p>El tipo <a title="La documentación acerca de este tema no ha sido escrita todavía . ¡Por favor  considera contribuir !"><code>BigInt</code></a> es un primitivo numérico en JavaScript que puede representar números enteros con precisión arbitraria. Con <code>BigInt</code>s, puedes almacenar y operar de forma segura en números enteros grandes incluso más allá del límite seguro de enteros para <code>Number</code>s.</p>
+            <p>Un <code>BigInt</code> se crea agregando <code>n</code> al final de un número entero o llamando al constructor.</p>
+            <p>Puedes obtener el valor más seguro que se puede incrementar con <code>Number</code>s utilizando la constante <a href="https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Number/MAX_SAFE_INTEGER"><code>Number.MAX_SAFE_INTEGER</code></a>. Con la introducción de <code>BigInt</code>s, puedes operar con números más allá de <a href="https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Number/MAX_SAFE_INTEGER"><code>Number.MAX_SAFE_INTEGER</code></a>.</p>
+            <p>Este ejemplo demuestra, dónde, incrementando el <a href="https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Number/MAX_SAFE_INTEGER"><code>Number.MAX_SAFE_INTEGER</code></a> devuelve el resultado esperado:</p>
+            <div>
+            <pre><code><span>&gt;</span> <span>const</span> x <span>=</span> <span>2n</span> <span>**</span> <span>53n</span><span>;</span>
+<span>9007199254740992n</span>
+<span>&gt;</span> <span>const</span> y <span>=</span> x <span>+</span> <span>1n</span><span>;</span>
+<span>9007199254740993n</span>
+</code></pre>
+            </div>
+            <p>Puedes utilizar los operadores <code>+</code>, <code>*</code>, <code>-</code>, <code>**</code> y <code>%</code> con <code>BigInt</code>s, igual que con <code>Number</code>s. Un <code>BigInt</code> no es estrictamente igual a un <code>Number</code>, pero lo es en términos generales.</p>
+            <p>Un <code>BigInt</code> se comporta como un <code>Number</code> en los casos en que se convierte a <code>Boolean</code>: <code>if</code>, <code>||</code>, <code>&amp;&amp;</code>, <code>Boolean</code>, <code>!</code>.</p>
+            <p>Los <code>BigInt</code> no se pueden utilizar indistintamente con los <code>Number</code>. En su lugar, se lanzará un <a title="La documentación acerca de este tema no ha sido escrita todavía . ¡Por favor  considera contribuir !"><code>TypeError</code></a>.</p>
+        </div>
+        <h3 id="tipo_string">
+            <a href="#tipo_string" title="Permalink to Tipo String">Tipo <code>String</code></a>
+        </h3>
+        <div>
+            <p>El tipo <a href="https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/String"><code>String</code></a> de JavaScript se utiliza para representar datos textuales. Es un conjunto de "elementos" de valores enteros sin signo de 16 bits. Cada elemento del <code>String</code> ocupa una posición en la cadena. El primer elemento está en el índice <code>0</code>, el siguiente en el índice <code>1</code>, y así sucesivamente. La longitud de una cadena es el número de elementos que contiene.</p>
+            <p>A diferencia de algunos lenguajes de programación (tal como C), las cadenas de JavaScript son inmutables. Esto significa que una vez que se crea una cadena, no es posible modificarla.</p>
+            <p>Sin embargo, todavía es posible crear otra cadena basada en una operación en la cadena original. Por ejemplo:</p>
+            <ul>
+                <li>Una subcadena de la original seleccionando letras individuales o usando <a href="https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/String/substr"><code>String.substr()</code></a>.</li>
+                <li>Una concatenación de dos cadenas usando el operador de concatenación (<code>+</code>) o <a href="https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/String/concat"><code>String.concat()</code></a>.</li>
+            </ul>
+            <h4 id="¡ten_cuidado_de_no_convertir_a_cadenas_tu_código!">¡Ten cuidado de no "convertir a cadenas" tu código!</h4>
+            <p>Puede resultar tentador utilizar cadenas para representar datos complejos. Hacer esto viene con beneficios a corto plazo:</p>
+            <ul>
+                <li>Es fácil construir cadenas complejas con concatenación.</li>
+                <li>Las cadenas son fáciles de depurar (lo que ves impreso siempre es lo que está en la cadena).</li>
+                <li>Las cadenas son el denominador común de muchas APIs (<a href="https://developer.mozilla.org/en/docs/Web/API/HTMLInputElement" title="HTMLInputElement">campos de entrada —<code>input</code>s—</a>, <a href="https://developer.mozilla.org/en/docs/Storage" title="This is a link to an unwritten page">valores de almacenamiento local</a>, respuestas <a href="https://developer.mozilla.org/en/docs/Web/API/XMLHttpRequest" title="Usa objetos XMLHttpRequest (XHR) para interactuar con servidores. Puedes recuperar datos de una URL sin tener que actualizar la página completa. Esto permite que una página web actualice solo parte de su contenido sin interrumpir lo que el usuario está haciendo."><code>XMLHttpRequest</code></a> cuando se usa <code>responseText</code>, etc.) y puede resultar tentador trabajar solo con cadenas.</li>
+            </ul>
+            <p>Con las convenciones, es posible representar cualquier estructura de datos en una cadena. Esto no la convierte en una buena idea. Por ejemplo, con un separador, se podría emular una lista (mientras que un arreglo de JavaScript sería más adecuado). Desafortunadamente, cuando el separador se usa en uno de los elementos de la "lista", la lista se rompe. Se puede elegir un caracter de escape, etc. Todo esto requiere convenciones y crea una innecesaria carga de mantenimiento.</p>
+            <p>Utiliza cadenas para datos textuales. Cuando quieras representar datos complejos, <em>procesa</em> las cadenas y usa la abstracción adecuada.</p>
+        </div>
+        <h3 id="tipo_symbol">
+            <a href="#tipo_symbol" title="Permalink to Tipo Symbol">Tipo <code>Symbol</code></a>
+        </h3>
+        <div>
+            <p>Un símbolo es un valor primitivo <strong>único</strong> e <strong>inmutable</strong> y se puede utilizar como clave de una propiedad de objeto (ve más abajo). En algunos lenguajes de programación, los símbolos se denominan "átomos".</p>
+            <p>Para obtener más detalles, consulta <a href="https://developer.mozilla.org/en/docs/Glossary/Symbol">Symbol</a> y el contenedor de objetos <a href="https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Symbol"><code>Symbol</code></a> en JavaScript.</p></div><h2 id="objetos"><a href="#objetos" title="Permalink to Objetos">Objetos</a></h2><div><p>En ciencias de la computación, un objeto es un valor en la memoria al que posiblemente hace referencia un <a href="https://developer.mozilla.org/en/docs/Glossary/Identifier">identificador</a>.</p>
+        </div>
+        <h3 id="propiedades">
+            <a href="#propiedades" title="Permalink to Propiedades">Propiedades</a>
+        </h3>
+        <div>
+            <p>En JavaScript, los objetos se pueden ver como una colección de propiedades. Con la <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Grammar_and_types#object_literals" title="Currently only available in English (US)">sintaxis de objeto literal (en-US)</a>, se inicia un conjunto limitado de propiedades; luego se pueden agregar y eliminar propiedades. Los valores de propiedad pueden ser valores de cualquier tipo, incluidos otros objetos, lo que permite construir estructuras de datos complejas. Las propiedades se identifican mediante valores <em>clave</em>. Un valor <em>clave</em> es un valor de cadena o un símbolo.</p>
+            <p>Hay dos tipos de propiedades de objeto que tienen ciertos atributos: la propiedad <em>data</em> y la propiedad <em>accessor</em>.</p>
+            <div id="sect4">
+                <p><strong>Nota</strong>: Cada propiedad tiene <em>atributos correspondientes</em>. Los atributos, internamente los utiliza el motor JavaScript, por lo que no puedes acceder a ellos directamente. Es por eso que los atributos se enumeran entre corchetes dobles, en lugar de simples.</p>
+                <p>Consulta <a href="https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Object/defineProperty"><code>Object.defineProperty()</code></a> para obtener más información.</p>
+            </div>
+            <h4 id="propiedad_data">Propiedad <code>Data</code></h4>
+            <p>Asocia una clave con un valor y tiene los siguientes atributos:</p>
+            <table>
+                <caption>Atributos de una propiedad <code>data</code></caption>
+                <thead>
+                    <tr>
+                        <th scope="col">Atributo</th>
+                        <th scope="col">Tipo</th>
+                        <th scope="col">Descripción</th>
+                        <th scope="col">Valor predeterminado</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                    <td>[[Value]]</td>
+                    <td>Cualquier tipo de JavaScript</td>
+                    <td>El valor recuperado por un captador de acceso <code>get</code> a la propiedad.</td>
+                    <td><code>undefined</code></td>
+                    </tr>
+                    <tr>
+                    <td>[[Writable]]</td>
+                    <td><code>Boolean</code></td>
+                    <td>Si es <code>false</code>, el [[Value]] de la propiedad no se puede cambiar.</td>
+                    <td><code>false</code></td>
+                    </tr>
+                    <tr>
+                    <td>[[Enumerable]]</td>
+                    <td><code>Boolean</code></td>
+                    <td>
+                        <p>Si es <code>true</code>, la propiedad se enumerará en bucles <a href="https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Statements/for...in"><code>for...in</code></a>.<br>
+                        Consulta también <a href="https://developer.mozilla.org/en/docs/Web/JavaScript/Enumerability_and_ownership_of_properties">Enumerabilidad y posesión de propiedades</a>.</p>
+                    </td>
+                    <td><code>false</code></td>
+                    </tr>
+                    <tr>
+                    <td>[[Configurable]]</td>
+                    <td><code>Boolean</code></td>
+                    <td>Si es <code>false</code>, la propiedad no se puede eliminar, no se puede cambiar a una propiedad de acceso descriptor y los atributos que no sean [[Value]] y [[Writable]] no se pueden cambiar.</td>
+                    <td><code>false</code></td>
+                    </tr>
+                </tbody>
+            </table>
+            <table>
+                <caption>Atributos obsoletos (a partir de ECMAScript 3, renombrado en ECMAScript 5)</caption>
+                <thead>
+                    <tr>
+                    <th scope="col">Atributo</th>
+                    <th scope="col">Tipo</th>
+                    <th scope="col">Descripción</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                    <td><code>Read-only</code></td>
+                    <td><code>Boolean</code></td>
+                    <td>Estado inverso del atributo ES5 [[Writable]].</td>
+                    </tr>
+                    <tr>
+                    <td><code>DontEnum</code></td>
+                    <td><code>Boolean</code></td>
+                    <td>Estado inverso del atributo ES5 [[Enumerable]].</td>
+                    </tr>
+                    <tr>
+                    <td><code>DontDelete</code></td>
+                    <td><code>Boolean</code></td>
+                    <td>Estado inverso del atributo ES5 [[Configurable]].</td>
+                    </tr>
+                </tbody>
+            </table>
+            <h4 id="propiedad_accessor">Propiedad <code>Accessor</code></h4>
+            <p>Asocia una clave con una de las dos funciones de acceso (<code>get</code> y <code>set</code>) para recuperar o almacenar un valor y tiene los siguientes atributos:</p>
+            <table>
+                <caption>Atributos de una propiedad <code>accessor</code></caption>
+                <thead>
+                    <tr>
+                    <th scope="col">Atributo</th>
+                    <th scope="col">Tipo</th>
+                    <th scope="col">Descripción</th>
+                    <th scope="col">Valor predeterminado</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                    <td>[[Get]]</td>
+                    <td>Objeto <code>Function</code> o <code>undefined</code></td>
+                    <td>La función se llama con una lista de argumentos vacía y recupera el valor de la propiedad cada vez que se realiza un acceso al valor.<br>
+                        Consulta también <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/get" title="Currently only available in English (US)">get (en-US)</a>.</td>
+                    <td><code>undefined</code></td>
+                    </tr>
+                    <tr>
+                    <td>[[Set]]</td>
+                    <td>Objeto <code>Function</code> o <code>undefined</code></td>
+                    <td>La función se llama con un argumento que contiene el valor asignado y se ejecuta siempre que se intenta cambiar una propiedad específica.<br>
+                        Consulta también <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/set" title="Currently only available in English (US)">set (en-US)</a>.</td>
+                    <td><code>undefined</code></td>
+                    </tr>
+                    <tr>
+                    <td>[[Enumerable]]</td>
+                    <td><code>Boolean</code></td>
+                    <td>Si es <code>true</code>, la propiedad se enumerará en bucles <a href="https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Statements/for...in"><code>for...in</code></a>.</td>
+                    <td><code>false</code></td>
+                    </tr>
+                    <tr>
+                    <td>[[Configurable]]</td>
+                    <td><code>Boolean</code></td>
+                    <td>Si es <code>false</code>, la propiedad no se puede eliminar y no se puede cambiar a una propiedad de datos.</td>
+                    <td><code>false</code></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <h3 id="objetos_y_funciones_normales">
+            <a href="#objetos_y_funciones_normales" title="Permalink to Objetos y funciones &quot;normales&quot;">Objetos y funciones "normales"</a>
+        </h3>
+        <div>
+            <p>Un objeto JavaScript es una asociación entre <em>claves</em> y <em>valores</em>. Las claves son cadenas (o <a href="https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Symbol"><code>Symbol</code></a>s), y los <em>valores</em> pueden ser cualquier cosa. Esto hace que los objetos se ajusten naturalmente a <a href="http://en.wikipedia.org/wiki/Hash_table" rel="noopener"><code>hashmaps</code></a>.</p>
+            <p>Las funciones son objetos regulares con la capacidad adicional de ser <em>invocables</em>.</p></div><h3 id="fechas"><a href="#fechas" title="Permalink to Fechas">Fechas</a></h3><div><p>Al representar fechas, la mejor opción es utilizar la utilidad <a href="https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Date"><code>Date</code> incorporada</a> en JavaScript.</p>
+        </div>
+        <h3 id="colecciones_indexadas_arreglos_y_arreglos_tipados">
+            <a href="#colecciones_indexadas_arreglos_y_arreglos_tipados" title="Permalink to Colecciones indexadas: arreglos y arreglos tipados">Colecciones indexadas: arreglos y arreglos tipados</a>
+        </h3>
+        <div>
+            <p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array" title="Currently only available in English (US)">Los arreglos (en-US)</a> son objetos regulares para los que existe una relación particular entre las propiedades de clave entera y la Propiedad <code>length</code>.</p>
+            <p>Además, los arreglos heredan de <code>Array.prototype</code>, que les proporciona un puñado de convenientes métodos para manipular arreglos. Por ejemplo, <a href="https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Array/indexOf" title="es/JavaScript/Reference/Global_Objects/Array/indexOf"><code>indexOf</code></a> (buscando un valor en el arreglo) o <a href="https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Array/push" title="es/JavaScript/Reference/Global_Objects/Array/push"><code>push</code></a> (agrega un elemento al arreglo), y así sucesivamente. Esto hace que el <code>Array</code> sea un candidato perfecto para representar listas o conjuntos.</p>
+            <p>Los <a href="https://developer.mozilla.org/en/docs/Web/JavaScript/Typed_arrays">Arreglos tipados</a> son nuevos en JavaScript con ECMAScript 2015 y presentan una vista similar a un arreglo de un búfer de datos binarios subyacente. La siguiente tabla ayuda a determinar los tipos de datos equivalentes en C:</p>
+            <table>
+                <thead>
+                    <tr>
+                    <th scope="col">Tipo</th>
+                    <th scope="col">Intervalo de valores</th>
+                    <th scope="col">Tamaño en bytes</th>
+                    <th scope="col">Descripción</th>
+                    <th scope="col">Tipo de IDL web</th>
+                    <th scope="col">Tipo C equivalente</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><a title="La documentación acerca de este tema no ha sido escrita todavía . ¡Por favor considera contribuir !"><code>Int8Array</code></a></td>
+                        <td><code>-128</code> a <code>127</code></td>
+                        <td>1</td>
+                        <td>Dos enteros complementarios de 8 bits con signo</td>
+                        <td><code>byte</code></td>
+                        <td><code>int8_t</code></td>
+                    </tr>
+                    <tr>
+                        <td><a href="https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Uint8Array"><code>Uint8Array</code></a></td>
+                        <td><code>0</code> a <code>255</code></td>
+                        <td>1</td>
+                        <td>Entero de 8-bit sin signo</td>
+                        <td><code>octet</code></td>
+                        <td><code>uint8_t</code></td>
+                    </tr>
+                    <tr>
+                        <td><a title="La documentación acerca de este tema no ha sido escrita todavía . ¡Por favor considera contribuir !"><code>Uint8ClampedArray</code></a></td>
+                        <td><code>0</code> a <code>255</code></td>
+                        <td>1</td>
+                        <td>Entero de 8 bits sin signo (sujeto)</td>
+                        <td><code>octet</code></td>
+                        <td><code>uint8_t</code></td>
+                    </tr>
+                    <tr>
+                        <td><a title="La documentación acerca de este tema no ha sido escrita todavía . ¡Por favor considera contribuir !"><code>Int16Array</code></a></td>
+                        <td><code>-32768</code> a <code>32767</code></td>
+                        <td>2</td>
+                        <td>Dos enteros complementarios de 16 bits con signo</td>
+                        <td><code>short</code></td>
+                        <td><code>int16_t</code></td>
+                    </tr>
+                    <tr>
+                        <td><a title="La documentación acerca de este tema no ha sido escrita todavía . ¡Por favor considera contribuir !"><code>Uint16Array</code></a></td>
+                        <td><code>0</code> a <code>65535</code></td>
+                        <td>2</td>
+                        <td>Entero de 16 bits sin signo</td>
+                        <td><code>Short sin signo</code></td>
+                        <td><code>uint16_t</code></td>
+                    </tr>
+                    <tr>
+                        <td><a title="La documentación acerca de este tema no ha sido escrita todavía . ¡Por favor considera contribuir !"><code>Int32Array</code></a></td>
+                        <td><code>-2147483648</code> a <code>2147483647</code></td>
+                        <td>4</td>
+                        <td>dos enteros complementarios de 32 bits con signo</td>
+                        <td><code>long</code></td>
+                        <td><code>int32_t</code></td>
+                    </tr>
+                    <tr>
+                        <td><a title="La documentación acerca de este tema no ha sido escrita todavía . ¡Por favor considera contribuir !"><code>Uint32Array</code></a></td>
+                        <td><code>0</code> a <code>4294967295</code></td>
+                        <td>4</td>
+                        <td>Enteros de 32 bits sin signo</td>
+                        <td><code>long sin signo</code></td>
+                        <td><code>uint32_t</code></td>
+                    </tr>
+                    <tr>
+                        <td><a title="La documentación acerca de este tema no ha sido escrita todavía . ¡Por favor considera contribuir !"><code>Float32Array</code></a></td>
+                        <td><code>1.2</code><span>×</span><code>10<sup>-38</sup></code> a <code>3.4</code><span>×</span><code>10<sup>38</sup></code></td>
+                        <td>4</td>
+                        <td>Número de coma flotante IEEE de 32 bits (7 dígitos significativos, p. ej., <code>1.1234567</code>)</td>
+                        <td><code>float sin restricciones</code></td>
+                        <td><code>float</code></td>
+                    </tr>
+                    <tr>
+                        <td><a title="La documentación acerca de este tema no ha sido escrita todavía . ¡Por favor considera contribuir !"><code>Float64Array</code></a></td>
+                        <td><code>5.0</code><span>×</span><code>10<sup>-324</sup></code> a <code>1.8</code><span>×</span><code>10<sup>308</sup></code></td>
+                        <td>8</td>
+                        <td>Número de coma flotante IEEE de 64 bits (16 dígitos significativos, p. ej., <code>1.123...15</code>)</td>
+                        <td><code>doble sin restricciones</code></td>
+                        <td><code>double</code></td>
+                    </tr>
+                    <tr>
+                        <td><a title="La documentación acerca de este tema no ha sido escrita todavía . ¡Por favor considera contribuir !"><code>BigInt64Array</code></a></td>
+                        <td><code>-2<sup>63</sup></code> a <code>2<sup>63</sup>-1</code></td>
+                        <td>8</td>
+                        <td>Dos enteros complementarios de 64 bits con signo</td>
+                        <td><code>bigint</code></td>
+                        <td><code>int64_t (long long con signo)</code></td>
+                    </tr>
+                    <tr>
+                        <td><a title="La documentación acerca de este tema no ha sido escrita todavía . ¡Por favor considera contribuir !"><code>BigUint64Array</code></a></td>
+                        <td><code>0</code> a <code>2<sup>64</sup>-1</code></td>
+                        <td>8</td>
+                        <td>Entero de 64 bits sin signo</td>
+                        <td><code>bigint</code></td>
+                        <td><code>uint64_t (long long sin signo)</code></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <h3 id="colecciones_con_clave_mapas_conjuntos_weakmaps_weaksets">
+            <a href="#colecciones_con_clave_mapas_conjuntos_weakmaps_weaksets" title="Permalink to Colecciones con clave: mapas, conjuntos, WeakMaps, WeakSets">Colecciones con clave: mapas, conjuntos, <code>WeakMaps</code>, <code>WeakSets</code></a>
+        </h3>
+        <div>
+            <p>Estas estructuras de datos, introducidas en ECMAScript Edition 6, toman referencias a objetos como claves. <a href="https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Set"><code>Set</code></a> y <a href="https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/WeakSet"><code>WeakSet</code></a> representan un conjunto de objetos, mientras que <a title="La documentación acerca de este tema no ha sido escrita todavía . ¡Por favor considera contribuir !"><code>Map</code></a> y <a href="https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/WeakMap"><code>WeakMap</code></a> se asocian un valor a un objeto.</p>
+            <p>La diferencia entre <code>Map</code>s y <code>WeakMap</code>s es que en el primero, las claves de objeto se pueden enumerar. Esto permite la optimización de la recolección de basura en el último caso.</p>
+            <p>Se podrían implementar <code>Map</code>s y <code>Set</code>s en ECMAScript 5 puro. Sin embargo, dado que los objetos no se pueden comparar (en el sentido de <code>&lt;</code> "menor que", por ejemplo), el rendimiento de búsqueda sería necesariamente lineal. Las implementaciones nativas de ellos (incluidos los <code>WeakMap</code>s) pueden tener un rendimiento de búsqueda que es aproximadamente logarítmico al tiempo constante.</p>
+            <p>Por lo general, para vincular datos a un nodo DOM, se pueden establecer propiedades directamente en el objeto o usar atributos <code>data-*</code>. Esto tiene la desventaja de que los datos están disponibles para cualquier script que se ejecute en el mismo contexto. Los <code>Map</code>s y <code>WeakMap</code>s facilitan la vinculación <em>privada</em> de datos a un objeto.</p>
+        </div>
+        <h3 id="datos_estructurados_json">
+            <a href="#datos_estructurados_json" title="Permalink to Datos estructurados: JSON">Datos estructurados: JSON</a>
+        </h3>
+        <div>
+            <p>JSON (<strong>J</strong>ava <strong>S</strong>cript <strong>O</strong>bject <strong>N</strong>otation) es un formato ligero de intercambio de datos, derivado de JavaScript, pero utilizado por muchos lenguajes de programación. JSON crea estructuras de datos universales.</p>
+            <p>Consulta <a href="https://developer.mozilla.org/en/docs/Glossary/JSON">JSON</a> y <a href="https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/JSON"><code>JSON</code></a> para obtener más detalles.</p>
+        </div>
+        <h3 id="más_objetos_en_la_biblioteca_estándar">
+            <a href="#más_objetos_en_la_biblioteca_estándar" title="Permalink to Más objetos en la biblioteca estándar">Más objetos en la biblioteca estándar</a>
+        </h3>
+        <div>
+            <p>JavaScript tiene una biblioteca estándar de objetos integrados.</p>
+            <p>Échale un vistazo a la <a href="https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects">referencia</a> para conocer más objetos.</p>
+        </div>
+        <h2 id="determinación_de_tipos_usando_el_operador_typeof">
+            <a href="#determinación_de_tipos_usando_el_operador_typeof" title="Permalink to Determinación de tipos usando el operador typeof">Determinación de tipos usando el operador <code>typeof</code></a>
+        </h2>
+        <div>
+            <p>El operador <code>typeof</code> te puede ayudar a encontrar el tipo de tu variable.</p>
+            <p>Lee la <a href="https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Operators/typeof">página de referencia</a> para obtener más detalles y casos extremos.</p>
+        </div>
+        <h2 id="especificaciones">
+            <a href="#especificaciones" title="Permalink to Especificaciones">Especificaciones</a>
+        </h2>
+        <div>
+            <table>
+                <thead>
+                    <tr>
+                        <th scope="col">Especificación</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><a href="https://tc39.es/ecma262/#sec-ecmascript-data-types-and-values" hreflang="en" lang="en" rel="noopener">ECMAScript (ECMA-262)<br><small lang="es">La definición de 'Tipos Data y Values ECMAScript' en esta especificación.</small></a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <h2 id="ve_también">
+            <a href="#ve_también" title="Permalink to Ve también">Ve también</a>
+        </h2>
+        <div>
+            <ul>
+                <li><a class="link-https external" href="https://github.com/nzakas/computer-science-in-javascript/" rel="noopener">Colección de estructura de datos común y algoritmos comunes en JavaScript de Nicholas Zakas.</a></li>
+                <li><a href="https://github.com/monmohan/DataStructures_In_Javascript" rel="noopener">Estructuras de datos implementadas en JavaScript</a></li>
+            </ul>
+        </div>
+    </article>
+</div>
