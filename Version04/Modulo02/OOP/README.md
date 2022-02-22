@@ -3,7 +3,7 @@
 
 ![](https://i.ibb.co/rbzdqdR/FOTO.png)
 
-## Paradigma de Progrmación Orientada a Objetos
+## Paradigma de Programación Orientada a Objetos
 ### Módulo 2
   
 ### Introducción
