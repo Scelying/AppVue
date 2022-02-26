@@ -275,8 +275,8 @@ class Rectangulo extends FiguraBidimensional {
 
 const cuadrado = new Cuadrado(0,0,5);
 const rectangulo = new Rectangulo(0,0,2,3);
-console.log(cuadrado.area());
-console.log(rectangulo.area());
+//console.log(cuadrado.area());
+//console.log(rectangulo.area());
 
 //Como creo un objeto por medio una clase
 //Instancia
@@ -331,7 +331,34 @@ const division = (dividendo = 1, divisor = 1) => {
 //Templates
 //`${<nombreVariable>}`
 //ES5
-console.log('El nombre de la persona es: ' + persona.nombre + ' ' + 'y su apellido es: ' + persona.apellido);
+//console.log('El nombre de la persona es: ' + persona.nombre + ' ' + 'y su apellido es: ' + persona.apellido);
 
 //ES6
-console.log(`El nombre de la persona es: ${persona.nombre} y su apellido es: ${persona.apellido}`);
+//console.log(`El nombre de la persona es: ${persona.nombre} y su apellido es: ${persona.apellido}`);
+
+//Desestructuracion
+//desestructuracion de arreglos
+var arregloDigitosPares = [2,4,6,8,0];
+
+//ES5
+/*var primeraPosicion = arregloDigitosPares[0];
+var segundaPosicion = arregloDigitosPares[1];
+var terceraPosicion = arregloDigitosPares[2];
+var cuartaPosicion = arregloDigitosPares[3];
+var quintaPosicion = arregloDigitosPares[4];*/
+
+//ES6
+const [primeraPosicion, segundaPosicion, terceraPosicion, cuartaPosicion, quintaPosicion] = arregloDigitosPares;
+//console.log(primeraPosicion, segundaPosicion, terceraPosicion, cuartaPosicion, quintaPosicion);
+
+const tamanioArreglo = arregloDigitosPares.length;
+
+for(let posicion = 0; posicion < tamanioArreglo; posicion++) {
+    eval(`posicion${posicion}=${arregloDigitosPares[posicion]}`);
+}
+
+console.log(posicion0);
+console.log(posicion1);
+console.log(posicion2);
+console.log(posicion3);
+console.log(posicion4);
