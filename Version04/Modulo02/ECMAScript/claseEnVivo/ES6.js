@@ -94,7 +94,7 @@ const sumarAlternativa = () => {
 //Un mapa tiene una propiedad que reprsenta el tamaño del mapa.
 //Crea como un mapa
 const diccionario = new Map();
-console.log(diccionario.size);
+//console.log(diccionario.size);
 
 //Agregar información o datos
 //set()
@@ -105,57 +105,57 @@ diccionario.set('css', 'Es un lenguaje de estilos');
 diccionario.set(0, 'Es un número');
 diccionario.set(0, 'Se sobreescribe');
 diccionario.set(false, 'Es un valor boleano');
-console.log(diccionario.size);
+//console.log(diccionario.size);
 
 //Obtener información o datos de la nueva estructura Map
 //get()
 //<nombreMapa>.set(<clave>);
-console.log(diccionario.get(false));
-console.log(diccionario.get(0));
-console.log(diccionario.get('html'));
+//console.log(diccionario.get(false));
+//console.log(diccionario.get(0));
+//console.log(diccionario.get('html'));
 
 //Elimine datos o información
 //delete()
 //<nombreMapa>.delete(<clave>);
-console.log(diccionario.delete(false));
-console.log(diccionario.size);
+//console.log(diccionario.delete(false));
+//console.log(diccionario.size);
 
 //Validar la existencia de alguna clave
 //has()
 //<nombreMapa>.has(<clave>);
-console.log(diccionario.has(false));
-console.log(diccionario.has('css'));
+//console.log(diccionario.has(false));
+//console.log(diccionario.has('css'));
 
 //Tipo de dato de Mapa
-console.log(typeof diccionario);
+//console.log(typeof diccionario);
 
 //Instancia de Mapa
-console.log(diccionario instanceof Map);
+//console.log(diccionario instanceof Map);
 
 //Conocer todas las claves de un Mapa
 //values()
 //<nombreMapa>.values();
-console.log(diccionario.values());
+//console.log(diccionario.values());
 
 //Conocer todas los valores de un Mapa
 //keys()
 //<nombreMapa>.keys();
-console.log(diccionario.keys());
+//console.log(diccionario.keys());
 
 //Conocer todas las asociaciones entre <clave>-<valor> de un Mapa
 //entries()
 //<nombreMapa>.entries();
-console.log(diccionario.entries());
+//console.log(diccionario.entries());
 
 for(asociacion of diccionario) {
-    console.log(asociacion);
+    //console.log(asociacion);
 }
 
 //Eliminar todas las claves
 //clear()
 //<nombreMapa>.clear();
 diccionario.clear();
-console.log(diccionario.size);
+//console.log(diccionario.size);
 
 //Set()
 //Nueva estructura de datos
@@ -174,39 +174,83 @@ conjuntoVocales.add('i');
 conjuntoVocales.add('o');
 conjuntoVocales.add('u');
 conjuntoVocales.add('u');
-console.log(conjuntoVocales);
-console.log(conjuntoVocales.size);
+//console.log(conjuntoVocales);
+//console.log(conjuntoVocales.size);
 
 //new Set()
 //const conjuntoVocales = new Set(['a', 'e', 'i', 'o','u']);
 
 conjuntoVocales.forEach(function(valor) {
-    console.log(valor);
+    //console.log(valor);
 })
 
 //Manipular un objeto como estructura iterable
 //<nombreConjunto>.values();
 const conjuntoIterable = conjuntoVocales.values();
-console.log(conjuntoIterable);
+//console.log(conjuntoIterable);
 
 for(elementoInterno of conjuntoIterable) {
-    console.log(elementoInterno);
+    //console.log(elementoInterno);
 }
 
 //Un conjunto no tiene <claves>, pero si uso el metodo keys(), me retorna los datos
 //keys()
-console.log(conjuntoVocales.keys());
+//console.log(conjuntoVocales.keys());
 
 //entries()
 //Un conjunto no tiene <claves>, le asigna a cada <nuevaClave> el mismo <valor>
-console.log(conjuntoVocales.entries())
+//console.log(conjuntoVocales.entries())
 const conjuntoIterableEntradas = conjuntoVocales.entries();
 for(elementoInterno of conjuntoIterableEntradas) {
-    console.log(elementoInterno);
+    //console.log(elementoInterno);
 }
 
 //Tipo de dato de conjunto
-console.log(typeof conjuntoVocales);
+//console.log(typeof conjuntoVocales);
 
 //Instancia de Conjunto
-console.log(conjuntoVocales instanceof Set);
+//console.log(conjuntoVocales instanceof Set);
+
+//Clases
+//Son templates para trabajar como objetos
+/*
+Sintaxis -> class <nombreClase> {
+    //cuerpo interno de la clase
+}
+*/
+class Persona {
+    constructor(nombre, apellido) {
+        this.nombre = nombre;
+        this.apellido = apellido;
+    }
+
+    darNombre() {
+        return this.nombre;
+    }
+
+    darApellido() {
+        return this.apellido;
+    }
+
+    darNombreCompleto() {
+        return this.nombre.concat(' ', this.apellido);
+    }
+
+    cambiarNombre(nombre) {
+        this.nombre = nombre;
+    }
+
+    cambiarApellido(apellido) {
+        this.apellido = apellido;
+    }
+}
+
+//Como creo un objeto por medio una clase
+//Instancia
+const GustavoGarcia = new Persona('Gustavo', 'Garcia');
+const PepitoPerez = new Persona('Pepito', 'Perez');
+GustavoGarcia.cambiarNombre('Adolfo');
+GustavoGarcia.cambiarApellido('Blanco');
+console.log(GustavoGarcia.darNombreCompleto());
+
+
