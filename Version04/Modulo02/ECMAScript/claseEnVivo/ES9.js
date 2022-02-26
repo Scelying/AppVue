@@ -21,8 +21,23 @@ const promesaTres = new Promise((resolve, reject) => {
 
 const arregloPromesas = [promesaUno, promesaDos, promesaTres];
 
-(async function() {
+/*(async function() {
     for await (let elemento of arregloPromesas) {
         console.log(`elemento: ${elemento}`);
     }
-})();
+})();*/
+
+//Promise.finally()
+const promesaCuatro = new Promise((resolve, reject) => {
+    setTimeout(() => {
+        resolve("Exito Cuarta Promesa");
+    }, 1000)
+    /*setTimeout(() => {
+        reject("Error Cuarta Promesa");
+    }, 2000)*/
+});
+
+promesaCuatro
+.then((response) => console.log(response))
+.catch((error) => console.error(error))
+.finally(() => console.log('Se ejecuta esta linea'));
