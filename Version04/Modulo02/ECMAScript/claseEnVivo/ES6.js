@@ -245,12 +245,93 @@ class Persona {
     }
 }
 
+class FiguraBidimensional {
+    constructor() {}
+    area() {}
+}
+
+class Cuadrado extends FiguraBidimensional {
+    constructor(lado) {
+        super();
+        this.lado = lado;
+    }
+
+    area() {
+        return this.lado * this.lado;
+    }
+}
+
+class Rectangulo extends FiguraBidimensional {
+    constructor(ancho, largo) {
+        super();
+        this.ancho = ancho;
+        this.largo = largo;
+    }
+
+    area() {
+        return this.ancho * this.largo;
+    }
+}
+
+const cuadrado = new Cuadrado(0,0,5);
+const rectangulo = new Rectangulo(0,0,2,3);
+console.log(cuadrado.area());
+console.log(rectangulo.area());
+
 //Como creo un objeto por medio una clase
 //Instancia
 const GustavoGarcia = new Persona('Gustavo', 'Garcia');
 const PepitoPerez = new Persona('Pepito', 'Perez');
 GustavoGarcia.cambiarNombre('Adolfo');
 GustavoGarcia.cambiarApellido('Blanco');
-console.log(GustavoGarcia.darNombreCompleto());
+//console.log(GustavoGarcia.darNombreCompleto());
 
+//Promise
 
+//Symbol
+//Nuevo tipo de dato primitivo para JS
+//Representa un identificador único("oculto") al que ningún otro codigo puede acceder accidentalmente.
+const persona = {
+    nombre: 'Gustavo',
+    apellido: 'Garcia'
+};
+
+let id = Symbol('id');
+persona[id] = 145025;
+//console.log(persona);
+//console.log(persona[id]);
+//console.log(persona.id);
+
+let idDos = Symbol('id');
+persona[idDos] = 145025;
+
+//console.log(persona == persona);
+//console.log(persona[id] == persona[idDos]);
+
+//Valores por defecto en los parametros
+//ES5
+/*function division(dividendo, divisor) {
+    if(typeof dividendo === 'undefined' || typeof divisor === 'undefined') {
+        console.error('no se puedo realizar la operación');
+        return;
+    } else if (divisor === 0) {
+        console.error('no se puedo realizar la operación, ya que el divisor es 0');
+        return;
+    }
+    return dividendo / divisor;
+}*/
+
+//ES6
+const division = (dividendo = 1, divisor = 1) => {
+    return dividendo / divisor;
+}
+
+//console.log(division(10, 0));
+
+//Templates
+//`${<nombreVariable>}`
+//ES5
+console.log('El nombre de la persona es: ' + persona.nombre + ' ' + 'y su apellido es: ' + persona.apellido);
+
+//ES6
+console.log(`El nombre de la persona es: ${persona.nombre} y su apellido es: ${persona.apellido}`);
