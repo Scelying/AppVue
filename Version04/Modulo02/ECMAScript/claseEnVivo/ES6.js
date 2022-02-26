@@ -67,19 +67,19 @@ var <nombreFuncion> = function(<argumento>*){
 //Si hago todo en una unica linea de codigo puedo omitir corchetes y la palabra
 //reservada de return;
 const sumar = () => 4 + 5;
-console.log(sumar());
+//console.log(sumar());
 
 //Si tengo un solo argumento los aprantesis son opcionales
 //const multiplicarPorDos = (numero) => numero * 2;
 const multiplicarPorDos = numero => numero * 2;
-console.log(multiplicarPorDos(5));
+//console.log(multiplicarPorDos(5));
 
 //Si tengo mas de una linea de codigo estoy obligado a usar los corchetes y si quiero
 //retorna alguna informacion de usar la palabra reservada de return
 const sumarAlternativa = () => {
     return 4 + 5;
 };
-console.log(sumarAlternativa());
+//console.log(sumarAlternativa());
 
 //Las funciones flechas no tienes su propio this. No estan hechas para metodos dentro 
 //de objetos, no estan hechas para constructores. Al igual que las funcionaes tipo variable
@@ -93,8 +93,73 @@ console.log(sumarAlternativa());
 //Un mapa recuerda el orden de inserción de las claves.
 //Un mapa tiene una propiedad que reprsenta el tamaño del mapa.
 //Crea como un mapa
-const nombres = new Map([
-    ['Gustavo Garcia'],
-    ['Pepito Perez']
-]);
-console.log(nombres.size);
+const diccionario = new Map();
+console.log(diccionario.size);
+
+//Agregar información o datos
+//set()
+//<nombreMapa>.set(<clave>, <valor>);
+diccionario.set('js', 'Es un lenguaje de programación');
+diccionario.set('html', 'Es un lenguaje de etiquetas');
+diccionario.set('css', 'Es un lenguaje de estilos');
+diccionario.set(0, 'Es un número');
+diccionario.set(0, 'Se sobreescribe');
+diccionario.set(false, 'Es un valor boleano');
+console.log(diccionario.size);
+
+//Obtener información o datos de la nueva estructura Map
+//get()
+//<nombreMapa>.set(<clave>);
+console.log(diccionario.get(false));
+console.log(diccionario.get(0));
+console.log(diccionario.get('html'));
+
+//Elimine datos o información
+//delete()
+//<nombreMapa>.delete(<clave>);
+console.log(diccionario.delete(false));
+console.log(diccionario.size);
+
+//Validar la existencia de alguna clave
+//has()
+//<nombreMapa>.has(<clave>);
+console.log(diccionario.has(false));
+console.log(diccionario.has('css'));
+
+//Tipo de dato de Mapa
+console.log(typeof diccionario);
+
+//Instancia de Mapa
+console.log(diccionario instanceof Map);
+
+//Conocer todas las claves de un Mapa
+//values()
+//<nombreMapa>.values();
+console.log(diccionario.values());
+
+//Conocer todas los valores de un Mapa
+//keys()
+//<nombreMapa>.keys();
+console.log(diccionario.keys());
+
+//Conocer todas las asociaciones entre <clave>-<valor> de un Mapa
+//entries()
+//<nombreMapa>.entries();
+console.log(diccionario.entries());
+
+for(asociacion of diccionario) {
+    console.log(asociacion);
+}
+
+//Eliminar todas las claves
+//clear()
+//<nombreMapa>.clear();
+diccionario.clear();
+console.log(diccionario.size);
+
+//Set()
+//Nueva estructura de datos
+//Un conjunto no posee cardinalidad.
+//Un conjunto solo puede tener un valor único por cada elemento.
+//Un conjunto puede contener cualquier tipo de dato.
+//Como creo un conjunto
