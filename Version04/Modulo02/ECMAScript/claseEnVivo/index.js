@@ -103,9 +103,59 @@ function numerosParesMetodo(valor, posicion, arreglo) {
 //some()
 //Devuelve un true si se cumpla para al menos un indice una condicion
 var numerosMayoresA7 = arregloNumeros.some(numerosMayoresA7Metodo);
-console.log(numerosMayoresA7);
+//console.log(numerosMayoresA7);
 
 function numerosMayoresA7Metodo(valor, posicion, arreglo) {
     //console.log("valor: ", valor, "posicion: ", posicion, "arreglo:", arreglo);
     return valor > 7;
 }
+
+//JSON
+//JavaScript Object Notation
+
+//JSON.Parse()
+//Es un uso común para convertir texto en un objeto JS
+var objeto = JSON.parse('{"nombre": "Gustavo", "apellido": "Garcia"}');
+//console.log(objeto.nombre);
+//console.log(JSON.parse('5'));
+
+//JSON.stringfy()
+//Converitr un objeto JS a un texto
+var persona = {
+    nombre: 'Gustavo',
+    apellido: 'Garcia'
+}
+//console.log(JSON.stringify(persona));
+
+//Getter y Setters
+/*var personaComplicada = {
+    nombre: 'Gustavo',
+    apellido: 'Garcia',
+    get nombreCompleto() {
+        return this.nombre + " " + this.apellido;
+    },
+    set cambiarNombre(nuevoNombre) {
+        this.nombre = nuevoNombre;
+    }
+}*/
+//console.log(personaComplicada.nombreCompleto);
+//personaComplicada.cambiarNombre = 'Adolfo';
+//console.log(personaComplicada.nombre, personaComplicada.nombreCompleto);
+
+//bind() con objetos
+//Un objeto toma prestado un metodo de otro objeto
+var personaComplicada = {
+    nombre: 'Gustavo',
+    apellido: 'Garcia',
+    nombreCompleto: function() {
+        return this.nombre + " " + this.apellido;
+    }
+};
+
+ var otraPersona = {
+    nombre: 'Pepito',
+    apellido: 'Perez',
+}
+
+var nombreCompletoVariable = personaComplicada.nombreCompleto.bind(otraPersona);
+console.log(nombreCompletoVariable()); 
