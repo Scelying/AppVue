@@ -163,3 +163,50 @@ console.log(diccionario.size);
 //Un conjunto solo puede tener un valor único por cada elemento.
 //Un conjunto puede contener cualquier tipo de dato.
 //Como creo un conjunto
+const conjuntoVocales = new Set();
+
+//Como agrego información a un conjunto
+//add()
+//<nombreConjunto>.add(<valor>);
+conjuntoVocales.add('a');
+conjuntoVocales.add('e');
+conjuntoVocales.add('i');
+conjuntoVocales.add('o');
+conjuntoVocales.add('u');
+conjuntoVocales.add('u');
+console.log(conjuntoVocales);
+console.log(conjuntoVocales.size);
+
+//new Set()
+//const conjuntoVocales = new Set(['a', 'e', 'i', 'o','u']);
+
+conjuntoVocales.forEach(function(valor) {
+    console.log(valor);
+})
+
+//Manipular un objeto como estructura iterable
+//<nombreConjunto>.values();
+const conjuntoIterable = conjuntoVocales.values();
+console.log(conjuntoIterable);
+
+for(elementoInterno of conjuntoIterable) {
+    console.log(elementoInterno);
+}
+
+//Un conjunto no tiene <claves>, pero si uso el metodo keys(), me retorna los datos
+//keys()
+console.log(conjuntoVocales.keys());
+
+//entries()
+//Un conjunto no tiene <claves>, le asigna a cada <nuevaClave> el mismo <valor>
+console.log(conjuntoVocales.entries())
+const conjuntoIterableEntradas = conjuntoVocales.entries();
+for(elementoInterno of conjuntoIterableEntradas) {
+    console.log(elementoInterno);
+}
+
+//Tipo de dato de conjunto
+console.log(typeof conjuntoVocales);
+
+//Instancia de Conjunto
+console.log(conjuntoVocales instanceof Set);
