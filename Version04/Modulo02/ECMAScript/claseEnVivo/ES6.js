@@ -357,8 +357,34 @@ for(let posicion = 0; posicion < tamanioArreglo; posicion++) {
     eval(`posicion${posicion}=${arregloDigitosPares[posicion]}`);
 }
 
-console.log(posicion0);
+/*console.log(posicion0);
 console.log(posicion1);
 console.log(posicion2);
 console.log(posicion3);
-console.log(posicion4);
+console.log(posicion4);*/
+
+/*const [primerElemento, ,tercerElemento] = arregloDigitosPares;
+console.log(primerElemento);
+console.log(segundoElemento);*/
+
+const [primerElemento, ...restoArreglo] = arregloDigitosPares;
+//console.log(primerElemento);
+//console.log(restoArreglo);
+
+//desestructuracion de arreglos
+//ES5
+var objetoPersona = {
+    nombre: 'Gustavo',
+    apellido: 'Garcia',
+    edad: 33
+};
+var nombreObjetoPersona = objetoPersona.nombre;
+var apellidoObjetoPersona = objetoPersona.apellido;
+var edadObjetoPersona = objetoPersona.edad;
+console.log(nombreObjetoPersona, apellidoObjetoPersona, edadObjetoPersona);
+
+//ES6
+//La nueva variable que creo debe llamarse exavtamente igual a la llave dentro del objeto
+//Si quiero rescatar las propiedas que no uso utlizo la notacion ...
+const {nombre, ...restoObjeto} = objetoPersona;
+console.log(nombre, restoObjeto);
