@@ -388,3 +388,29 @@ console.log(nombreObjetoPersona, apellidoObjetoPersona, edadObjetoPersona);
 //Si quiero rescatar las propiedas que no uso utlizo la notacion ...
 const {nombre, ...restoObjeto} = objetoPersona;
 console.log(nombre, restoObjeto);
+
+//Operador Spread
+//Permite a un elemento iterable o una cadena de texto ser expandida(spread) en lugares
+//donde cero o mas argumentos(para llamada de función) son esperados.
+function resta(n1, n2) {
+    return n1-n2;
+}
+
+//console.log(resta(...arregloDigitosPares));
+
+//Operador Rest
+//Nos permite representar un número indefinido de argumentos(parametros de una función) como
+//un array.
+function sumaAlternativa(...desestructuracion) {
+    console.log(desestructuracion);
+    return desestructuracion.reduce((total, valor) => {
+        return total + valor;
+    });
+}
+
+console.log(sumaAlternativa(1,2,3,4,5,6,7,8,9,0));
+
+//Modulos
+//Importar desde exportaciones con nombre
+//Importe exportaciones con nombre desde el archivo person.js
+//Por favor redirigase a module.js
