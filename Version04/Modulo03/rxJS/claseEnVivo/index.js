@@ -75,19 +75,51 @@ obs$.subscribe(
   (v) => console.log(v),
   (e) => console.error(e)
 );*/
-import { interval } from 'rxjs';
+/*import { interval } from 'rxjs';
 import { take } from 'rxjs/operators';
 
 const numbers = interval(2000);
 
-/*numbers.subscribe(
+numbers.subscribe(
   (x) => console.log('Next: ', x),
   (error) => console.error(error)
-);*/
+);
 
 const takeFourNumbers = numbers.pipe(take(10));
 
 takeFourNumbers.subscribe(
   (x) => console.log('Next: ', x),
   (error) => console.error(error)
-);
+);*/
+/*import { range } from 'rxjs';
+
+const numbers = range(1, 3);
+
+numbers.subscribe({
+  next: (value) => {
+    console.log(value);
+  },
+  complete: () => {
+    console.log('Complete!');
+  },
+});*/
+/*import { combineLatest, timer } from 'rxjs';
+
+const firstTimer = timer(0, 1000);
+const secondTimer = timer(500, 1000);
+
+const combinedTimers = combineLatest([firstTimer, secondTimer]);
+const subscripcion = combinedTimers.subscribe((value) => console.log(value));
+
+setTimeout(() => {
+  subscripcion.unsubscribe();
+}, 5000);*/
+import { concat, interval, range, combineLatest } from 'rxjs';
+import { take } from 'rxjs/operators';
+
+const timer = interval(1000).pipe(take(4));
+const sequence = interval(1000).pipe(take(4));
+const result = concat(timer, sequence);
+const combinar = combineLatest([timer, result]);
+result.subscribe((x) => console.log(x));
+combinar.subscribe((x) => console.log(x));
