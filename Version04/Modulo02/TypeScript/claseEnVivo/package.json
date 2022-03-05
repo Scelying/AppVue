@@ -1,0 +1,14 @@
+{
+  "name": "miprimerapaquete",
+  "version": "1.0.0",
+  "description": "Este es un ejemplo de un paquete para trabajar con js",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Gustavo Garcia",
+  "license": "MIT",
+  "dependencies": {
+    "typescript": "^4.6.2"
+  }
+}
