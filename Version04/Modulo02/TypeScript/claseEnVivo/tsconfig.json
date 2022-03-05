@@ -3,7 +3,8 @@
     "target": "es5",
     "module": "CommonJS",
     "strict": true,
-    "outDir": "dist",
-    "sourceMap": true
-  }
+    "outDir": "lib",
+    "sourceMap": false
+  },
+  //"files": ["index.ts"]
 }
