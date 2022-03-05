@@ -4,6 +4,7 @@
   "description": "Este es un ejemplo de un paquete para trabajar con js",
   "main": "index.js",
   "scripts": {
+    "build": "tsc ./index.ts",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Gustavo Garcia",
