@@ -27,7 +27,7 @@ const express = require('express');
 //importar y usamos mongoose
 const mongoose = require('mongoose');
 //imporat y usamos chalk
-//const chalk = require('chalk');
+const chalk = require('chalk');
 //Creamos una instancia de express
 const app = express();
 //crear puerto
@@ -36,7 +36,7 @@ const puerto = 5500;
 app.use(express.json());
 
 //Creamos una promesa que se conecta a la base de datos
-let promise = mongoose.connect('mongodb://localhost:27017/miprimerabasededatos');
+let promise = mongoose.connect('mongodb://localhost:27016/miprimerabasededatos');
 
 //Crear un esquema de Vehiculo
 const automovilesSchema = mongoose.Schema({
@@ -71,9 +71,6 @@ function isAdminMw(req, res, next) {
 //Despues agregamos el middleware
 //app.use(<nombreMiddleware>)
 app.use(isAdminMw);
-
-//Usamos chalk
-//app.use(chalk);
 
 //Creamos un puerto para express
 app.post('/', (request, response) => {
