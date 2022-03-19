@@ -115,7 +115,7 @@ app.get('*', (req, res) => {
 
 app.listen(puerto, () => {
     promise
-        .then(() => console.log('Conectado a la base de datos'))
+        .then(() => console.log(chalk.green('Conectado a la base de datos')))
         .catch(() => console.log(chalk.red('No se pudo conectar a la base de datos')));
     console.log(`Aplicacion arriba sobre el puerto ${puerto}`);
 })
