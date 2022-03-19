@@ -36,7 +36,12 @@ app.use(express.json());
 //manejo de una ruta(path)
 //Mi primer Middleware validara si soy administrador
 function isAdminMw(req, res, next) {
-    if(JSON.parse(req.headers['isadmin'])) {
+    //Error interno en el servidor
+    //Si no envio el encabezado la propiedad isAdmin
+    if(req.headers['isadmin'] === undefined) {
+        res.status(500).send('Internal Error Server');
+    }
+    else if(JSON.parse(req.headers['isadmin'])) {
         //Si es admin continua con el flujo normal
         next();
     } else {
