@@ -39,6 +39,16 @@ app.get('/', (request, response) => {
     response.send('ruta para operacion leer verbo GET');
 });
 
+app.get('/:color/:modelo', (req, res) => {
+    const color = req.params.color;
+    const modelo = req.params.modelo;
+    res.send('Path param /:color/:modelo');
+});
+
+app.get('/color/:color/modelo/:modelo', (req, res) => {
+    res.send('Path param /color/:color/modelo/:modelo');
+});
+
 app.put('/', (request, response) => {
     //valla a db y traigame info
     response.send('ruta para operacion actualizar verbo PUT');
