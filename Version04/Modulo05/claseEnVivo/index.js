@@ -24,12 +24,17 @@ console.log('Servidor esta corriendo en el puerto 8081');
 //Express
 //Importamos y usamos express
 const express = require('express');
+//importar y usamos mongoose
+const mongoose = require('mongoose');
 //Creamos una instancia de express
 const app = express();
 //crear puerto
 const puerto = 5500;
 //Permitir que todos los parametros sean en formato JSON
 app.use(express.json());
+
+//nos conectamos a la base de datos
+mongoose.connect('mongodb://localhost:27017/miprimerabasededatos');
 
 //Vamos a crear nuestro primer middleware
 //Middleware condigo que se ejecuta antes o despues del
