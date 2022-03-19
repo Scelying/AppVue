@@ -26,6 +26,8 @@ console.log('Servidor esta corriendo en el puerto 8081');
 const express = require('express');
 //importar y usamos mongoose
 const mongoose = require('mongoose');
+//imporat y usamos chalk
+//const chalk = require('chalk');
 //Creamos una instancia de express
 const app = express();
 //crear puerto
@@ -35,6 +37,17 @@ app.use(express.json());
 
 //Creamos una promesa que se conecta a la base de datos
 let promise = mongoose.connect('mongodb://localhost:27017/miprimerabasededatos');
+
+//Crear un esquema de Vehiculo
+const automovilesSchema = mongoose.Schema({
+    modelo: Number,
+    color: String,
+    marca: String,
+    tipo: String
+})
+
+//Crecar el modelo en mongoose
+const automovilesModel = mongoose.model('automoviles', automovilesSchema);
 
 //Vamos a crear nuestro primer middleware
 //Middleware condigo que se ejecuta antes o despues del
@@ -59,6 +72,9 @@ function isAdminMw(req, res, next) {
 //app.use(<nombreMiddleware>)
 app.use(isAdminMw);
 
+//Usamos chalk
+//app.use(chalk);
+
 //Creamos un puerto para express
 app.post('/', (request, response) => {
     //valla a db y traigame info
@@ -66,8 +82,11 @@ app.post('/', (request, response) => {
 });
 
 app.get('/', (request, response) => {
-    //valla a db y traigame info
-    response.send('ruta para operacion leer verbo GET');
+    //modelo me permite interactuar -> valla a db y traigame info
+    automovilesModel.find((err, resp) => {
+        response.json(resp);
+    })
+    //response.send('ruta para operacion leer verbo GET');
 });
 
 app.get('/:color/:modelo', (req, res) => {
@@ -100,6 +119,6 @@ app.get('*', (req, res) => {
 app.listen(puerto, () => {
     promise
         .then(() => console.log('Conectado a la base de datos'))
-        .catch(() => console.error('No se pudo conectar a la base de datos'));
+        .catch(() => console.log(chalk.red('No se pudo conectar a la base de datos')));
     console.log(`Aplicacion arriba sobre el puerto ${puerto}`);
 })
