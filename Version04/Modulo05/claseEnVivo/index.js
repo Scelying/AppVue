@@ -28,6 +28,8 @@ const express = require('express');
 const app = express();
 //crear puerto
 const puerto = 5500;
+//Permitir que todos los parametros sean en formato JSON
+app.use(express.json());
 
 //Vamos a crear nuestro primer middleware
 //Middleware condigo que se ejecuta antes o despues del
