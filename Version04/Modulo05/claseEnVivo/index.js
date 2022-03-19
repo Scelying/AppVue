@@ -28,6 +28,27 @@ const express = require('express');
 const app = express();
 //crear puerto
 const puerto = 5500;
+
+//Vamos a crear nuestro primer middleware
+//Middleware condigo que se ejecuta antes o despues del
+//manejo de una ruta(path)
+//Mi primer Middleware validara si soy administrador
+function isAdminMw(req, res, next) {
+    console.log('body: ', req.body);
+    console.log('req: ', req);
+    if(req.body.isAdmin) {
+        //Si es admin continua con el flujo normal
+        next();
+    } else {
+        //Si no es admin me retorna un error de acceso
+        res.status(403).send('Forbidden Acess Denied');
+    }
+}
+
+//Despues agregamos el middleware
+//app.use(<nombreMiddleware>)
+app.use(isAdminMw);
+
 //Creamos un puerto para express
 app.post('/', (request, response) => {
     //valla a db y traigame info
