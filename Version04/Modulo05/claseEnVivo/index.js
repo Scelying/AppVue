@@ -33,6 +33,9 @@ const puerto = 5500;
 //Permitir que todos los parametros sean en formato JSON
 app.use(express.json());
 
+//Creamos una promesa que se conecta a la base de datos
+let promise = mongoose.connect('mongodb://localhost:27017/miprimerabasededatos');
+
 //Vamos a crear nuestro primer middleware
 //Middleware condigo que se ejecuta antes o despues del
 //manejo de una ruta(path)
@@ -95,8 +98,8 @@ app.get('*', (req, res) => {
 })
 
 app.listen(puerto, () => {
-    //nos conectamos a la base de datos
-    let promise = mongoose.connect('mongodb://localhost:27017/miprimerabasededatos');
-    promise.then(() => console.log('Conectado a la base de datos'));
+    promise
+        .then(() => console.log('Conectado a la base de datos'))
+        .catch(() => console.error('No se pudo conectar a la base de datos'));
     console.log(`Aplicacion arriba sobre el puerto ${puerto}`);
 })
