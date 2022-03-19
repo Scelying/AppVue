@@ -45,9 +45,10 @@ app.get('/:color/:modelo', (req, res) => {
     res.send(`/${color}/${modelo}`);
 });
 
-app.get('/color/:color/modelo/:modelo', (req, res) => {
+app.get('/color/:color([a-z]+)/modelo/:modelo([0-9]{4})', (req, res) => {
     const color = req.params.color;
     const modelo = req.params.modelo;
+
     res.send(`/color/${color}/modelo/${modelo}`);
 });
 
@@ -60,6 +61,10 @@ app.delete('/', (request, response) => {
     //valla a db y traigame info
     response.send('ruta para operacion eliminar verbo DELETE');
 });
+
+app.get('*', (req, res) => {
+    res.send('Pagina no encontrada', 404);
+})
 
 app.listen(puerto, () => {
     console.log(`Aplicacion arriba sobre el puerto ${puerto}`);
