@@ -42,11 +42,13 @@ app.get('/', (request, response) => {
 app.get('/:color/:modelo', (req, res) => {
     const color = req.params.color;
     const modelo = req.params.modelo;
-    res.send('Path param /:color/:modelo');
+    res.send(`/${color}/${modelo}`);
 });
 
 app.get('/color/:color/modelo/:modelo', (req, res) => {
-    res.send('Path param /color/:color/modelo/:modelo');
+    const color = req.params.color;
+    const modelo = req.params.modelo;
+    res.send(`/color/${color}/modelo/${modelo}`);
 });
 
 app.put('/', (request, response) => {
