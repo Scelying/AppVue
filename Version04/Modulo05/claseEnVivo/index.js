@@ -147,3 +147,19 @@ app.listen(puerto, () => {
         .catch(() => console.log(chalk.red('No se pudo conectar a la base de datos')));
     console.log(`Aplicacion arriba sobre el puerto ${puerto}`);
 })
+
+//Agregarciones
+/*db.automoviles.aggregate([
+    //Primero 1: Si quiero encontrar datos por alguna condicion (opcional)
+    {
+        $match: {modelo:{$gt: 2000}}
+    },
+    //Segundo 2: Agrupo por una llave de propiedad dentro del documento
+    {
+        $group:{_id:'$marca', total:{$sum:1}}
+    },
+    //Tercero 3: Establezco el tipo de ordenamiento -1 descendente 1 ascendente
+    {
+        $sort: {total: 1}
+    }
+])*/
