@@ -28,6 +28,7 @@ const express = require('express');
 const mongoose = require('mongoose');
 //imporat y usamos chalk
 const chalk = require('chalk');
+const { response } = require('express');
 //Creamos una instancia de express
 const app = express();
 //crear puerto
@@ -36,7 +37,7 @@ const puerto = 5500;
 app.use(express.json());
 
 //Creamos una promesa que se conecta a la base de datos
-let promise = mongoose.connect('mongodb://localhost:27016/miprimerabasededatos');
+let promise = mongoose.connect('mongodb://localhost:27017/miprimerabasededatos');
 
 //Crear un esquema de Vehiculo
 const automovilesSchema = mongoose.Schema({
@@ -86,10 +87,22 @@ app.get('/', (request, response) => {
     //response.send('ruta para operacion leer verbo GET');
 });
 
-app.get('/:color/:modelo', (req, res) => {
-    const color = req.params.color;
+app.get('/modelo/:modelo', (req, response) => {
     const modelo = req.params.modelo;
-    res.send(`/${color}/${modelo}`);
+    console.log('modelo: ', modelo);
+    automovilesModel.find({modelo: modelo}, (err, resp) => {
+        console.log(resp);
+        response.json(resp);
+    });
+});
+
+app.get('/color/:color', (req, response) => {
+    const color = req.params.color;
+    console.log('color: ', color);
+    automovilesModel.find({color: color}, (err, resp) => {
+        console.log(resp);
+        response.json(resp);
+    });
 });
 
 app.get('/color/:color([a-z]+)/modelo/:modelo([0-9]{4})', (req, res) => {
