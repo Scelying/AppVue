@@ -45,6 +45,8 @@ const automovilesSchema = mongoose.Schema({
     color: String,
     marca: String,
     tipo: String
+}, {
+    versionKey: false
 })
 
 //Crecar el modelo en mongoose
