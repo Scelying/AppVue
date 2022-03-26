@@ -28,7 +28,6 @@ const express = require('express');
 const mongoose = require('mongoose');
 //imporat y usamos chalk
 const chalk = require('chalk');
-const { response } = require('express');
 //Importamos las rutas creadas
 const router = require('./rutas');
 //Creamos una instancia de express
