@@ -1,57 +1,40 @@
 //Importamos el modelo
-const { automovilModel } = require("../modelos/automovilesModelo");
+const automovilServicios = require('../servicios');
 
-//Creamos una instancia a la importacion
-const automovilModelo = automovilModel;
-
-exports.listarTodos = (req, response) => {
-  automovilModelo.find((err, resp) => {
-    response.json(resp);
-  });
+const listarTodos = (req, response) =>  {
+  automovilServicios.listarTodos(req, response);
 };
 
-exports.listarPorModelo = (req, response) => {
-  const modelo = req.params.modelo;
-  automovilModelo.find({ modelo: modelo }, (err, resp) => {
-    response.json(resp);
-  });
+const listarPorModelo = (req, response) => {
+  automovilServicios.listarPorModelo(req, response);
 };
 
-exports.listarPorColor = (req, response) => {
-  const color = req.params.color;
-  automovilModelo.find({ color: color }, (err, resp) => {
-    response.json(resp);
-  });
+const listarPorColor = (req, response) => {
+  automovilServicios.listarPorColor(req, response);
 };
 
-exports.listarPorColorYModelo = (req, response) => {
-  const color = req.params.color;
-  const modelo = req.params.modelo;
-
-  automovilModelo.find({ color: color, modelo: modelo }, (err, resp) => {
-    response.json(resp);
-  });
+const listarPorColorYModelo = (req, response) => {
+  automovilServicios.listarPorColorYModelo(req, response);
 };
 
-exports.listarPorColorYModelo = (req, response) => {
-  const color = req.params.color;
-  const modelo = req.params.modelo;
-
-  automovilModelo.find({ color: color, modelo: modelo }, (err, resp) => {
-    response.json(resp);
-  });
+const actualizarDatos = (req, response) => {
+  automovilServicios.actualizarDatos(req, response);
 };
 
-exports.actualizarDatos = (req, response) => {
-  //valla a db y traigame info
-  response.send("ruta para operacion actualizar verbo PUT");
+const eliminarDatos = (req, response) => {
+  automovilServicios.eliminarDatos(req, response);
 };
 
-exports.eliminarDatos = (req, response) => {
-  //valla a db y traigame info
-  response.send("ruta para operacion eliminar verbo DELETE");
+const paginaNoEncontrada = (req, response) => {
+  automovilServicios.paginaNoEncontrada(req, response);
 };
 
-exports.paginaNoEncontrada = (req, response) => {
-  response.send("Pagina no encontrada", 404);
-};
+module.exports = {
+  listarTodos,
+  listarPorModelo,
+  listarPorColor,
+  listarPorColorYModelo,
+  actualizarDatos,
+  eliminarDatos,
+  paginaNoEncontrada
+}
