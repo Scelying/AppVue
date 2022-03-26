@@ -5,29 +5,11 @@ const express = require('express');
 //Usamos el Router de express
 const rutas = express.Router();
 
-//importar y usamos mongoose
-const mongoose = require('mongoose');
+//Importamos el controlador que se encarga de la coleccion de automoviles
+const automovilControlador = require('../controladores/automoviles');
 
-//Crear un esquema de Vehiculo
-const automovilesSchema = mongoose.Schema({
-    modelo: Number,
-    color: String,
-    marca: String,
-    tipo: String
-}, {
-    versionKey: false
-})
-
-//Crecar el modelo en mongoose
-const automovilesModel = mongoose.model('automoviles', automovilesSchema);
-
-rutas.get('/', (request, response) => {
-    //modelo me permite interactuar -> valla a db y traigame info
-    automovilesModel.find((err, resp) => {
-        response.json(resp);
-    })
-    //response.send('ruta para operacion leer verbo GET');
-});
+//Operacion para crear data
+rutas.post('/', automovilControlador.listarTodos);
 
 rutas.get('/modelo/:modelo', (req, response) => {
     const modelo = req.params.modelo;
@@ -68,8 +50,7 @@ rutas.get('*', (req, res) => {
     res.send('Pagina no encontrada', 404);
 })
 
-//Operacion para crear data
-/*router.post('/', automovilesControlador.crearInformacion);
+/*
 //Operacion para listar todos los datos
 router.get('/', automovilesControlador.listarInformacion);
 //Operacion para traer datos en base al modelo
