@@ -37,34 +37,18 @@ const puerto = 5500;
 //Permitir que todos los parametros sean en formato JSON
 app.use(express.json());
 
+//Importamos el middleware
+const {isAdminMW} = require('./middlewares');
+
+//Despues agregamos el middleware
+//app.use(<nombreMiddleware>)
+app.use(isAdminMW);
+
 //Usamos la importacion de las rutas
 app.use(router);
 
 //Creamos una promesa que se conecta a la base de datos
 let promise = mongoose.connect('mongodb://localhost:27017/miprimerabasededatos');
-
-//Vamos a crear nuestro primer middleware
-//Middleware condigo que se ejecuta antes o despues del
-//manejo de una ruta(path)
-//Mi primer Middleware validara si soy administrador
-function isAdminMw(req, res, next) {
-    //Error interno en el servidor
-    //Si no envio el encabezado la propiedad isAdmin
-    if(req.headers['isadmin'] === undefined) {
-        res.status(500).send('Internal Error Server');
-    }
-    else if(JSON.parse(req.headers['isadmin'])) {
-        //Si es admin continua con el flujo normal
-        next();
-    } else {
-        //Si no es admin me retorna un error de acceso
-        res.status(403).send('Forbidden Acess Denied');
-    }
-}
-
-//Despues agregamos el middleware
-//app.use(<nombreMiddleware>)
-app.use(isAdminMw);
 
 app.listen(puerto, () => {
     promise

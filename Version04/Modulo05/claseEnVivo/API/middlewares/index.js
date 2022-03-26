@@ -2,7 +2,7 @@
 //Middleware condigo que se ejecuta antes o despues del
 //manejo de una ruta(path)
 //Mi primer Middleware validara si soy administrador
-const isAdmin = (req, res, next) => {
+function isAdminMW(req, res, next) {
     //Error interno en el servidor
     //Si no envio el encabezado la propiedad isAdmin
     if(req.headers['isadmin'] === undefined) {
@@ -15,6 +15,8 @@ const isAdmin = (req, res, next) => {
         //Si no es admin me retorna un error de acceso
         res.status(403).send('Forbidden Acess Denied');
     }
-}
+};
 
-exports.isAdmin = isAdmin;
+module.exports = {
+    isAdminMW
+}
