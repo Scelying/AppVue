@@ -1,6 +1,6 @@
 {
   "scripts": {
-    "start": "nodemon ./claseEnVivo/index.js"
+    "start": "nodemon ./claseEnVivo/API/index.js"
   },
   "dependencies": {
     "chalk": "^4.1.2",
