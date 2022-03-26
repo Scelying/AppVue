@@ -75,8 +75,21 @@ app.use(isAdminMw);
 
 //Creamos un puerto para express
 app.post('/', (request, response) => {
-    //valla a db y traigame info
-    response.send('ruta para operacion crear verbo POST');
+    //Este objeto me crea el nuevo modelo en base al body
+    const nuevoAutomovil = {
+        modelo: request.body.modelo,
+        color: request.body.color,
+        marca: request.body.marca,
+        tipo: request.body.tipo,
+    }
+    //Crear una constante instanciando el modelo
+    const automovil = new automovilesModel(nuevoAutomovil);
+
+    //Me persista el modelo que cree en la base de datos
+    automovil.save((error, resp) => {
+        response.json(resp);
+    })
+
 });
 
 app.get('/', (request, response) => {
