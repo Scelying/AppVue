@@ -9,7 +9,7 @@ var http = require('http');
 console.log(http.Server);
 
 //Crear servidor
-//Necesitamos utlizar la instacia hhtp creada para llamar el metodo
+//Necesitamos utilizar la instacia http creada para llamar el metodo
 //http.createServer(), este a su vez, me crea una instancia
 // del servidor. Lo puedo enlazar al puerto donde lo desee
 //levantar usando el metodo listen(<numeroPuerto>).
@@ -26,7 +26,7 @@ console.log('Servidor esta corriendo en el puerto 8081');
 const express = require('express');
 //importar y usamos mongoose
 const mongoose = require('mongoose');
-//imporat y usamos chalk
+//importar y usamos chalk
 const chalk = require('chalk');
 //Importamos las rutas creadas
 const router = require('./rutas');

@@ -23,14 +23,4 @@ rutas.delete('/', automovilControlador.eliminarDatos);
 //Operacion pagina no encontrada
 rutas.get('*', automovilControlador.paginaNoEncontrada);
 
-/*
-//Operacion para listar todos los datos
-router.get('/', automovilesControlador.listarInformacion);
-//Operacion para traer datos en base al modelo
-router.get('/modelo/:modelo', automovilesControlador.listarPorModelo);
-//Operacion para traer datos en base al color
-router.get('/color/:color', automovilesControlador.listarPorColor);
-//Operacion para traer datos en base al color y al modelo
-router.get('/color/:color/modelo/:modelo', automovilesControlador.listarPorColorYModelo);*/
-
 module.exports = rutas;
