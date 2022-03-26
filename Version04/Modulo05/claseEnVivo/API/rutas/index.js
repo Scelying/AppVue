@@ -8,8 +8,8 @@ const rutas = express.Router();
 //Importamos el controlador que se encarga de la coleccion de automoviles
 const automovilControlador = require('../controladores/automoviles');
 
-//Operacion para crear data
-rutas.post('/', automovilControlador.listarTodos);
+//Operacion para listar todos los datos
+rutas.get('/', automovilControlador.listarTodos);
 
 rutas.get('/modelo/:modelo', (req, response) => {
     const modelo = req.params.modelo;

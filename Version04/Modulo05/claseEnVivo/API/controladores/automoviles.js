@@ -17,7 +17,7 @@ const automovilesSchema = mongoose.Schema(
 //Crecar el modelo en mongoose
 const automovilesModel = mongoose.model("automoviles", automovilesSchema);
 
-exports.listarTodos = () => {
+exports.listarTodos = (req, response) => {
   automovilesModel.find((err, resp) => {
     response.json(resp);
   });
