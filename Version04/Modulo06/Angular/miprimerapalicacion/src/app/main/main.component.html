@@ -8,8 +8,10 @@
       </mat-option>
     </mat-select>
   </mat-form-field>
-  <app-article-a [contenido]="selectedOption"></app-article-a>
-  <app-article-b (mensajeAComponentePadre)="recibirInformaciondeComponenteHijo($event)"></app-article-b>
+  <div id="flex">
+    <app-article-a [contenido]="selectedOption"></app-article-a>
+    <app-article-b (mensajeAComponentePadre)="recibirInformaciondeComponenteHijo($event)"></app-article-b>
+  </div>
   <p *ngIf="cantidadDeMarcas">
     La cantidad de vehiculos seleccionados de la marca son: {{cantidadDeMarcas}}
   </p>
