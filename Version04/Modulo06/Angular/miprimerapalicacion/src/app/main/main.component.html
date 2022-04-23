@@ -1,1 +1,13 @@
-<p>main works!</p>
+<main>
+  <p>{{titulo}}</p>
+  <mat-form-field appearance="fill">
+    <mat-label>Por favor seleccione un medio de transporte</mat-label>
+    <mat-select [(ngModel)]="selectedOption" (selectionChange)="selectOption($event.value)">
+      <mat-option *ngFor="let medioTransporte of arregloMedioTransporte" [value]="medioTransporte">
+        {{medioTransporte}}
+      </mat-option>
+    </mat-select>
+  </mat-form-field>
+  <app-article-a contenido="mensaje"></app-article-a>
+  <app-article-b></app-article-b>
+</main>

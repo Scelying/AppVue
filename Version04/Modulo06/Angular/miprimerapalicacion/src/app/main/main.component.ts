@@ -5,11 +5,13 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './main.component.html',
   styleUrls: ['./main.component.sass']
 })
-export class MainComponent implements OnInit {
+export class MainComponent {
+  selectedOption: string = '';
+  titulo = 'Componente Padre';
 
-  constructor() { }
+  arregloMedioTransporte = [ 'Auto', 'Bus', 'Motocicleta'];
 
-  ngOnInit(): void {
+  selectOption = (evento:any):void => {
+    console.log(evento);
   }
-
 }
