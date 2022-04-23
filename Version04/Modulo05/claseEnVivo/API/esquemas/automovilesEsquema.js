@@ -2,7 +2,10 @@
 const mongoose = require("mongoose");
 
 mongoose.set("debug", function (coll, method, query, doc) {
-  console.log(query);
+  console.log('coll:', coll);
+  console.log('method:', method);
+  console.log('query:', query);
+  console.log('doc:', doc);
 });
 
 //Crear un esquema de Vehiculo
