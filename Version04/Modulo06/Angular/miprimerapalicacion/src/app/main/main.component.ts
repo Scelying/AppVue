@@ -7,6 +7,7 @@ import { MedioTransporte } from '../interfaces/medio-transporte';
   styleUrls: ['./main.component.sass']
 })
 export class MainComponent {
+  cantidadDeMarcas!: number;
   selectedOption!: MedioTransporte;
   titulo = 'Componente Padre';
   arregloMedioTransporte: MedioTransporte[] = [
@@ -20,7 +21,10 @@ export class MainComponent {
   ];
 
   selectOption = (medioId:number):void => {
-    let prueba = this.arregloMedioTransporte.filter(medio => medioId === medio.id)[0];
-    this.selectedOption = prueba;
+    this.selectedOption = this.arregloMedioTransporte.filter(objetoTemporalArregloMedioTransporte => medioId === objetoTemporalArregloMedioTransporte.id)[0];
+  }
+
+  recibirInformaciondeComponenteHijo = ($event:string):void => {
+    this.cantidadDeMarcas = this.arregloMedioTransporte.filter(objetoTemporalArregloMedioTransporte => objetoTemporalArregloMedioTransporte.nombre === $event).length;
   }
 }

@@ -1,9 +1,13 @@
 <mat-card>
   <mat-card-title>{{titulo}}</mat-card-title>
-  <mat-card-subtitle>Articulo B</mat-card-subtitle>
   <mat-card-content>
-    <p>This card indeterminates progress bar.</p>
+    <mat-form-field appearance="fill">
+      <mat-label>Por favor seleccione una marca</mat-label>
+      <mat-select (selectionChange)="selectOption($event.value)">
+        <mat-option *ngFor="let medioTransporte of arregloMedioTransporte" [value]="medioTransporte.nombre">
+          {{medioTransporte.nombre}}
+        </mat-option>
+      </mat-select>
+    </mat-form-field>
   </mat-card-content>
-  <mat-card-actions>
-  </mat-card-actions>
 </mat-card>

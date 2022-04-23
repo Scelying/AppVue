@@ -9,5 +9,8 @@
     </mat-select>
   </mat-form-field>
   <app-article-a [contenido]="selectedOption"></app-article-a>
-  <app-article-b></app-article-b>
+  <app-article-b (mensajeAComponentePadre)="recibirInformaciondeComponenteHijo($event)"></app-article-b>
+  <p *ngIf="cantidadDeMarcas">
+    La cantidad de vehiculos seleccionados de la marca son: {{cantidadDeMarcas}}
+  </p>
 </main>
