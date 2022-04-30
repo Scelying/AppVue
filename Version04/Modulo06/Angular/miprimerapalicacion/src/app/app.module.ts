@@ -12,9 +12,11 @@ import { MainComponent } from './components/main/main.component';
 import { ArticleAComponent } from './components/article-a/article-a.component';
 import { ArticleBComponent } from './components/article-b/article-b.component';
 import { WelcomeComponent } from './components/welcome/welcome.component';
+import { SharedDataComponent } from './components/shared-data/shared-data.component';
 
 const appRoutes: Routes = [
   {path:'inicio', component: WelcomeComponent},
+  {path:'comunicacionComponentes', component: SharedDataComponent},
 ];
 
 @NgModule({
@@ -25,7 +27,8 @@ const appRoutes: Routes = [
     MainComponent,
     ArticleAComponent,
     ArticleBComponent,
-    WelcomeComponent
+    WelcomeComponent,
+    SharedDataComponent
   ],
   imports: [
     BrowserModule,
