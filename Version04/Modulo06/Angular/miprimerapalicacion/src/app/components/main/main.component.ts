@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { MedioTransporte } from '../interfaces/medio-transporte';
+import { MedioTransporte } from '../../interfaces/medio-transporte';
 
 @Component({
   selector: 'app-main',

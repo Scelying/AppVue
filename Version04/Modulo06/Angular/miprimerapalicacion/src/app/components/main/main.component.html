@@ -1,5 +1,16 @@
 <main>
-  <p>{{titulo}}</p>
+  <nav>
+    <ul>
+      <li>
+        <a routerLink="/inicio">Bienvenido</a>
+      </li>
+      <li>
+        <a routerLink="/comunicacionComponentes">Comunicación entre componentes</a>
+      </li>
+    </ul>
+  </nav>
+  <router-outlet></router-outlet>
+  <!--<p>{{titulo}}</p>
   <mat-form-field appearance="fill">
     <mat-label>Por favor seleccione un medio de transporte</mat-label>
     <mat-select (selectionChange)="selectOption($event.value)">
@@ -14,5 +25,5 @@
   </div>
   <p *ngIf="cantidadDeMarcas">
     La cantidad de vehiculos seleccionados desde el componente Hijo B de la marca son: {{cantidadDeMarcas}}
-  </p>
+  </p>-->
 </main>
