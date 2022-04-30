@@ -1,0 +1,11 @@
+<div>
+  <p>Lista de contactos</p>
+  <mat-card *ngFor="let persona of personas">
+    <mat-card-header>
+      <div mat-card-avatar class="example-header-image"></div>
+      <mat-card-title>{{persona.email}}</mat-card-title>
+      <mat-card-subtitle>{{persona.first_name}} {{persona.last_name}}</mat-card-subtitle>
+    </mat-card-header>
+    <img [src]="persona.avatar" [alt]="persona.id" height="175px">
+  </mat-card>
+</div>
