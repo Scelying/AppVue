@@ -1,1 +1,18 @@
-<p>person works!</p>
+<div *ngIf="person; then data else loading"></div>
+<ng-template #data>
+  <p>Persona {{person.id}}</p>
+  <mat-card>
+    <mat-card-header>
+      <div mat-card-avatar class="example-header-image"></div>
+      <mat-card-title>{{person.email}}</mat-card-title>
+      <mat-card-subtitle>{{person.first_name}} {{person.last_name}}</mat-card-subtitle>
+    </mat-card-header>
+    <img [src]="person.avatar" [alt]="person.id" height="175px">
+  </mat-card>
+</ng-template>
+<ng-template #loading>
+  <mat-card>
+    <mat-card-title>Cargando...</mat-card-title>
+  </mat-card>
+</ng-template>
+

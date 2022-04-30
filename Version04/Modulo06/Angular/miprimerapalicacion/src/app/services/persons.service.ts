@@ -1,6 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { Observable } from 'rxjs';
+import { map, Observable } from 'rxjs';
 import { Person } from '../interfaces/person';
 import { Regres } from '../interfaces/reqres';
 
@@ -15,10 +15,12 @@ export class PersonsService {
   constructor(private http: HttpClient) {}
 
   getPersons(): Observable<Regres> {
-      return this.http.get<Regres>(`${this.endpoint}/users`);
+    return this.http.get<Regres>(`${this.endpoint}/users`);
   }
 
   getPersonById(idPerson: string): Observable<Person> {
-    return this.http.get<Person>(`${this.endpoint}/users/${idPerson}`)
+    return this.http.get<any>(`${this.endpoint}/users/${idPerson}`).pipe(map((response)=> response.data));
   }
 }
+
+
