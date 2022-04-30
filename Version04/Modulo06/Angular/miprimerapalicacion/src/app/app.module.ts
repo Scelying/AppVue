@@ -16,6 +16,7 @@ import { WelcomeComponent } from './components/welcome/welcome.component';
 import { SharedDataComponent } from './components/shared-data/shared-data.component';
 import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component';
 import { PersonsComponent } from './components/persons/persons.component';
+import { PersonComponent } from './components/person/person.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { PersonsComponent } from './components/persons/persons.component';
     WelcomeComponent,
     SharedDataComponent,
     PageNotFoundComponent,
-    PersonsComponent
+    PersonsComponent,
+    PersonComponent
   ],
   imports: [
     BrowserModule,

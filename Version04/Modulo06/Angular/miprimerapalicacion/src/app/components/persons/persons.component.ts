@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { PersonsService } from 'src/app/services/persons.service';
-import { Person } from '../../interfaces/person';
 
 @Component({
   selector: 'app-persons',
