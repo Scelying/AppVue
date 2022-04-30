@@ -9,6 +9,7 @@ import { Person } from '../../interfaces/person';
   styleUrls: ['./person.component.sass']
 })
 export class PersonComponent implements OnInit {
+  error!: string;
   idPerson!: string;
   person!: Person;
 
@@ -17,7 +18,10 @@ export class PersonComponent implements OnInit {
    }
 
   ngOnInit(): void {
-    this.personService.getPersonById(this.idPerson).subscribe(response => this.person = response);
+    this.personService.getPersonById(this.idPerson).subscribe(
+      response => this.person = response,
+      err => this.error = err
+    );
   }
 
 }

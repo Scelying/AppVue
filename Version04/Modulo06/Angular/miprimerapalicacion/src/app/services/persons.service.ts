@@ -1,6 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { map, Observable } from 'rxjs';
+import { catchError, map, Observable, throwError } from 'rxjs';
 import { Person } from '../interfaces/person';
 import { Regres } from '../interfaces/reqres';
 
@@ -19,7 +19,11 @@ export class PersonsService {
   }
 
   getPersonById(idPerson: string): Observable<Person> {
-    return this.http.get<any>(`${this.endpoint}/users/${idPerson}`).pipe(map((response)=> response.data));
+    return this.http.get<any>(`${this.endpoint}/users/${idPerson}`).pipe(
+      map((response)=> response.data),
+      catchError(() => {
+        return throwError(() => new Error('Persona no existe'));
+      }));
   }
 }
 
