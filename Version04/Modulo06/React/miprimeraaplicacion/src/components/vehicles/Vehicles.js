@@ -3,15 +3,17 @@ import { getVehicles } from "../../services/Vehicles";
 import Vehicle from "./Vehicle";
 
 const Vehicles = () => {
-  const [isLoading, setIsLoding] = useState(true);
+  const [isLoading, setIsLoading] = useState(true);
   const [vehicles, setVehicles] = useState([]);
 
   useEffect(() => {
+    console.log('useEffect');
     getVehicles().then((response) => {
+      console.log(response);
       setVehicles(response);
-      setIsLoding(false);
+      setIsLoading(false);
     });
-  }, []);
+  }, ['isLoading']);
 
   return (
     <>
