@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React from 'react';
 import Header from './components/Header';
 import Main from './components/Main';
 import Footer from './components/Footer';
@@ -59,22 +59,11 @@ import './App.css';
 
 /* componente funcional - App */
 const App = () => {
-  const vehiclesMock = [
-    {id:0, medio:'Auto', foto:'https://i.pinimg.com/originals/5c/cc/e0/5ccce05a17ff931754faa9c30775793f.jpg', nombre:'BMW', cantidadInteresados: 0},
-    {id:1, medio:'Motocicleta', foto:'https://www.elcarrocolombiano.com/wp-content/uploads/2019/10/20191025-DUCATI-STREETFIGHTER-V4-AA01.jpg', nombre:'Ducati',cantidadInteresados: 0},
-    {id:2, medio:'Bus', foto:'https://assets.volvo.com/is/image/VolvoInformationTechnologyAB/1860x1050-9700-teaser-2018?qlt=82&wid=1440&ts=1630576292069&dpr=off&fit=constrain', nombre:'Volvo', cantidadInteresados: 0},
-    {id:3, medio:'Motocicleta', foto:'https://www.motofichas.com/images/phocagallery/BMW_Motorrad/g-310-gs-2021/01-bmw-g-310-gs-2022-estudio-triple-black.jpg', nombre:'BMW', cantidadInteresados: 0},
-    {id:4, medio:'Auto', foto:'https://i.pinimg.com/736x/a5/a3/ac/a5a3acf5c54bdf83d182b02aa0d68bcf.jpg', nombre:'Mazda', cantidadInteresados: 0},
-    {id:5, medio:'Auto', foto:'https://i.pinimg.com/originals/75/52/d1/7552d1673816375cb94e8022b6139ab6.jpg', nombre:'Ferrari', cantidadInteresados: 0},
-    {id:6, medio:'Auto', foto:'https://i.pinimg.com/originals/58/39/90/5839906af57e445e7ad7b5753fd6872a.jpg', nombre:'Volvo', cantidadInteresados: 0}
-  ]
-
-  const [vehicles, setVehicles] = useState(vehiclesMock);
 
   return(
     <>
       <Header />
-      <Main vehicles={vehicles}/>
+      <Main />
       <Footer />
     </>
   )

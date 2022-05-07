@@ -1,8 +1,8 @@
 import Vehicles from './vehicles/Vehicles';
 
-const Main = ({vehicles}) => {
+const Main = () => {
     return(
-        <Vehicles vehicles={vehicles} />
+        <Vehicles />
     )
 };
 
