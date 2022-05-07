@@ -1,7 +1,9 @@
-const SahredComponent = () => {
+import ParentComponent from "./components/ParentComponent";
+
+const SharedComponent = () => {
     return(
-        <p>Comunicación componente padre a componente hijo</p>
+        <ParentComponent />
     )
 }
 
-export default SahredComponent;
+export default SharedComponent;
