@@ -1,22 +1,27 @@
+<script src="https://unpkg.com/vue/dist/vue.js"></script>
+<script src="https://unpkg.com/vue-router/dist/vue-router.js"></script>
+
 <template>
   <v-app>
-    <v-app-bar app color="primary" dark>
-      <v-spacer></v-spacer>
-    </v-app-bar>
-    <v-main>
-      <!--<HelloWorld v-bind:nombre="nombre" :apellido="apellido" />-->
-    </v-main>
+    <HeaderComponent />
+    <MainComponent />
+    <FooterComponent />
   </v-app>
 </template>
 
 <script>
-//import HelloWorld from "./components/HelloWorld";
+import HeaderComponent from "./components/HeaderComponent";
+import MainComponent from "./components/MainComponent";
+import FooterComponent from "./components/FooterComponent";
 
 export default {
   name: "App",
   data: () => ({
   }),
   components: {
+    HeaderComponent,
+    MainComponent,
+    FooterComponent
     //HelloWorld,
   }
 };
