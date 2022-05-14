@@ -4,13 +4,13 @@
       <v-spacer></v-spacer>
     </v-app-bar>
     <v-main>
-      <HelloWorld v-bind:nombre="nombre" :apellido="apellido" />
+      <!--<HelloWorld v-bind:nombre="nombre" :apellido="apellido" />-->
     </v-main>
   </v-app>
 </template>
 
 <script>
-import HelloWorld from "./components/HelloWorld";
+//import HelloWorld from "./components/HelloWorld";
 
 export default {
   name: "App",
@@ -19,7 +19,7 @@ export default {
     apellido: 'Garcia'
   }),
   components: {
-    HelloWorld,
+    //HelloWorld,
   }
 };
 </script>
