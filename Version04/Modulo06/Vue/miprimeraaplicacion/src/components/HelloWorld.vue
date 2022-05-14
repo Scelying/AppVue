@@ -22,7 +22,7 @@
     <ul>
       <v-card
         class="mx-auto my-12 text-center"
-        max-width="374"
+        max-width="500"
         v-for="vehiculoTemporal in vehiculos"
         :key="vehiculoTemporal.id"
       >
