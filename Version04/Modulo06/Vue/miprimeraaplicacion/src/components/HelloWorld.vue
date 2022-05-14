@@ -20,9 +20,20 @@
   </v-container>
   <v-container v-else>
     <ul>
-      <li v-for="listaTemporal in vehiculos" :key="listaTemporal.id">
-        {{listaTemporal}}
-      </li>
+      <v-card
+        class="mx-auto my-12 text-center"
+        max-width="374"
+        v-for="vehiculoTemporal in vehiculos"
+        :key="vehiculoTemporal.id"
+      >
+        <v-img height="250" :src="vehiculoTemporal.foto"></v-img>
+
+        <v-card-title class="text-center-component">{{ vehiculoTemporal.nombre }}</v-card-title>
+
+        <v-card-text>
+          <div class="my-4 text-subtitle-1">{{ vehiculoTemporal.medio }}</div>
+        </v-card-text>
+      </v-card>
     </ul>
   </v-container>
 </template>
@@ -146,5 +157,8 @@ export default {
 }
 .danger {
   color: red;
+}
+.text-center-component {
+  display: flow-root
 }
 </style>
