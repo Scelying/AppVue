@@ -6,8 +6,15 @@
     <v-btn class="ma-2" color="primary" @click="alerta('Hola')" dark>
       Generar alerta
     </v-btn>
-    <span>{{split}}</span>
+    <span :class="{danger: active, primary: !active}">{{split}}</span>
+    <span :class="[active ? 'primary': 'danger']">{{split}}</span>
     <span>{{reversed}}</span>
+    <h1 v-if="loading">Cargando...</h1>
+    <h1 v-else>Bienvenido...</h1>
+    <h1 v-if="color === 'rojo'">Frene</h1>
+    <h1 v-else-if="color === 'amarillo'">Precaucion</h1>
+    <h1 v-else-if="color === 'verde'">Siga</h1>
+    <h1 v-else>Revise su color porque no tiene sentido</h1>
   </v-container>
 </template>
 
@@ -16,7 +23,10 @@ export default {
   name: "HelloWorld",
   data: () => ({
     html: '<span style="color:red">Hola Mundo</span>',
-    arreglo: [5,4,3,2,1]
+    arreglo: [5,4,3,2,1],
+    active: false,
+    loading: true,
+    color: 'morado'
   }),
   props: {
     nombre: String,
@@ -54,7 +64,11 @@ export default {
     console.log('3. Clico de vida de un componente beforeMount');
   },
   mounted: function() {
-    console.log('4. Clico de vida de un componente mounted');  
+    console.log('4. Clico de vida de un componente mounted');
+    //console.log(`loading: ${this.loading}`);
+    setTimeout(() => {
+      this.loading = !this.loading;
+    }, 5000)
   },
   beforeUpdate: function() {
     console.log('5. Clico de vida de un componente beforeUpdated');  
@@ -70,3 +84,12 @@ export default {
   }
 };
 </script>
+
+<style scoped>
+  .primary {
+    color: blue;
+  }
+  .danger {
+    color: red
+  }
+</style>
