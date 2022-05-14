@@ -15,8 +15,6 @@
 export default {
   name: "App",
   data: () => ({
-    nombre: 'Adolfo',
-    apellido: 'Garcia'
   }),
   components: {
     //HelloWorld,
