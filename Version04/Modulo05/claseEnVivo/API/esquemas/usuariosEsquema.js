@@ -8,13 +8,11 @@ mongoose.set("debug", function (coll, method, query, doc) {
   console.log('doc:', doc);
 });
 
-//Crear un esquema de Vehiculo
-exports.automovilSchema = mongoose.Schema(
+//Crear un esquema de Usuarios
+exports.usuarioSchema = mongoose.Schema(
   {
-    modelo: Number,
-    color: String,
-    marca: String,
-    tipo: String,
+    usuario: String,
+    clave: String,
   },
   {
     versionKey: false,
