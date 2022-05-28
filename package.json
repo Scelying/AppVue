@@ -4,7 +4,7 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build /Version04/Modulo06/Angular/miprimerapalicacion",
+    "build": "ng build --base-href /Version04/Modulo06/Angular/miprimerapalicacion",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "analyzer": "webpack-bundle-analyzer dist/miprimeraaplicacion/stats.json"
