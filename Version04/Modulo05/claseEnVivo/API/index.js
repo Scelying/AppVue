@@ -39,10 +39,12 @@ app.use(express.json());
 
 //Importamos el middleware
 const {isAdminMW} = require('./middlewares');
+const {authenticationToken} = require('./middlewares/autenticacion');
 
 //Despues agregamos el middleware
 //app.use(<nombreMiddleware>)
 app.use(isAdminMW);
+app.use(authenticationToken);
 
 //Usamos la importacion de las rutas
 app.use(router);
