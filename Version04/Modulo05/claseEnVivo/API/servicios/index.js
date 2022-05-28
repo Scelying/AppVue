@@ -1,8 +1,18 @@
+const jsonwebtoken = require("jsonwebtoken");
+const dotenv = require("dotenv");
 //Importamos el modelo
-const { automovilModel } = require("../modelos/automovilesModelo");
+const { automovilModel } = require("../modelos/automovilesModelo")
 
 //Creamos una instancia a la importacion
 const automovilModelo = automovilModel;
+
+//En esta linea me esta llamando las variables de entorno
+dotenv.config();
+
+exports.generarToken =(req, response) => {
+  const palabraClave = process.env.TOKEN_SECRET;
+  response.json(jsonwebtoken.sign({}, palabraClave, {expiresIn: '1800s'}));
+}
 
 exports.listarTodos = (req, response) => {
   automovilModelo.find((err, resp) => {

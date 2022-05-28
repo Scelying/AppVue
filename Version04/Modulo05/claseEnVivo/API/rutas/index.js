@@ -1,7 +1,6 @@
 //Express
 //Importamos y usamos express
 const express = require('express');
-
 //Usamos el Router de express
 const rutas = express.Router();
 
@@ -16,6 +15,8 @@ rutas.get('/modelo/:modelo', automovilControlador.listarPorModelo);
 rutas.get('/color/:color', automovilControlador.listarPorColor);
 //Operacion para listar todos los datos por color y modelo
 rutas.get('/color/:color([a-z]+)/modelo/:modelo([0-9]{4})', automovilControlador.listarPorColorYModelo);
+//Operacion para crear el token
+rutas.post('/token', automovilControlador.generarToken);
 //Operacion para actualizar
 rutas.put('/', automovilControlador.actualizarDatos);
 //Operacion para eliminar

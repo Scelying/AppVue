@@ -1,6 +1,10 @@
 //Importamos el modelo
 const automovilServicios = require('../servicios');
 
+const generarToken = (req, response) =>  {
+  automovilServicios.generarToken(req, response);
+};
+
 const listarTodos = (req, response) =>  {
   automovilServicios.listarTodos(req, response);
 };
@@ -30,6 +34,7 @@ const paginaNoEncontrada = (req, response) => {
 };
 
 module.exports = {
+  generarToken,
   listarTodos,
   listarPorModelo,
   listarPorColor,
